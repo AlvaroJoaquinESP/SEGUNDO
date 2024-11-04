@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <!--¿DataList?-->
+    <select name="game" id="game">
+      <option value="rock">Rock</option>
+      <option value="paper">Paper</option>
+      <option value="scissors">Scissors</option>
+    </select>
+    <input type="button" value="Play Now" onclick="javascript:rps()" />
+    <br />
+    <hr />
+    <div id="solucion" class="solucion1">
+      <input type="text" name="result" id="result" readonly/>
+    </div>
+    
+
+    <!-- <div class="ganaMaquina">
+        <input type="text" name="maquina" id="maquina">
+    </div>
+    <div class="ganoYo">
+        <input type="text" name="yo" id="yo">
+    </div> -->
+    <script src="main.js"></script>
+  </body>
+</html>

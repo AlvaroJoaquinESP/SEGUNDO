@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de una página web sencilla con etiquetas HTML semánticas, formularios, tablas, listas, imágenes, videos, anclas y listas de descripción.">
+    <meta name="keywords" content="HTML, formularios, tablas, listas, imágenes, videos, anclas, listas de descripción, ejemplo, semántica">
+    <meta name="author" content="Nombre del Autor">
+    <meta name="robots" content="index, follow">
+    <title>Mi Página Web Completa con Imágenes, Videos y Anclas</title>
+<style>
+        /* Reset básico para márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* Navegación */
+        nav ul {
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        /* Estilo del main */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #444;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Formularios */
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form textarea:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f4f4f4;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #e9e9e9;
+        }
+
+        /* Imágenes */
+        picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Videos */
+        video {
+            display: block;
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Listas de descripción */
+        dl {
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            letter-spacing: 0.5px;
+        }
+
+        /* Enlaces internos (anclas) */
+        a[href^="#"] {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a[href^="#"]:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#tabla">Tabla de Datos</a></li>
+                <li><a href="#imagenes">Imágenes</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#descripcion">Lista de Descripción</a></li>
+                <li><a href="#contacto">Ir al pie de página (Ancla)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Este es un ejemplo de una página web sencilla que utiliza formularios, tablas, listas, imágenes, videos, anclas y listas de descripción, además de etiquetas HTML semánticas.</p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un desarrollador web que disfruta creando sitios web accesibles y bien estructurados. Me encanta enseñar a los demás cómo usar HTML.</p>
+
+            <h3>Mis hobbies:</h3>
+            <ul>
+                <li>Programación</li>
+                <li>Lectura</li>
+                <li>Senderismo</li>
+                <li>Viajar</li>
+            </ul>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="suscripcion">Suscribirse a la newsletter:</label>
+                <input type="checkbox" id="suscripcion" name="suscripcion"><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="tabla">
+            <h2>Tabla de Cursos</h2>
+            <table border="1">
+                <caption>Mis Cursos de Programación</caption>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Duración</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML y CSS Básico</td>
+                        <td>1 Mes</td>
+                        <td>Principiante</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Intermedio</td>
+                        <td>2 Meses</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>PHP Avanzado</td>
+                        <td>3 Meses</td>
+                        <td>Avanzado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Más cursos disponibles próximamente.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="imagenes">
+            <h2>Imágenes con la etiqueta &lt;picture&gt;</h2>
+            <picture>
+                <source media="(min-width: 650px)" srcset="imagen-grande.jpg">
+                <source media="(min-width: 465px)" srcset="imagen-mediana.jpg">
+                <img src="imagen-pequeña.jpg" alt="Descripción de la imagen">
+            </picture>
+            <p>Esta imagen cambia según el tamaño de la pantalla del dispositivo.</p>
+        </section>
+
+        <section id="videos">
+            <h2>Video Ejemplo</h2>
+            <video width="320" height="240" controls>
+                <source src="video-ejemplo.mp4" type="video/mp4">
+                <source src="video-ejemplo.ogv" type="video/ogg">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Este es un video de ejemplo que puede ser reproducido con controles.</p>
+        </section>
+
+        <section id="descripcion">
+            <h2>Lista de Descripción</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web.</dd>
+
+                <dt>CSS</dt>
+                <dd>Lenguaje de estilos utilizado para describir la presentación de un documento escrito en HTML o XML.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de programación que permite crear contenido dinámico en las páginas web.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>&copy; 2024 Nombre del Autor. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+
+html{
+    background-color: black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    background-color: chartreuse;
+    flex: 1;
+    display: flex;
+}
+
+main{
+    background-color: aqua;
+    flex: 8;
+}
+
+footer{
+    display: flex;
+    background-color: red;
+    flex: 1;
+}
+
+.item{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+
+}
+
+.hola{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    align-items: center;
+    height: 10px;
+}
+
+nav{
+    display: flex;
+}
+
+
+

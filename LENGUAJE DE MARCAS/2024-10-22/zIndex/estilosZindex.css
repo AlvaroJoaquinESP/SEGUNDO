@@ -1,0 +1,25 @@
+/*Especifico que sea de section, para poder llamar "primero" a otros*/
+section.primero {
+    height: 150px;
+    width: 150px;
+    border: 20px outset hwb(240 5% 20%);
+    position: sticky; /*Para que superponga*/
+    top: 10%;
+    left: 15%;
+    background-color: yellow;
+    z-index: 1;
+}
+section.segundo {
+    height: 150px;
+    width: 150px;
+    border: 10px outset rgba(9, 222, 137, 0.694);
+    position: sticky;
+    top: 10%;
+    left: 20%;
+    background-color: red;
+}
+/*El hover, para cuando te pongas encima, te ponga algo*/
+section.segundo:hover{ 
+    z-index: 3;
+    background-color: chartreuse;
+}

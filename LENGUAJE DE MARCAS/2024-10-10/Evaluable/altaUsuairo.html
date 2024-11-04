@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      tr {
+        border: 1px solid black;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <p>Formulario</p>
+      <label for="id">Id</label>
+      <input type="number" name="id" />
+      <br />
+      <br />
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" />
+      <br />
+      <br />
+      <label for="apellidos">Apellidos</label>
+      <input type="text" name="apellidos" />
+      <br />
+      <br />
+      <label for="gen">Genero</label>
+      <input type="number" name="gen" list="generos"/>
+      <datalist id="generos">
+        <option value="Masculino"></option>
+        <option value="Femenino"></option>
+        <option value="Otro"></option>
+      </datalist>
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" />
+      <br />
+      <br />
+
+      <label for="alta">Fecha de Alta</label>
+      <input type="date" name="alta" />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>GENERO</th>
+        <th>EMAIL</th>
+        <th>FECHA DE CREACION</th>
+      </tr>
+    </form>
+  </body>
+</html>

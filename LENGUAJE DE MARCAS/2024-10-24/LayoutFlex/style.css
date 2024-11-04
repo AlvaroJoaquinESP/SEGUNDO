@@ -1,0 +1,74 @@
+header {
+    padding: 10px;
+    background-color: aquamarine;
+    text-align: start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    opacity: 0.5;
+    /* align-content: flex-start; */
+    justify-content: start;
+    margin-right: auto;
+}
+
+.nav {
+    padding: 10px;
+    background-color: grey;
+    display: flex;
+    flex: 1;
+    justify-content: end; /*Horizontal*/
+    align-items: center;
+}
+
+a {
+    text-decoration: none; /*Le quita el subrayado a los enlaces*/
+    font-size: 1.5rem;
+    font-weight: bold; /*Negrita*/
+    border-radius: 5;
+    color: black;
+    margin: 10px;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+.principal {
+    display: flex;
+    flex: 10;
+}
+
+.as {
+    background-color: blue;
+    flex: 25%;
+    align-content: start;
+}
+.as2 {
+    background-color: blueviolet;
+    flex: 25%;
+}
+
+.sec {
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 50%;
+}
+
+.word {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.foot{
+    background-color: chartreuse;
+    padding: 5px;
+    color: crimson;
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    flex-direction: column;
+}
+

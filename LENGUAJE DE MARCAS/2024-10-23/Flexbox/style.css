@@ -1,0 +1,32 @@
+.container {
+    border: 1px solid black;
+    background-color: hsl(211, 50%, 40%);
+    height: 800px;
+    width: vh100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/*Como se separan. Si lo hacen o no. */
+    justify-content: center; /*Donde se poner el separador.*/ /*Alinearlo en la horizontal.*/
+    align-content: center; /*Alineo en contenido de esta etiqueta en la vertical.*/
+}
+
+.child {
+    border: 1px solid black;
+    background-color: hsl(99, 50%, 40%);
+    height: 200px;
+    width: 200px;
+    align-content: flex-end; /*Pongo el contenido de la etiqueta abajo del todo verticalmente.*/
+}
+
+.art1{
+    flex: 2; /*Con 2 mide el doble que uno normal.*/ 
+}
+
+
+.art2{
+    flex: 4;
+}
+
+.art3{
+    flex: 2;
+}

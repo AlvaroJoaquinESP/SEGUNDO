@@ -1,0 +1,32 @@
+body{
+    background-color: grey;
+    position: relative;
+}
+
+header{
+    text-align: center;
+}
+main{
+    position: relative;
+    top: 40px;
+    left: 3%;
+}
+
+section.primera{
+    background-color: beige;
+    width: 20em;
+    height: 10em;
+    font-size: 1.2em;
+    color: dimgray;
+    border: 3px dashed red;
+}
+
+section.segunda{
+    background-color: aqua;
+    width: 20em;
+    height: 10em;
+    font-size: 1.2em;
+    border-bottom: 3px dotted yellow;
+    left: 60%;
+}
+

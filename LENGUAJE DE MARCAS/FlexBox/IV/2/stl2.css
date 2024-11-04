@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+header p{
+    color: white;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+header nav{
+    align-content: center;
+}
+
+main{
+    flex: 8;
+    background-color: antiquewhite;
+    width: 85%;
+}
+
+footer{
+    flex: 1;
+    background-color: darkgrey;
+}
+
+.pmain{
+
+}
+
+
+

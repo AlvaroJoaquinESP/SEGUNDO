@@ -1,0 +1,93 @@
+body{
+    background-color: rgba(165, 42, 42, 0.243);
+}
+
+p{
+    background: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.colorclass{
+    background: red;
+    font:100;
+}
+
+#hola{
+    background: olive;
+}
+
+div p{
+    background-color: blueviolet;
+}
+
+span > p{
+    color: black;
+}
+
+/*Despues de un div cuando te encuentres un p...*/
+div + p{
+    padding: 20px;
+    color: aqua;
+}
+/*Hermanos.Al primero no se aplica*/
+pre ~ pre{
+    color:gray;
+    padding: 5px;
+}
+
+/*En mi clase lista, cuando te encuentre el primer elemento
+de tipo li, ponlo en -color-*/
+.milista li:first-child{
+    color: yellow;
+} 
+
+
+/*En mi clase lista, cuando te encuentre el último elemento
+de tipo li, ponlo en -color-*/
+.milista li:last-child{
+    color: red;
+} 
+
+/*Enlaces*/
+a:link{
+    background-color: green;
+}
+
+/*Si el enlace ya está visitado.*/
+a:visited{
+    background-color: chocolate;
+}
+
+/*Para cuando te pones encima del enlace sin clickar*/
+.enlace:hover{
+    color: white;
+    background-color: blue;
+}
+
+/*Para que al pulsar el enlace se ponga de otro color*/
+.claseActiva:active{
+    color: blue;
+    background-color: white;
+}
+
+/*Cuando haces 'focus' para escribir, cambia -lo que le pongas-*/
+input:focus{
+    border: 10px dotted yellow;
+}
+
+/*Puede ser first-letter o first-line*/
+.miparrafo::first-letter{
+    text-transform: uppercase;
+}
+
+.miparrafo{
+    background-color: aqua;
+}
+
+#idparrafo{
+    background-color: gray; 
+}
+
+
+
+

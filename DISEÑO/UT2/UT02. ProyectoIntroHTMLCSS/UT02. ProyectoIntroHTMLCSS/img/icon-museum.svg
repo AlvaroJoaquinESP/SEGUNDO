@@ -1,0 +1,6 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="30px" height="30px" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bg" stroke-width="0"/>
+<g id="tracer" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="icon"> <path d="M4 44H44" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <path d="M8 7.27273C8 7.27273 15 4 24 4C33 4 40 7.27273 40 7.27273V13H8V7.27273Z" fill="#cc5120" stroke="#000000" stroke-width="4" stroke-linejoin="round"/> <path d="M10 13V38" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <path d="M17 13V38" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <path d="M24 13V38" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <path d="M31 13V38" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <path d="M38 13V38" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/> <rect x="7" y="38" width="34" height="6" stroke="#000000" stroke-width="4" stroke-linejoin="round"/> </g>
+</svg>

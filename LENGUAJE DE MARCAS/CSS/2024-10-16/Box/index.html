@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .midiv{
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        font-size: 2em;
+        box-sizing: border-box;
+        overflow: auto;
+        /*hidden para ocultar el texto, auto para poder moverlo*/
+        /*Border-box se ajusta al tamaño del texto*/
+        /*Si se desborda  y queremos que se mueva el
+        cuadro ponemos over-flow.*/
+        text-overflow: ellipsis;
+        /*Ellipsis si en caso de que el texto supere el 
+        límite del contenedor, salgan 3 puntos suspensivos*/
+        margin-left: 100px; /*Aplica margen a la izq
+        desplazando la caja, no el contenido*/
+        text-decoration: line-through;
+       } 
+    </style>
+</head>
+<body>
+    <div class="midiv">Css is awesomeeeeeeeeeeeeeeeeeeeeeeee</div>
+</body>
+</html>

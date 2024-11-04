@@ -1,0 +1,29 @@
+body{
+    /* display: grid;
+    min-height: 100dvh;
+    grid-template-rows:
+    auto 1fr auto; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+header{
+    background-color: gainsboro;
+    flex: 1;
+}
+
+main{
+    background-color: grey;
+    flex: 8;
+}
+
+footer{
+    background-color: orange;
+    flex: 1;
+}
+
+nav section{
+    display: flex;
+    justify-content: flex-end;
+}

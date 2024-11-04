@@ -1,0 +1,41 @@
+body{
+    display: block;
+}
+header{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center; /*Horizontalmente*/
+    align-items: center; /*Verticalmente*/
+    height: 5em;
+}
+
+main{
+    background-color: aqua;
+    display: flex;
+}
+
+section.primera {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: coral;
+}
+
+section.segunda {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: greenyellow;
+    border: 1px dashed green;
+}
+
+section.tercera {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: violet;
+}
