@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post" id="formulary">
+    <form action="kk.php" method="post" id="formulary">
         <label>Nombre:</label>
         <input type="text" name="nombre" id="nombre" required minlength="3"><br>
         
@@ -17,9 +17,13 @@
         <input type="password" name="contrasenia1" id="contrasenia1" required minlength="8" maxlength="8"><br>
         
         <label>Confirmar Password</label>
-        <input type="text" name="contrasenia2" id="contrasenia2"><br>
+        <input type="password" name="contrasenia2" id="contrasenia2" required minlength="8" maxlength="8"><br>
 
+        <!-- <button id="nothing">Submit</button> -->
         <input id="nothing" type="submit" value="Submit">
+        <br><br>
+
+        <textarea name="sol" id="sol"></textarea>
         <script src="3_.js"></script>
     </form>
 </body>

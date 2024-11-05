@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nombre Empresa</h1>
+    <hr>
+    <h2>Formulario de Asistencia Técnica</h2>
+    <form action="" method="post" id="formulario">
+        <label>Tipo de Incidencia</label>
+        <select name="selector" id="selector" required>
+            <option value="Cambio">Cambio</option>
+            <option value="Devolución">Devolución</option>
+            <option value="Reparación">Reparación</option>
+        </select>
+        <br>
+         <label>Número de Serie</label>
+         <input type="text" name="serie" id="serie" minlength="6" maxlength="6" required><br>
+         
+         <label>Descripción del problema</label>
+         <textarea name="descripcion" id="descripcion" rows="5" cols="40" maxlength="200" required></textarea>
+
+         <input type="submit" value="ENVIAR" id="boton">
+    </form>
+<script src="8_1.js"></script>
+</body>
+</html>
