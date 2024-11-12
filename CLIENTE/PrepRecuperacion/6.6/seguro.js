@@ -51,6 +51,7 @@ class Seguro {
             </tr>
         </tbody>
     </table>`
+    document.write(exit);
   }
 
   insuranceType() {
