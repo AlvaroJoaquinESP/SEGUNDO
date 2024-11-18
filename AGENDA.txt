@@ -3,3 +3,11 @@ HACER ACTIVIDADES DISEÑO T1
 ver css todocode y cursos juan para este fin de semana.
 
 terminar 9.13 cliente
+
+terminar practica8 lazaro()
+
+practica 4.5 marcas()
+
+public apis y devchallenges cliente()
+
+express cliente()

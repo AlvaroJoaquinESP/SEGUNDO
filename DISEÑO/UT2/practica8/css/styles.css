@@ -1,0 +1,61 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.section-title{
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+/* Listas generales */
+
+.list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.list__item{
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos */
+
+/* Lista con marcadores cuadrados */
+
+.list--square{
+    list-style-type: square ;
+}
+
+.list--roman{
+    list-style-type: upper-roman;
+}
+
+.description-list{
+    margin-left: 20px; /* Igual que las otras listas. */
+}
+
+.description-list__term{
+    color: blue;
+    font-weight: bolder; /* ¿No seria mejor ponerlo desde html? */
+    margin-bottom: 5px;
+    background-image: url(../img/flecha.png);
+}
+
+.description-list__definition{
+    margin-left: 70px;
+    margin-bottom: 17px;
+}
