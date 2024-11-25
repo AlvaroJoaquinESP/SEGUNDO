@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dronega</h1>
+    <h2>Formulario de Asistencia Técnica</h2>
+    <form action="kk.php" method="post" id="formulary">
+        <label for="selector">Incidencia</label>
+        <select name="selector" id="selector" required>
+            <option value="cambio">Cambio</option>
+            <option value="devolucion">Devolucion</option>
+            <option value="reparacion">Reparacion</option>
+        </select>
+        <br>
+        <label for="nSerie">Número de serie</label>
+        <input type="text" name="nSerie" id="nSerie" required minlength="6" maxlength="6">
+        <br>
+        <textarea name="area" id="area" placeholder="Describa su problema" required maxlength="200"></textarea>
+        <br>
+        <input type="submit" value="ENVIAR" id="noId">
+        <script src="main.js"></script>
+    </form>
+</body>
+</html>

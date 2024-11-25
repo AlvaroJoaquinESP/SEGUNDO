@@ -26,7 +26,6 @@ document.querySelector("#formulario").addEventListener("submit", (ev) => {
     return
   }
   
-  
 
 
 })

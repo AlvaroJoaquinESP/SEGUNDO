@@ -1,0 +1,1 @@
+const Persona = new Persona('Paco',18,'H',80,1.8 ,'12345678A');

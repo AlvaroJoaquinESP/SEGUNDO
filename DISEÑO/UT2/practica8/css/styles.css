@@ -14,6 +14,7 @@
     font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: 10px;
+    color: #34495e;
 }
 
 .paragraph {
@@ -46,16 +47,23 @@
 
 .description-list{
     margin-left: 20px; /* Igual que las otras listas. */
+    padding-left: 2rem;
+    list-style-type: none;
 }
 
 .description-list__term{
     color: blue;
     font-weight: bolder; /* ¿No seria mejor ponerlo desde html? */
     margin-bottom: 5px;
+    padding-left: 2rem;
     background-image: url(../img/flecha.png);
+    background-position: 0 0;
+    background-size: 1.4rem 1.3rem;
+    background-repeat: no-repeat;
 }
 
 .description-list__definition{
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-left: 15px;
     margin-bottom: 17px;
 }

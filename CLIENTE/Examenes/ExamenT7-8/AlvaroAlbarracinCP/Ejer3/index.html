@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="kk.php" method="post" id="formulary">
+      <label for="nombre">Nombre Usuario</label>
+      <input type="text" name="nombre" id="nombre" required minlength="4" />
+      <br />
+
+      <label for="tel">Teléfono</label>
+      <input
+        type="text"
+        name="tel"
+        id="tel"
+        required
+        minlength="9"
+        maxlength="9"
+      />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+      <br />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        minlength="10"
+      />
+      <br />
+      <input type="submit" value="ENVIAR" id="boton" />
+    </form>
+    <script src="main.js"></script>
+
+  </body>
+</html>

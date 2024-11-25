@@ -1,0 +1,15 @@
+.resultado {
+    font-size: normal;
+    background-color: white;
+    color: black;
+}
+.ganaMaquina {
+    font-size: 3em;
+    background-color: yellow;
+    color:black;
+}
+.ganaPlayer  {
+    font-size: 0.5em;
+    background-color:green;
+    color:red;
+}

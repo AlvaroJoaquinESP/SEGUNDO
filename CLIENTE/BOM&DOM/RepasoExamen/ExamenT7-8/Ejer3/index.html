@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="holajuan.php" method="post" id="formulary">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required minlength="3">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required >
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required minlength="8" maxlength="8">
+        <br>
+        <label for="confirmed">Confirmar Password</label>
+        <input type="password" name="confirmed" id="confirmed" required minlength="8" maxlength="8">
+        <br>
+        <input type="submit" value="Comprobar" id="boton">
+        <br>
+    <script src="main.js"></script>
+    </form>
+</body>
+</html>
