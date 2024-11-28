@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sucursales>
+    <sucursal id="1">
+        <cuentas>
+            <cuenta id="1">
+                <cliente id="a">Operacion 1<prestamo>Si</prestamo></cliente>
+            </cuenta>
+
+            <cuenta id="2">
+                <cliente id="b">
+                    <operacion>Operacion 2<prestamo>No</prestamo></operacion>
+                </cliente>
+
+            </cuenta>
+
+            <cuenta id="3">
+                <cliente id="c">Operacion 3<prestamo>No</prestamo></cliente>
+
+            </cuenta>
+        </cuentas>
+
+    </sucursal>
+
+    <sucursal id="2">
+        <cuentas>
+            <cuenta id="1">
+                <cliente id="a">Operacion 34561<prestamo>Si</prestamo></cliente>
+
+            </cuenta>
+
+            <cuenta id="2">
+                <cliente id="b">Operacion 254565<prestamo>Si</prestamo></cliente>
+
+            </cuenta>
+
+            <cuenta id="3">
+                <cliente id="c">Operacion 3545<prestamo>No</prestamo></cliente>
+
+            </cuenta>
+        </cuentas>
+
+    </sucursal>
+
+    <sucursal id="3">
+        <cuentas>
+            <cuenta id="1">
+                <cliente id="a">Operacion 188<prestamo>Si</prestamo></cliente>
+
+            </cuenta>
+
+            <cuenta id="2">
+                <cliente id="b">Operacion 254<prestamo>No</prestamo></cliente>
+
+            </cuenta>
+
+            <cuenta id="3">
+                <cliente id="c">Operacion 34<prestamo>Si</prestamo></cliente>
+
+            </cuenta>
+        </cuentas>
+
+    </sucursal>
+
+</sucursales>

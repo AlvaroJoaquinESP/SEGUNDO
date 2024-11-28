@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ACTORES FORM</h1>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <br>
+    
+    <label for="apellidos">Apellidos</label>
+    <input type="text" name="apellidos" id="apellidos" required>
+    <br>
+
+    <label>Género:</label>
+    <label for="male">Male</label>
+    <input type="radio" name="genero" id="genero" value="male"required>
+    <label for="female">Female</label>
+    <input type="radio" name="genero" id="genero" value="female" required>
+
+    <br>
+    
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" id="edad" required>
+    <br>
+    
+    <label for="pelicula">Película</label>
+    <select name="pelicula" id="pelicula">
+        <option value="batman">Batman</option>
+        <option value="El Caballero Oscuro">El Caballero Oscuro</option>
+        <option value="El Caballero Oscuro: La Leyenda Renace">El Caballero Oscuro: La Leyenda Renace</option>
+    </select>
+    <br>
+
+    <input type="button" value="Agregar" id="boton">
+    <div id="salida"></div>
+    <script src="main.js"></script>
+</body>
+</html>

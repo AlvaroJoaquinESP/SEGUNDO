@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+tr,th {
+    border-collapse: collapse;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+td{
+    border: 1px solid rgb(190, 190, 190);
+    text-align: center;
+}
+
+/*Cambia el color
+Esto busca las filas que son "pares". Las filas se numeran desde el 1, así que la fila 2, la fila 4, la fila 6, y así sucesivamente son las filas "pares".
+
+td: Esto se refiere a las celdas dentro de esas filas.*/
+tr:nth-child(even) td{
+    background-color: rgb(250, 250, 250);
+}
+
+/*Cambia el color
+Esto selecciona las filas "impares" de la tabla. Recuerda que las filas se cuentan desde 1, así que la fila 1, la fila 3, la fila 5, etc., son las filas "impares".
+
+td: Esto se refiere a las celdas dentro de esas filas.*/
+tr:nth-child(odd) td{
+    background-color: rgb(245, 245, 245);
+}

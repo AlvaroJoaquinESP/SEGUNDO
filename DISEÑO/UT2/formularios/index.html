@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>Regístrate Hoy</h1>
+      <p>Completa los datos a continuación</p>
+
+      <div id="grupo-formulario">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" name="nombre" id="nombre" required/>
+        <br />
+      </div>
+
+      <div id="grupo-formulario">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      />
+      </div>
+      <br />
+
+      <div id="grupo-formulario">
+        <label for="posicion">Posicion</label>
+        <select name="posicion" id="posicion" required>
+            <option value="">Selecciona una Posición</option>
+            <option value="desarrollador">Desarrollador</option>
+            <option value="diseñador">Diseñador</option>
+            <option value="gerente">Gerente</option>
+        </select>
+        <br />
+      </div>
+
+      <div id="grupo-formulario">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required/>
+        <br />
+      </div>
+
+      <div id="grupo-formulario">
+        l
+      </div>
+    </section>
+  </body>
+</html>
