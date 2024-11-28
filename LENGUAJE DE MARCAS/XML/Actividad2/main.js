@@ -32,8 +32,8 @@ const mostrar = () => {
                     <td>${element.genero}</td>
                     <td>${element.edad}</td>
                     <td>${element.pelicula}</td>
-                </tr>
-        </table>`
+                </tr>`
     });
+    salida+=`</table>`
     document.querySelector("#salida").innerHTML = salida
 }

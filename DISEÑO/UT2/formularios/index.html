@@ -4,50 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="lazaro.css">
   </head>
   <body>
-    <section>
-      <h1>Regístrate Hoy</h1>
-      <p>Completa los datos a continuación</p>
+    <div class="contenedor">
+      <h1 class="title">Regístrate Hoy</h1>
+      <p class="paragraph">Completa los datos a continuación</p>
 
-      <div id="grupo-formulario">
+      <div class="grupo-formulario">
         <label for="nombre">Nombre Completo</label>
-        <input type="text" name="nombre" id="nombre" required/>
+        <input type="text" name="nombre" id="nombre" required placeholder="Nombre Completo"/>
         <br />
       </div>
 
-      <div id="grupo-formulario">
-      <label for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        required
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-      />
+      <div class="grupo-formulario">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="Email"/>
       </div>
-      <br />
 
-      <div id="grupo-formulario">
+      <div class="grupo-formulario">
         <label for="posicion">Posicion</label>
-        <select name="posicion" id="posicion" required>
-            <option value="">Selecciona una Posición</option>
-            <option value="desarrollador">Desarrollador</option>
-            <option value="diseñador">Diseñador</option>
-            <option value="gerente">Gerente</option>
+        <select name="posicion" id="posicion">
+          <option value="">Selecciona una Posición</option>
+          <option value="desarrollador">Desarrollador</option>
+          <option value="diseñador">Diseñador</option>
+          <option value="gerente">Gerente</option>
         </select>
         <br />
       </div>
 
-      <div id="grupo-formulario">
+      <div class="grupo-formulario">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" required/>
+        <input type="password" name="password" id="password" placeholder="Password"/>
         <br />
       </div>
 
-      <div id="grupo-formulario">
-        l
+      <div class="genero">
+        <label
+          ><input
+            type="radio"
+            name="genero"
+            id="genero-masculino"
+            value="masculino"
+            required
+          />Masculino</label
+        >
+
+        <label
+          ><input
+            type="radio"
+            name="genero"
+            id="genero-femenino"
+            value="femenino"
+            required
+          />Femenino</label
+        >
+
+        <label
+          ><input
+            type="radio"
+            name="genero"
+            id="genero-secreto"
+            value="secreto"
+            required
+          />Secreto</label
+        >
       </div>
-    </section>
+
+      <div class="checkbox">
+        <label for="confirmo"><input type="checkbox" name="confirmo" id="confirmo" required><span>Confirmo que todos los datos son correctos</span></label>
+      </div>
+
+      <input type="submit" value="Registro" id="boton" class="btn-enviar">
+    </div>
   </body>
 </html>

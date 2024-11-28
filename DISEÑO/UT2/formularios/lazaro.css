@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  background-color: #1a2a36;
+}
+
+.contenedor {
+  width: 350px;
+  color: #2c3e24;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+    font-size: 24px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.paragraph {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grupo-formulario {
+    margin: 10px 5%;
+}
+
+.grupo-formulario label {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.grupo-formulario input, select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #2b3a47;
+    color: white;
+}
+
+.genero {
+    text-align: center;
+}
+
+.genero label {
+    display: inline-block;
+    width: 20%;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.btn-enviar {
+    width: 90%;
+    margin: 10px 4%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #45a049;
+}
