@@ -1,0 +1,27 @@
+.header {
+    display: flow-root;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul li {
+    display: inline-block; /*Adopta caracteristicas de bloque. Permite que los elementos se comporten como texto.*/
+}
+
+.container {
+    position : relative; /*Hace que el footer se adapte a él, ya que lo toma a él como referencia y no a la página*/
+    min-height: 100vh;
+}
+
+.footer {
+    position : absolute;
+    bottom: 0%;
+    left: 0%;  
+}
+

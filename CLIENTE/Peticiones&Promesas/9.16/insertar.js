@@ -1,0 +1,4 @@
+let personas = []
+
+personas = rellenaArray()
+
