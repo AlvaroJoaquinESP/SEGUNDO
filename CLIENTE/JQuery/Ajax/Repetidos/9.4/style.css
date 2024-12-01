@@ -1,0 +1,16 @@
+body {
+    width: 70%;
+    text-align: center;
+    margin:auto;
+    
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
+}
+
+.contenedor div {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+}

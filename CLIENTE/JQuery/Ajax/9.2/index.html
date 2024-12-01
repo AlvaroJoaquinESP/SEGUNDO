@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form action="kk.php" method="post" id="formulary">
+      <h1>Alvarolandia</h1>
+      <h2>Formulario de Asistencia</h2>
+      <input type="text" name="numeroSerie" id="numeroSerie" minlength="6" maxlength="6">
+      <select name="tipoDeIncidencia" id="tipoDeIncidencia" required>
+        tipoDeIncidencia
+        <option value="cambio">cambio</option>
+        <option value="devolucion">devolucion</option>
+        <option value="reparacion">reparacion</option>
+      </select>
+      <br />
+      <textarea name="descripcion" id="descripcion" maxlength="200"></textarea>
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
