@@ -1,20 +1,20 @@
 * {
   box-sizing: border-box;
   background-color: #1a2a36;
+  margin: 0;
+  padding: 0;
 }
 
 .contenedor {
+    border: 1px solid red;
   width: 350px;
   color: #2c3e24;
+  background-color: #45a049;
   border-radius: 10px;
   color: white;
   text-align: center;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin: 0 auto;
+
 }
 
 .title {
@@ -64,6 +64,7 @@
     margin: 10px 10px;
     text-align: center;
 }
+.
 
 .btn-enviar {
     width: 90%;

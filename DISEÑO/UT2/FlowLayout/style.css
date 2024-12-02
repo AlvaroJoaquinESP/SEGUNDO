@@ -1,17 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header {
     display: flow-root;
+    margin-right: 1.5rem;
 }
 
 .logo {
-    float: left;
+    float: right;
+    top: 0%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .nav {
     float: right;
+    bottom: 0%;
+    clear: both; /*Para bajar los enlaces debajo del logo.*/
 }
 
 .nav ul li {
     display: inline-block; /*Adopta caracteristicas de bloque. Permite que los elementos se comporten como texto.*/
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    background-color: beige;
+    min-height: 100vh;
+    /* text-align: center; COMPROBAR*/ 
+    
 }
 
 .container {
@@ -20,8 +44,24 @@
 }
 
 .footer {
-    position : absolute;
+    width: 100%;
+    position : relative;
     bottom: 0%;
-    left: 0%;  
+    left: 0%;
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
+.footer p a{
+    color: gray;
+    text-decoration: none;
+    bottom: 0%;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    ;
+}
