@@ -8,7 +8,7 @@ $(document).ready(function () {
             dataType: "json",
             success: function (response) {
                 console.log(response.rates.EUR)
-                dolar = 
+                dolar = a
 
             }
         });

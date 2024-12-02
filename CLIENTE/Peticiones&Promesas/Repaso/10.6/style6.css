@@ -1,0 +1,31 @@
+body {
+    width: 70%;
+    margin: auto;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
+}
+
+.contenedor div {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color:#fff;
+    font-size: 12px;
+    padding:10px;
+    margin-left: 20px;
+    }
+
+input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 16px;
+    padding:10px;
+}

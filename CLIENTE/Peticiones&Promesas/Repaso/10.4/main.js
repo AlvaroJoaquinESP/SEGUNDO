@@ -4,8 +4,13 @@ async function peticion() {
     console.log(url)
     const datatype= await fetch(url);
     const response= await datatype.json()
-     console.log(response);
+     console.log(response.data);
+     let salida = ``
+    for (const element of response.data) {
+        salida+=`<img src='${element.images.fixed_height.url}'>`
+    }
 
+    document.querySelector('#salida').innerHTML = salida
 }
 
 peticion();
