@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100%;
+}
+.container {
+    position : relative; /*Hace que el footer se adapte a él, ya que lo toma a él como referencia y no a la página*/
+    min-height: 100%;
+    height: 100%;
+}
+
 .header {
     display: flow-root;
     margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .logo {
@@ -14,6 +24,8 @@
     font-weight: bold;
     font-size: 1.3rem;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .nav {
@@ -32,23 +44,38 @@
 }
 
 .main {
-    background-color: beige;
-    min-height: 100vh;
-    /* text-align: center; COMPROBAR*/ 
-    
+    position: relative; 
+    height: 90vh; 
+    min-height: 90vh;
+    background-color: #f4f4f4;
+    /* text-align: center; COMPROBAR  */
+
+}
+.main-contenido {
+ position: relative;
+ width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+    /* padding-top: 35%;
+    padding-left: 25%; */
 }
 
-.container {
-    position : relative; /*Hace que el footer se adapte a él, ya que lo toma a él como referencia y no a la página*/
-    min-height: 100vh;
+main h1 {
+    letter-spacing: 0.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
-
+main p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .footer {
     width: 100%;
     position : relative;
     bottom: 0%;
     left: 0%;
-    /* background-color: black; */
+    background-color: black;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -63,5 +90,9 @@
 .btn {
     background-color: red;
     color: white;
-    ;
+    margin-top: 1rem;
+    padding: 5px;
+    border: none;
 }
+
+
