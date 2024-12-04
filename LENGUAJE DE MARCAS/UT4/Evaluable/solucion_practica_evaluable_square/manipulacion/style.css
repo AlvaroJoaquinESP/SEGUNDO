@@ -1,0 +1,25 @@
+.azul {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.rojo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.verde {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.parentflex{
+    display: flex;
+    justify-content: space-between;
+}

@@ -36,4 +36,5 @@ const mostrar = () => {
     });
     salida+=`</table>`
     document.querySelector("#salida").innerHTML = salida
+    
 }

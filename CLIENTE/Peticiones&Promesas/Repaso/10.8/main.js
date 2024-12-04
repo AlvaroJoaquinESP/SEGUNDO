@@ -4,10 +4,13 @@ document.querySelector("#boton").addEventListener("click",()=> {
     peticion();
 });
 
+
 async function peticion() {
     const obj = {
         name : document.querySelector('#name').value,
-        job : document.querySelector('#job').value
+        job : document.querySelector('#job').value,
+        name : document.querySelector("#name").value,
+        job : document.querySelector("#job").value
     }
     let url = "https://reqres.in/api/users"
     const datatype= await fetch(url, {
