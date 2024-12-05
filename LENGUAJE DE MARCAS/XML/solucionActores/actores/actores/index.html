@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis actores</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>FORMULARIO ACTORES</h1>
+
+    <form action="" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br><br>
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="apellidos" required>
+        <br><br>
+
+        <label for="genero">Genero: </label>
+        <input type="radio" name="genero" id="male" value="male">
+        <label for="genero">Masculino</label>
+        <input type="radio" name="genero" id="female" value="female">
+        <label for="genero">Femenino</label>
+        <br><br>
+
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" required>
+        <br><br>
+
+        <label for="pelicula">Pelicula: </label>
+        <select name="pelicula" id="pelicula">
+            <option value="Batman begins">Batman Begins</option>
+            <option value="El caballero oscuro">El caballero Oscuro</option>
+            <option value="El caballero Oscuro: La leyenda renace">El caballero Oscuro: La leyenda renace</option>
+        </select>
+        <br><br>
+        <input type="button" id="boton" value="Agregar">
+    </form>
+
+    <hr>
+    <div id="salida"></div>
+    <br>
+    <button id="generar">Generar XML</button>
+    <script src="main.js"></script>
+</body>
+</html>
+
