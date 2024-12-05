@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 1200px;
+}
+
+header h1 {
+    background-color: #0F76EC;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+header nav ul{
+    display: grid;
+    grid-template-columns: repeat(4,15%);
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+    background-color: gray;
+
+}
+
