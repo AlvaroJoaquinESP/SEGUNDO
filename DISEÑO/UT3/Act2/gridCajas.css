@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
-header {
+body {
+    height: 100vh;
+}
+
+.principal {
     width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+header {
+    width: 100%;
 }
 
 header h1 {
@@ -22,7 +32,78 @@ header nav ul{
     list-style: none;
     justify-content: center;
     padding: 10px;
-    background-color: gray;
-
+    background-color: #eee;
+    border: 1px solid #ccc;
 }
+
+header nav ul:hover {
+    background-color: rgb(15, 75, 143);
+    color: white;
+    cursor: wait;
+}
+
+main {
+    display: flex;
+}
+
+.main-cajas {
+    width: 895px;
+    height: 479px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.main-barra-lateral {
+    width: 300px;
+    height: 479px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.titulo-cajas {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caja {
+    width: 24%;
+    height: 160px;
+    margin: 20px;
+    margin-left: 40px;
+    background-color: red;
+    border: 5px solid blue;
+    color: white;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
