@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 100vh;
+} */
+
+.container {
+    background-color: #C7C8D2;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #5A5E7A;
+}
+
+.ferran {
+    border: 1px solid #C04000;
+    border-radius: 0 15px 15px 15px;
+    margin: 15px;
+}
+
+.title-ferran {
+    background-color: #C04000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+.pferran1 {
+    background-color: #DC5C00;
+    padding: 10px;
+}
+
+.pferran2 {
+    background-color: #FBB167;
+    padding: 10px;
+}
+
+.martin {
+    border: 1px solid #D000D5;
+    border-radius: 0 15px 15px 15px;
+    margin: 15px;
+}
