@@ -11,3 +11,42 @@ practica 4.5 marcas()
 public apis y devchallenges cliente()
 
 express cliente()
+
+escrituras siempre com put en firebase
+
+copiar snippets para clase
+
+--npm init -y para que no me pregunte 20 cosas--
+el bundler que vamos a utilizar va a ser PARCEL (Se encarga de bundling(hacer el código más legible a la página web)). npm i parcel
+--Para hacerlo como una dependencia obligatoria ponemos: npm i -D parcel--
+Además de npm i -D parcel bundler
+
+--
+
+1º -Carpeta
+2º -npm init -y (package.json)
+2.º- SI NO LO TENGO INSTALADO, HAGO NPM -I PARCEL	
+2º -npm i -D parcel
+3º -npm i -D parcel-bundler
+4º -Con el 2º y 3er paso se ha modificado el package.json
+5º -SI SUBO EL PROYECTO A ALGUN LADO, GITHUB O LO QUE SEA, TENGO QUE BORRAR LA CARPETA NODE_MODULES SI O SI. --JAMÁS ENTREGARLA EN UN EXAMEN NI NINGÚN LADO--
+6º -PARA RECUPERAR LA CARPETA Y PODER ABRIR EL ARCHIVO EN OTRO ORDENADOR O DONDE SEA, ABRIMOS UN CMD EN ESE PROYECTO Y HACEMOS -- NPM I --
+7º -En frontend, la tendencia es que el código se meta en una carpeta "src", por tanto, creamos la carpeta, y, a su vez, tendremos las carpetas separadas por extensión. Por ello, dentro de la carpeta "src" crearemos 3 carpetas: "js", "assets" para imágenes, vídeos y demás contenido gráfico y "css". LOS FICHEROS HTML IRAN DENTRO DE LA CARPETA "SRC" --siempre crearé un archivo index.html--
+
+
+**********
+
+Lo siguiente es modificar el package.json, cambiando la línea main por source, y dirigiéndola al index.html con src/index.html.
+--
+En los scripts tendremos 2: dev parcel --open , build parcel build, además de test que ya está.
+--
+Para ejecutar los cambios, vamos a la terminal y ponemos: npm run dev. Con esto me va a montar un servidos local para poder ejecutar mi aplicación.
+
+Al ejecutar npm run dev, nos crea una carpeta "dist", que nos permite tenerlo en local, Para ponerlo en la web para que piensen que sabemos programar jeje haremos npm run build.
+
+Investigar el npm.c del tema 11.
+*********
+
+
+
+
