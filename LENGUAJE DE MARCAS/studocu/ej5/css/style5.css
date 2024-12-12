@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    border: 4px solid red;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.num {
+    padding: 1rem 1rem;
+}
+
+.uno {
+    background-color: indianred;
+}
+
+.dos {
+    background-color: blue;
+}
+
+.tres {
+    background-color: purple;
+}
+
+.cuatro {
+    background-color: grey;
+}
+
+.cinco {
+    background-color: yellow;
+}
+
+.seis {
+    background-color: orange;
+}
+
+.siete {
+    background-color: beige;
+}
+
+.ocho {
+    background-color: aquamarine;
+}
+
+.nueve {
+    background-color: greenyellow;
+}
+
+.diez {
+    background-color: green;
+}

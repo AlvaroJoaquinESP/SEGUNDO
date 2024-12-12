@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    border: 3px solid red;
+}
+
+.uno {
+    background-color: indianred;
+    padding: 1rem 1rem;
+}
+
+
+.dos {
+    background-color: blue;
+    padding: 1rem 1rem;
+}
+
+.tres {
+    background-color: purple;
+    padding: 1rem 1rem;
+}
+
+.cuatro {
+    background-color: grey;
+    padding: 1rem 1rem;
+}
+
+.cinco {
+    background-color: yellow;
+    padding: 1rem 1rem;
+}
+
+.seis {
+    background-color: orange;
+    padding: 1rem 1rem;
+}
+
+.siete {
+    background-color: beige;
+    padding: 1rem 1rem;
+}
+
+.ocho {
+    background-color: aquamarine;
+    padding: 1rem 1rem;
+}
+
+.nueve {
+    background-color: greenyellow;
+    padding: 1rem 1rem;
+}
+
+.diez {
+    background-color: green;
+    padding: 1rem 0.5rem;
+}

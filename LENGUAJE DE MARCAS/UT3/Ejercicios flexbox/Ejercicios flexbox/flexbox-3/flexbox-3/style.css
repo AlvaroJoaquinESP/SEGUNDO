@@ -1,0 +1,65 @@
+main{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+body {
+  background-color: beige;
+}
+header {
+  text-align: center;
+  background-color: rgb(95, 93, 93);
+  padding: 1px;
+  margin-bottom: 5px;
+}
+
+.deportes {
+  background-color: rgb(169, 223, 248);
+  border: 4px solid rgb(78, 167, 179);
+}
+
+.amigos {
+  background-color: rgb(200, 253, 220);
+  border: 4px solid rgb(107, 194, 140);
+}
+
+.hotel {
+  background-color: rgb(147, 184, 184);
+  border: 4px solid rgb(44, 149, 163);
+}
+
+.otras {
+  margin-top: 1rem;
+  background-color: rgb(147, 184, 184);
+  flex: 100%; /*flex=1*/
+  border: 4px solid rgb(44, 149, 163);
+}
+
+.border{
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+section  h3 {
+  text-align: center;
+}
+
+
+footer{
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(95, 93, 93);
+  font-size: 1.5rem;
+  font-weight: bold;
+}

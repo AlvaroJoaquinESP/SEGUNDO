@@ -1,0 +1,59 @@
+
+*{/* Lo aplico a todos los elementos HTML*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(66, 64, 64);
+    color:white;
+}
+
+main{
+    display:flex;
+}
+
+.roma{
+    background-color: rgb(141, 247, 99);
+    flex: 1; /*33,3*/
+    padding-bottom: 5rem;
+    padding: 5px;
+}
+
+.madrid{
+    background-color: rgb(63, 212, 238);
+    flex:1;
+    padding-bottom: 5rem;
+    padding: 5px;
+
+}
+
+.paris{
+    background-color: rgb(186, 151, 207);
+    flex:1;
+    padding: 5px;
+}
+
+.img-city{
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+p{
+    padding-left: 1rem ;
+    padding-right: 1rem;
+}
+
+.titulo{
+    font-size: 5rem;
+    margin: 0;
+}
+
+.titulo-city{
+    text-align: center;
+}

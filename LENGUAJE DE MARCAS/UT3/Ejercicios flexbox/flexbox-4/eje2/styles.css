@@ -1,0 +1,65 @@
+
+html,body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    /* Se puede  usar un height % directamente en el header, main y footer en vez de flex*/
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+    flex: 8;
+}
+
+header{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex: 1;
+}
+.post-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+p{
+    color:rgb(49, 48, 48);
+}
+
+footer{
+    margin-left: 15%;
+    margin-right: 15%;
+    border-top: 1px solid grey;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(70, 67, 67);
+}
+
+main h1{
+    color:rgb(49, 48, 48);
+    font-weight: bold;
+}
+
