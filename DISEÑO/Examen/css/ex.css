@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: orange;
+}
+
+header {
+    text-align: center;
+    padding: 2% 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    padding: 0.7rem;
+    margin: 1.7% 15%;
+    border-radius: 10px;
+    font-size: 1.7vh;
+}
+
+header ul li{
+    list-style: none;
+    display: inline;
+    justify-content: space-around;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
