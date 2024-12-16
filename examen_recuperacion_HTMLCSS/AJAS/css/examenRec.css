@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #FFF0F5;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 19%;
+    flex: 1;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDAB9;
+    border-radius: 7px;
+    padding: 1%;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 15;
+}
+
+section {
+    display: flex;
+}
+
+.encabezado-main {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin: 4rem;
+}
+
+.txt {
+    background-color: #FFDAB9;
+    margin: 0vh 1vw;
+    padding: 1.5vh 1.5vw;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1,3rem;
+}
+
+.img {
+    margin-top: 1rem;
+    height: 15vh;
+}
+
+aside{
+    height: 300px;
+}
+
+.img-aside {
+    min-height: 100%;
+}
+
+.uso-title {
+    padding-bottom: 1vh;
+}
+.primero {
+    padding-bottom: 6vh;
+}
+
+footer {
+    display: flex;
+    flex: 3;
+    background-color: #FFDAB9;
+    justify-content: space-around;
+    padding-top: 1.4rem;
+    font-size: 1.5rem;
+}
+
+
+

@@ -14,6 +14,7 @@ body {
 header {
     text-align: center;
     padding: 2% 0;
+    flex: 1;
 }
 
 header ul {
@@ -38,4 +39,23 @@ header ul li a {
     text-decoration: none;
     color: white;
     padding: 0.5rem 1rem;
+
+}
+
+main {
+    display: flex;
+    flex:10;
+}
+
+.punteado {
+    border: 1px solid black;
+}
+
+aside {
+    background-color: aqua;
+    margin-bottom: %;
+}
+footer {
+    background-color: red;
+    flex: 1;
 }
