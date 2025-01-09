@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listin SYSTEM "listín.dtd">
+<listin>
+<persona sexo="hombre" id="ricky">
+    <nombre>Ricky Martin</nombre>
+    <email>ricky@puerto-rico.com</email>
+    <relacion amigo-de="leatitia"/>
+</persona>
+<persona sexo="mujer" id="leatitia">
+    <nombre>Leatitia Casta</nombre>
+    <email>castal@micasa.com</email>
+</persona>
+
+</listin>
+

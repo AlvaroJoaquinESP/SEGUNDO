@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE persona SYSTEM "persona.dtd">
+<persona>
+<nombre>Iker</nombre>
+<mayor_de_edad/>
+<ciudad>Pamplona</ciudad>
+</persona>

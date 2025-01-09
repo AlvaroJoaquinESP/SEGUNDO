@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet type="text/css" href="productos.css"?> 
+<!-- Esto es un comentario -->
+<productos>
+<nombre precio="12.56&#8364;">Gorro de lana</nombre>
+<nombre precio="16.99&#x20AC;">Gorro polar</nombre>
+<nombre precio="15.99$">Bufanda</nombre>
+<!-- Los comentarios no aparecen cuando se procesa el documento -->
+<![CDATA[
+#include <stdio.h>
+int main()
+{
+float nota;
+printf( "\n Introduzca nota (real): " );
+scanf( "%f", &nota );
+if ( 5 <= nota )
+printf( "\n APROBADO" );
+return 0;
+}
+]]>
+</productos>
