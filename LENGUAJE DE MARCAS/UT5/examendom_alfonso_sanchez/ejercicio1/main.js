@@ -92,6 +92,4 @@ const botonEliminar = (tr) => {
     tdDel.appendChild(botonDel);
     tr.appendChild(tdDel);
 
-
-
 }
