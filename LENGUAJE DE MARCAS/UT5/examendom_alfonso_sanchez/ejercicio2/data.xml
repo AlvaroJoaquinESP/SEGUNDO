@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <data id="1">
+        <Nombre>Alfonso</Nombre>
+        <Apellidos>Sanchez Serrano</Apellidos>
+        <Edad>20</Edad>
+    </data>
+    <data id="2">
+        <Nombre>Mateo</Nombre>
+        <Apellidos>Fernandez Guirado</Apellidos>
+        <Edad>21</Edad>
+    </data>
+    <data id="3">
+        <Nombre>Junior Fabricio</Nombre>
+        <Apellidos>Chipantashi Garzon</Apellidos>
+        <Edad>21</Edad>
+    </data>
+    <data id="4">
+        <Nombre>Cipriano</Nombre>
+        <Apellidos>Garcia Hernandez</Apellidos>
+        <Edad>??</Edad>
+    </data>
+</root>

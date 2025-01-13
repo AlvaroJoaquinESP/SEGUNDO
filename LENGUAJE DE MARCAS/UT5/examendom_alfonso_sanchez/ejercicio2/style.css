@@ -1,0 +1,15 @@
+body{
+    width: 85%;
+    margin: 0 auto;
+    font-family: sans-serif
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    padding:5px;
+    text-align: center;
+}
+
