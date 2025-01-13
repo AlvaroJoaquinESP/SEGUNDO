@@ -1,0 +1,31 @@
+.caja {
+    transform: translate(1000px,200px); /*EjeX/EjeY*/
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    animation: crece 1s ease infinite;
+}
+
+.caja {
+    transform: translateY(450px);
+    transform: translateX(250px) rotate(25deg);
+    transition: 1s;
+}
+
+.caja:hover {
+    transform: scale(2.1,0.2);
+    background-color: palevioletred;
+    border-radius: 50%;
+    /*Si meto aqui transition vuelve de golpe*/
+}
+
+
+@keyframes crece {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

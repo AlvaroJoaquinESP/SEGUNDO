@@ -50,6 +50,9 @@ document.querySelector("#boton1").addEventListener("click", () => {
     generarXML()
 });
 
+
+
+
 const generarXML = () => {
 //   const xmlString = `<?xml version="1.0" encoding="UTF-8"?> <actores></actores>`;
 //   // Parseamos la cadena XML

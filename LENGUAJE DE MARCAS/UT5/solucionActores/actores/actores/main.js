@@ -1,7 +1,7 @@
 document.querySelector("#boton").addEventListener("click",()=> {
     insertarActor();
 });
-
+ 
 document.querySelector("#generar").addEventListener("click",()=> {
     generarXMLdesdeTabla();
 });
