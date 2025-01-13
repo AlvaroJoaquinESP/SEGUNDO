@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+
+
 function insertarActor (){
 
     //Se recuperan los valores de los inputs
@@ -34,6 +38,15 @@ function insertarActor (){
     }
 
 }
+
+
+
+
+
+
+
+
+
 
 function generarXMLdesdeTabla () {
 
@@ -63,7 +76,6 @@ function generarXMLdesdeTabla () {
             actorNode.appendChild(edad);
             actorNode.appendChild(pelicula);
             actors.appendChild(actorNode);
-
     }
 
     //Para descargar el xml generado desde el navegador
@@ -75,6 +87,12 @@ function generarXMLdesdeTabla () {
     link.download = "actors.xml";
     link.click();
 }
+
+
+
+
+
+
 
 
 function mostrarTabla () {
