@@ -12,7 +12,7 @@ function procesarXML(file){
         encabezado.appendChild(enc)
     }
 
-    const tenistas = xml.getElementsByTagName("tenistas");
+    const tenistas = xml.getElementsByTagName("tenista");
     const body = table.createTBody()
 
     for (const tenista of tenistas) {

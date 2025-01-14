@@ -49,4 +49,49 @@ Investigar el npm.c del tema 11.
 
 
 
+REACT 
+
+CON CREATE REACT APP.
+
+1º npx create-react-app nombreCarpetaConProyectoReact (Crear el proyecyo react). 
+
+2º para solucionar los errores que genera, hacemos: npm i web-vitals, dentro de la carpeta que hemos creado. 
+
+3º para poder ejecutar las aplicaciones con cra usamos: npm start
+
+4º una vez hecho esto, se nos abre en el navegador.
+
+5º en la carpeta src, los archivos app.js y app.css son lo que llamamos un COMPONENTE. cada componente va a tener dos ficheros, o uno.
+
+ 
+CON VITE 
+
+1º npm create vite@latest
+
+2º en el placeholder ponemos el nombre del proyecto.
+
+3º elegimos el framework o librería, en nuestro caso react.
+
+4º elegimos como lenguaje js + swc
+
+5º hacemos los pasos que nos muestra la consola. 1º cd proyecto 2º npm i 3º npm run dev
+
+6º se nos despliega nuestro proyecto copiando la url y pegándola en el navegador.
+
+7º en este caso, el componente principal se llama APP.JSX Y APP.CSS. 
+
+8º tampoco hay index.js
+
+9º con vite utilizamos la versión 18.3 de react, en cra usamos la 19.0, por eso nos da el fallo.
+
+
+PARA MOVER O ENTREGAR LOS PROYECTOS --NO ENTREGAMOS LA CARPETA NODE-NODULES--.
+
+para ello, usamos el comando que hay en el aula virtual.
+
+
+
+
+
+
 

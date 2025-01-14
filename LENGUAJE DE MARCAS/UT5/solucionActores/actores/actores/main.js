@@ -36,9 +36,25 @@ function insertarActor (){
         td.textContent = data[i];
         tr.appendChild(td);
     }
+    
+    deleteButton(tr)
 
 }
 
+const deleteButton = (tr) => {
+    tdDele = document.createElement("td")
+    const del = document.createElement("button")
+    del.textContent = "Eliminar"
+
+    del.addEventListener("click", () => {
+        tr.remove()
+    })
+
+    tdDele.appendChild(del)
+    tr.appendChild(tdDele)
+
+
+}
 
 
 
@@ -96,15 +112,16 @@ function generarXMLdesdeTabla () {
 
 
 function mostrarTabla () {
-    //Se crea la tabla y la cabera por JS
+    //Se crea la tabla y la cabecera por JS
     const tabla = document.createElement("table");
     const tr = document.createElement("tr");
-    let arrCampos = ["nombre", "apellidos", "genero", "edad", "pelicula"];
+    let arrCampos = ["nombre", "apellidos", "genero", "edad", "pelicula","Eliminar"];
     for (let campo of arrCampos) {
         let th = document.createElement("th");
         th.textContent = campo;
         tr.appendChild(th);
     }
+    
 
     tabla.appendChild(tr);
     document.querySelector("#salida").appendChild(tabla);

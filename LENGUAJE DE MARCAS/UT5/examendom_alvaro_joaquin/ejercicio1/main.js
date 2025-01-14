@@ -1,7 +1,7 @@
 let table = document.createElement("table")
 document.querySelector("#boton").addEventListener("click",()=> {
     // Recojo el grosor de la tabla.
-    let grosorTabla = Number(document.querySelector("grosor").value)
+    let grosorTabla = Number(document.querySelector("#grosor").value)
 
     // Guardo los datos de la cabecera separados en un array.
     let arrCabecera = document.querySelector('#cabecera').value.split(",")
@@ -23,7 +23,7 @@ document.querySelector("#boton").addEventListener("click",()=> {
 
 const generateTable = (cabecera, valores, grosor) => {
     // Borro la tabla existenente.
-    table.remove()
+    //table.remove()
 
     // Creo una nueva tabla.
     let table = document.createElement("table")
@@ -48,6 +48,7 @@ const generateTable = (cabecera, valores, grosor) => {
 
     table.appendChild(tr)
 
+
     // Recorro el array de datos de valores para asignarlos a los td.
 
     for (const linea of valores) {
@@ -64,7 +65,7 @@ const generateTable = (cabecera, valores, grosor) => {
             tr.appendChild(td)
         }
         // Genero el botón en una función aparte
-        botonEliminar(tr)
+        deleteButton(tr)
 
         table.appendChild(tr)
 
@@ -84,7 +85,7 @@ const deleteButton = (tr) => {
     /* Añado un evento al botón para cuando se haga click se elimine 
     esa línea de la tabla*/
     buttonDel.addEventListener("click", () => {
-        tr.remove
+        tr.remove()
     })
 
     tdDel.appendChild(buttonDel)
