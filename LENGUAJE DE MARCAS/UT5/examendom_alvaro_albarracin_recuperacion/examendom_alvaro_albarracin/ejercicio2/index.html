@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas Juan</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <h1>Notas Juan</h1>
+
+    <label for="name">Nombre:</label>
+    <br />
+    <input type="text" name="name" id="name" required />
+    <br /><br />
+    <label for="asignatura">Asignatura:</label>
+    <br />
+    <select name="asignatura" id="asignatura" required>
+      <option value="servidor">Servidor</option>
+      <option value="cliente">Cliente</option>
+      <option value="marcas">Marcas</option>
+      <option value="despliegue">Despliegue</option>
+      <option value="diseno">Diseño</option>
+    </select>
+    <br /><br />
+
+    <label for="nota">Nota</label>
+    <br />
+    <input type="number" name="nota" id="nota" required />
+    <input type="button" value="Agregar" id="boton" />
+    <br /><br />
+
+    <hr />
+    <br />
+    <hr />
+
+    <div id="salida"></div>
+    <br />
+    <textarea name="xml" id="xml" rows="4"></textarea>
+    <br>
+    <input type="button" value="Cargar XML" id="boton1">
+    <script src="main.js"></script>
+  </body>
+</html>
