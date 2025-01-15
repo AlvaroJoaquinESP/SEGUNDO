@@ -25,10 +25,28 @@ h1 {
     letter-spacing: .3rem;
 }
 
+.box-author {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 0;
+}
+
 .quote--left-align-fancy-font {
-    font-family: cursive;
+    font-family: "Lobster", cursive;
     font-size: 16px;
-    font-weight: bold;
     text-align: left;
     letter-spacing: .1rem;
 }
+
+.author--right--align-spaced-font {
+    font-family: "Just Another Hand";
+    text-align: right;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    align-items: end;
+    align-content: center;
+    justify-content: flex-end;
+
+}
+
