@@ -90,6 +90,30 @@ PARA MOVER O ENTREGAR LOS PROYECTOS --NO ENTREGAMOS LA CARPETA NODE-NODULES--.
 para ello, usamos el comando que hay en el aula virtual.
 
 
+-- BOOTSTRAP.
+
+1º para añadir Bootstrap tengo que hacer 2 imports en el fichro app.jsx
+
+2º instalo Bootstrap con npm i Bootstrap lo primero de todo
+
+3º compruebo que se ha añadido en el package.json
+
+4º importo el css y el js con los snippets del av.
+
+5º compruebo que funciona con la prueba de fuego: <button className="btn btn-primary">Click me</button>
+
+6º inicio el servidor y compruebo
+
+
+-- SEGUIMOS CON REACT.
+
+Imaginemos que tenemos un array y lo queremos mostrar en el return de app.jsx:
+
+1º Para ello vamos a utilizar el método .map, muy parecido a recorrer el array con un foreach. No podemos usar for...of.
+
+2º   ver la clase del 15/01 en el min 35 aprox.
+
+
 
 
 
