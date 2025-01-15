@@ -1,0 +1,11 @@
+<!ELEMENT ribera (alumno+)>
+<!ELEMENT alumno (nombre, materia+, pc, tenista?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT materia (#PCDATA)>
+<!ELEMENT tenista EMPTY>
+<!ELEMENT pc (#PCDATA)>
+
+
+
+<!ATTLIST alumno id CDATA #REQUIRED>
+<!ATTLIST pc id CDATA #REQUIRED>

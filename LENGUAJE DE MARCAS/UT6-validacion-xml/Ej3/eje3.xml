@@ -4,20 +4,54 @@
 <TVSCHEDULE NAME="R">
 
     <CHANNEL CHAN="O">
-    <BANNER></BANNER>
-    <DAY></DAY>
-    </CHANNEL
+        <BANNER>Es la hora de unas vacaciones</BANNER>
+
+        <!-- Los atributos de title son opcionales-->
+        <DAY>
+
+            <DATE>Hoy</DATE>
+
+            <HOLIDAY>Hawai</HOLIDAY>
+            <HOLIDAY>Puerto Rico</HOLIDAY>
+
+            <PROGRAMSLOT
+                VTR="L2">
+                <TIME>10 a.m</TIME>
+                <TITLE RATING="HA" LANGUAGE="EN">Vamos a Hawai</TITLE>
+                <DESCRIPTION>Esto es una descripción opcional</DESCRIPTION>
+
+            </PROGRAMSLOT>
+            <PROGRAMSLOT
+                VTR="L3">
+
+                <TIME>11 p.m</TIME>
+                <TITLE RATING="PR" LANGUAGE="ES">Vamos a Puerto Rico</TITLE>
+                <DESCRIPTION>Esto es una descripción opcional</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+        <DAY>
+
+            <DATE>Hoy</DATE>
+            <HOLIDAY>Hawai</HOLIDAY>
+            <HOLIDAY>Puerto Rico</HOLIDAY>
 
 
+            <PROGRAMSLOT
+                VTR="L2">
+                <TIME>10 a.m</TIME>
+                <TITLE RATING="HA" LANGUAGE="EN">Vamos a Hawai</TITLE>
+                <DESCRIPTION>Esto es una descripción opcional</DESCRIPTION>
 
+            </PROGRAMSLOT>
+            <PROGRAMSLOT
+                VTR="L3">
 
-
-
-
-
-
-
-
+                <TIME>11 p.m</TIME>
+                <TITLE RATING="PR" LANGUAGE="ES">Vamos a Puerto Rico</TITLE>
+                <DESCRIPTION>Esto es una descripción opcional</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
 
 
 </TVSCHEDULE>

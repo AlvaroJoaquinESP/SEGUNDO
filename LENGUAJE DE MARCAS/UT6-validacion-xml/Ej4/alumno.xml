@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ribera SYSTEM "alumno.dtd">
+
+<!-- 
+- Usa ? para elementos opcionales.
+- Usa * para elementos que pueden aparecer cero o más veces.
+- Usa + para elementos que deben aparecer al menos una vez.
+-->
+
+<ribera>
+
+	<alumno id="1">
+
+		<nombre>Alfonso</nombre>
+
+		<materia>Servidor</materia>
+
+	    <materia>Marcas</materia>
+
+		<materia>Cliente</materia>
+
+		<pc id="2w3e3"/>
+
+	</alumno>
+
+	<alumno id="2">
+
+		<nombre>Ramón</nombre>
+
+		<materia>Servidor</materia>
+
+		<pc id="2w336"/>
+
+		<tenista/>
+
+	</alumno>
+
+	<alumno id="3">
+
+		<nombre>Asmaa</nombre>
+
+		<materia>Cliente</materia>
+
+		<materia>Servidor</materia>
+
+		<pc id="29w36"/>
+
+	</alumno>
+
+</ribera>

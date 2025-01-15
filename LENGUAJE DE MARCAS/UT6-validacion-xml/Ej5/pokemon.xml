@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pokemones SYSTEM "pokemon.dtd">
+<pokemones>
+
+    <pokemon id="1">
+        
+        <nombre>Pika</nombre>
+
+        <tipo>Eléctrico</tipo>
+
+        <nivel>67</nivel>
+
+        <ataques fuerza="leve">Cola vital</ataques>    
+        <ataques fuerza="mucha">Electropika</ataques>    
+        <ataques fuerza="moderada">Pika pika</ataques>
+
+    </pokemon>
+     
+    <pokemon id="2">
+        
+        <nombre>Charmander</nombre>
+
+        <tipo>Fuego</tipo>
+
+        <nivel>127</nivel>
+
+         <cipri></cipri>
+
+        <ataques fuerza="mucha">Tormenta de fuego</ataques>    
+        <ataques fuerza="moderada">Arder</ataques>    
+        <ataques fuerza="leve">Esto va a parecer Murcia en agosto</ataques>
+            
+    </pokemon>
+
+</pokemones>
