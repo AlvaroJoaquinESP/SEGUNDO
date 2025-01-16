@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- definition of simple elements |name-type| -->
+    <xs:element name="orderperson" type="xs:string" /> <!-- orderperson es un elemento simple ya que
+    no tiene atributos ni elementos
+    dentro-->
+    <xs:element name="name" type="xs:string"></xs:element>
+    <xs:element name="address" type="xs:string"></xs:element>
+    <xs:element name="city" type="xs:string"></xs:element>
+    <xs:element name="country" type="xs:string"></xs:element>
+    <xs:element name="title" type="xs:string"></xs:element>
+    <xs:element name="note" type="xs:string"></xs:element>
+    <xs:element name="quantity" type="xs:positiveInteger"></xs:element>
+    <xs:element name="price" type="xs:float"></xs:element>
+
+    <!-- definition of attributes |name-type| -->
+    <xs:attribute name="orderid" type="orderidtype">
+    
+    </xs:attribute>
+
+    <xs:simpleType name="orderidtype">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- definition of complex elements-->
+    <xs:element name="shipto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"></xs:element>
+                <xs:element ref="address"></xs:element>
+                <xs:element ref="city"></xs:element>
+                <xs:element ref="country"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="item">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title" />
+                <xs:element ref="note" minOccurs="0" />
+                <xs:element ref="quantity" />
+                <xs:element ref="price" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+<!-- formo el elemento principal-->
+    <xs:element name="shiporder">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="orderperson"/>
+                <xs:element ref="shipto"/>
+                <xs:element ref="item" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="orderid" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

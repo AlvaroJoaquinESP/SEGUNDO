@@ -1,0 +1,15 @@
+<!ELEMENT agenda (contacto+)>
+<!ELEMENT contacto (nombre, apellidos, numero, foto, email*)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+
+<!ATTLIST contacto
+    id ID #IMPLIED
+    relacion (familia|amigo) #IMPLIED
+>
+
+<!ATTLIST foto tieneFoto (true|false) "false">
