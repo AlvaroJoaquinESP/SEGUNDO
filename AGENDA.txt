@@ -113,6 +113,10 @@ Imaginemos que tenemos un array y lo queremos mostrar en el return de app.jsx:
 
 2º   ver la clase del 15/01 en el min 35 aprox.
 
+3º cuando recorro objetos con .map en react, NO ES necesario utilizar índice, en caambio, puedo utilizar la pk del objeto como muestro en el ejercico 15.4.
+
+4º para comparar algo se utilizan 3 ===
+
 
 
 
