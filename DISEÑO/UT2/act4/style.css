@@ -6,47 +6,60 @@
 
 body {
     background-color: #CAA842;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 .intro--centered-wide-margin {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 60vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
+    width: 600px;
+    margin: 2rem auto;
+    line-height: 1.8rem;
+    font-size: 11px;
+    text-align: center;
 }
 
 h1 {
     font-family: 'RIbeye Marrow', serif;
     font-size: 48px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 599;
     letter-spacing: .3rem;
 }
 
 .box-author {
     display: flex;
     flex-direction: column;
-    margin: 5vh 0;
+    margin: 5vh auto;
+    max-width: 80%;
+
 }
+
+.box-author1 {
+    display: flex;
+    margin: 4vh 0;
+    flex-direction: column;
+}
+
+
 
 .quote--left-align-fancy-font {
     font-family: "Lobster", cursive;
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     letter-spacing: .1rem;
 }
 
 .author--right--align-spaced-font {
     font-family: "Just Another Hand";
-    text-align: right;
+    /* text-align: right; */
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     letter-spacing: 1.5px;
-    align-items: end;
-    align-content: center;
-    justify-content: flex-end;
+    align-self: end;
+}
 
+span {
+    text-decoration: underline;
 }
 
