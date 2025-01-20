@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aeropuerto>
+
+    <nombre>JFK</nombre>
+
+    <vuelos>
+
+        <vuelo codigo="V22" estado="R">
+
+            <diario />
+
+            <origen>Murcia</origen>
+
+            <destino>Albacete</destino>
+
+            <hora-salida>9:11</hora-salida>
+
+            <hora-llegada>9:11</hora-llegada>
+
+        </vuelo>
+
+        <vuelo codigo="V23" estado="C">
+
+            <diario />
+
+            <origen>Cuenta</origen>
+
+            <destino>Espinardo</destino>
+
+            <hora-salida>9:11</hora-salida>
+
+            <hora-llegada>9:11</hora-llegada>
+
+        </vuelo>
+
+    </vuelos>
+
+    <fecha>7/7/7777</fecha>
+
+</aeropuerto>

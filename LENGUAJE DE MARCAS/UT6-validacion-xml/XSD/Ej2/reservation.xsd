@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="firstName" type="xs:string" />
+    <xs:element name="lastName" type="xs:string" />
+    <xs:element name="email" type="xs:string" />
+
+    <xs:element name="accommodationType" type="xs:string" />
+
+    <xs:element name="checkInDate" type="xs:date" />
+    <xs:element name="checkInTime" type="xs:time" />
+    <xs:element name="checkOutDate" type="xs:date" />
+    <xs:element name="checkOutTime" type="xs:time" />
+
+    <xs:attribute name="id" type="xs:ID" />
+
+    <xs:element name="guest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="firstName"></xs:element>
+                <xs:element ref="lastName"></xs:element>
+                <xs:element ref="email"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="reservation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="accommodationType"></xs:element>
+                <xs:element ref="checkInDate"></xs:element>
+                <xs:element ref="checkInTime"></xs:element>
+                <xs:element ref="checkOutDate"></xs:element>
+                <xs:element ref="checkOutTime"></xs:element>
+                <xs:element ref="guest"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="accommodationReservations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="reservation" maxOccurs="2"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

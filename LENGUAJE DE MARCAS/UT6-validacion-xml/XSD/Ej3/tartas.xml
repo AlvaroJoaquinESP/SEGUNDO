@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Tipo solo puede ser GRANDE y PEQUEÑA-->
+<!-- Precio tiene que ser entre 5.00 y 50.00-->
+<!-- atributos codigo y nombre son obligatorio, lote opcional-->
+<!-- codigo tiene 3 digitos-->
+<!-- Telefeno tiene que tener 9 digitos-->
+<!-- Ojito hay que reutilizar tipo y precion en roscón-->
+
+<productos>
+  <tarta codigo="123" nombre="LOTUS">
+    <tipo>GRANDE</tipo>
+    <precio>28.00</precio>
+  </tarta>
+  <tarta codigo="456" nombre="OREO" lote="1">
+    <tipo>PEQUEÑA</tipo>
+    <precio>19.00</precio>
+  </tarta>
+  <roscon id="nata">
+    <tipo>GRANDE</tipo>
+    <precio>28.00</precio>
+    <chef>Alfonso</chef>
+  </roscon>
+  <tienda telefono="650444666">Bullas</tienda>
+  <online web="www.tarta.es"/>
+</productos> 

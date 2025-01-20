@@ -15,10 +15,11 @@
     <xs:element name="price" type="xs:float"></xs:element>
 
     <!-- definition of attributes |name-type| -->
-    <xs:attribute name="orderid" type="orderidtype">
+    <xs:attribute name="orderid" type="orderidtype" />
     
-    </xs:attribute>
+    
 
+    <!-- creation of our own type -->
     <xs:simpleType name="orderidtype">
         <xs:restriction base="xs:string">
             <xs:pattern value="[0-9]{6}"/>

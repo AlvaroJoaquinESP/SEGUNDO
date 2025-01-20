@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- definition of simple elements -->
+    <xs:element name="nombre" type="xs:string" />
+    <xs:element name="diario" />
+    <xs:element name="origen" type="xs:string" />
+    <xs:element name="destino" type="xs:string" />
+    <xs:element name="hora-salida" type="xs:time" />
+    <xs:element name="hora-llegada" type="xs:time" />
+    <xs:element name="fecha" type="xs:date" />
+
+    <!-- definition of atributes -->
+    <xs:attribute name="codigo" type="xs:string" />
+    <xs:attribute name="estado" type="xs:string" />
+
+    <!-- definition of complex elements -->
+    <xs:element name="vuelo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="origen"></xs:element>
+                <xs:element ref="destino"></xs:element>
+                <xs:element ref="hora-salida"></xs:element>
+                <xs:element ref="hora-llegada"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="codigo" use="required"></xs:attribute>
+            <xs:attribute ref="estado" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="vuelos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vuelo" maxOccurs="2"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="aeropuerto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vuelos"></xs:element>
+                <xs:element ref="fecha"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+</xs:schema>
