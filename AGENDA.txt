@@ -117,6 +117,8 @@ Imaginemos que tenemos un array y lo queremos mostrar en el return de app.jsx:
 
 4º para comparar algo se utilizan 3 ===
 
+-- spring initializr
+
 
 
 
