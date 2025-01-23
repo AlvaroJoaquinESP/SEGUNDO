@@ -72,14 +72,12 @@ main {
 
 .line1 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
 .line2 {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
