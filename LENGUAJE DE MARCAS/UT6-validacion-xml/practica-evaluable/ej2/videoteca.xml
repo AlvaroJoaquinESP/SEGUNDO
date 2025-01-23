@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<videoteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="videoteca.xsd">
+
+  <pelicula genero="accion">
+
+    <titulo idioma="ingles">Mad Max: Fury Road</titulo>
+
+    <director>George Miller</director>
+
+    <ano>2015</ano>
+
+    <duracion>120.00</duracion>
+
+  </pelicula>
+
+  <pelicula genero="comedia">
+
+    <titulo idioma="castellano">Ocho apellidos vascos</titulo>
+
+    <director>Emilio Martínez-Lázaro</director>
+
+    <ano>2014</ano>
+
+    <duracion>98.00</duracion>
+
+  </pelicula>
+
+  <pelicula genero="ciencia ficcion">
+
+    <titulo idioma="ingles">Interstellar</titulo>
+
+    <director>Christopher Nolan</director>
+
+    <ano>2014</ano>
+
+    <duracion>169.00</duracion>
+
+  </pelicula>
+
+
+</videoteca>

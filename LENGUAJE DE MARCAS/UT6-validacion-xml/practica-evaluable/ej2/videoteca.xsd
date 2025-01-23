@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- elemento de pelicula -->
+  <xs:simpleType name="anoR">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1900" />
+      <xs:maxInclusive value="2025" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- elemento de pelicula -->
+  <xs:simpleType name="duracionR">
+    <xs:restriction base="xs:decimal">
+      <xs:minExclusive value="0.00" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- atributo de pelicula -->
+  <xs:simpleType name="generoR">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="accion"/>
+        <xs:enumeration value="comedia"/>
+        <xs:enumeration value="drama"/>
+        <xs:enumeration value="ciencia ficcion"/>
+
+      <!-- <xs:pattern value="accion|comedia|drama|fantasia" /> -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- atributo de titulo -->
+  <xs:simpleType name="idiomaR">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ingles"/>
+      <xs:enumeration value="castellano"/>
+      <xs:enumeration value="frances"/>
+      <xs:enumeration value="aleman"/>
+      <!-- <xs:pattern value="ingles|castellano|frances|aleman" /> -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="duracion" type="duracionR" />
+  <xs:element name="ano" type="anoR" />
+  <xs:element name="director" type="xs:string" />
+  
+
+  <xs:attribute name="idioma" type="idiomaR" />
+  <xs:attribute name="genero" type="generoR" />
+
+
+<xs:element name="titulo">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="idioma"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>  
+  
+</xs:element>
+  
+
+
+  <xs:element name="pelicula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo"></xs:element>
+        <xs:element ref="director"></xs:element>
+        <xs:element ref="ano"></xs:element>
+        <xs:element ref="duracion"></xs:element>
+      </xs:sequence>
+      <xs:attribute ref="genero" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="videoteca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pelicula" maxOccurs="3"></xs:element> 
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria SYSTEM "libreria.dtd">
+<libreria>
+
+  <libro categoria="cocina">
+
+    <titulo idioma="inglés">Treasure Island</titulo>
+
+    <autor>Robert Louis Stevenson</autor>
+
+    <ano>1883</ano>
+
+    <precio>30.00</precio>
+
+  </libro>
+
+  <libro categoria="ficción">
+
+    <titulo idioma="castellano">El libro de la selva</titulo>
+
+    <autor>Rudyard Kipling</autor>
+
+    <ano>1894</ano>
+
+    <precio>29.99</precio>
+
+  </libro>
+
+  <libro categoria="informática">
+
+    <titulo idioma="inglés">The Three Musketeers</titulo>
+
+    <autor>Alexandre Dumas</autor>
+
+    <ano>1844</ano>
+
+    <precio>49.99</precio>
+
+  </libro>
+
+  <libro categoria="informática" tipo="de bolsillo">
+
+    <titulo idioma="inglés">Journey to the Center of the Earth</titulo>
+
+    <autor>Jules Verne</autor>
+
+    <ano>1864</ano>
+
+    <precio>39.95</precio>
+
+  </libro>
+
+</libreria>
