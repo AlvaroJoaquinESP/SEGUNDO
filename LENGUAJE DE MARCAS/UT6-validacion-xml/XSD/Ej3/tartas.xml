@@ -22,5 +22,5 @@
     <chef>Alfonso</chef>
   </roscon>
   <tienda telefono="650444666">Bullas</tienda>
-  <online web="www.tarta.es"/>
+  <online web="www.tarta.es" />
 </productos> 

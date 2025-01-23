@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+    <xs:simpleType name="tipoR">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="GRANDE|PEQUEÑA" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="precioR">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="5.00" />
+            <xs:maxInclusive value="50.00" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="cogigoR">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{3}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="telefonoR">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{9}"/>
+        </xs:restriction>    
+    </xs:simpleType>
+
+
+
+
+    <xs:element name="online"/>
+    <xs:element name="tienda" type="xs:string"/>
+    <xs:element name="chef" type="xs:string"/>
+    <xs:element name="precio" type="precioR"/>
+    <xs:element name="tipo" type="tipoR"/>
+
+
+
+    <xs:attribute name="web" type="xs:string"/>
+    <xs:attribute name="telefono" type="telefonoR"/>
+    <xs:attribute name="codigo" type="cogigoR"/>
+    <xs:attribute name="nombre" type="xs:string"/>
+    <xs:attribute name="lote" type="xs:positiveInteger"/>
+    <xs:attribute name="id" type="xs:string"/>
+
+
+    <xs:element name="roscon">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tipo"></xs:element>
+                <xs:element ref="precio"></xs:element>
+                <xs:element ref="chef"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="tarta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tipo"></xs:element>
+                <xs:element ref="precio"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="codigo" use="required"></xs:attribute>
+            <xs:attribute ref="nombre" use="required"></xs:attribute>
+            <xs:attribute ref="lote" use="optional"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="productos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tarta" maxOccurs="2"></xs:element>
+                <xs:element ref="roscon"></xs:element>
+                <xs:element ref="tienda"></xs:element>
+                <xs:element ref="online"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
