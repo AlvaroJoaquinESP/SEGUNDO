@@ -7,7 +7,7 @@
 <!-- Telefeno tiene que tener 9 digitos-->
 <!-- Ojito hay que reutilizar tipo y precion en roscón-->
 
-<productos>
+<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tartas.xsd">
   <tarta codigo="123" nombre="LOTUS">
     <tipo>GRANDE</tipo>
     <precio>28.00</precio>

@@ -6,9 +6,9 @@
     <xs:element name="diario" />
     <xs:element name="origen" type="xs:string" />
     <xs:element name="destino" type="xs:string" />
-    <xs:element name="hora-salida" type="xs:time" />
-    <xs:element name="hora-llegada" type="xs:time" />
-    <xs:element name="fecha" type="xs:date" />
+    <xs:element name="hora-salida" type="xs:string" />
+    <xs:element name="hora-llegada" type="xs:string" />
+    <xs:element name="fecha" type="xs:string" />
 
     <!-- definition of atributes -->
     <xs:attribute name="codigo" type="xs:string" />
@@ -18,6 +18,7 @@
     <xs:element name="vuelo">
         <xs:complexType>
             <xs:sequence>
+                <xs:element ref="diario"></xs:element>
                 <xs:element ref="origen"></xs:element>
                 <xs:element ref="destino"></xs:element>
                 <xs:element ref="hora-salida"></xs:element>
@@ -39,6 +40,7 @@
     <xs:element name="aeropuerto">
         <xs:complexType>
             <xs:sequence>
+                <xs:element ref="nombre"></xs:element>            
                 <xs:element ref="vuelos"></xs:element>
                 <xs:element ref="fecha"></xs:element>
             </xs:sequence>

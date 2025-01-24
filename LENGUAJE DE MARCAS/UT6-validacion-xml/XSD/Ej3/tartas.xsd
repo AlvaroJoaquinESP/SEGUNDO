@@ -31,11 +31,20 @@
         </xs:restriction>    
     </xs:simpleType>
 
+    <xs:element name="tienda">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="telefono"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+    </xs:element>  
+
 
 
 
     <xs:element name="online"/>
-    <xs:element name="tienda" type="xs:string"/>
     <xs:element name="chef" type="xs:string"/>
     <xs:element name="precio" type="precioR"/>
     <xs:element name="tipo" type="tipoR"/>

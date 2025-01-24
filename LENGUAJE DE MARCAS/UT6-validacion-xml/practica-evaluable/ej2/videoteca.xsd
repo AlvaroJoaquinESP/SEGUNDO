@@ -24,7 +24,6 @@
         <xs:enumeration value="comedia"/>
         <xs:enumeration value="drama"/>
         <xs:enumeration value="ciencia ficcion"/>
-
       <!-- <xs:pattern value="accion|comedia|drama|fantasia" /> -->
     </xs:restriction>
   </xs:simpleType>
