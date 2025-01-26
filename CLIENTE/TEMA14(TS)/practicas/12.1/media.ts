@@ -4,7 +4,7 @@ let c:number = 7
 let d:number = 35
 
 function media (a,b,c,d) {
-    let suma = a + b + c + d / 4 
+    let suma = (a + b + c + d) / 4 
     console.log(suma)
 }
 
