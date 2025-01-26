@@ -117,6 +117,12 @@ Imaginemos que tenemos un array y lo queremos mostrar en el return de app.jsx:
 
 4º para comparar algo se utilizan 3 ===
 
+
+-- BORRAR NODE MODULES TERMINAL
+FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rd /s /q "%d"
+
+
+
 -- spring initializr
 
 
