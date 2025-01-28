@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="pokemon.xslt" type="text/xsl"?>
+
+<pokemonList>
+
+  <pokemon>
+
+    <nombre>Pikachu</nombre>
+
+    <tipo>Eléctrico</tipo>
+
+    <nivel>25</nivel>
+
+  </pokemon>
+
+  <pokemon>
+
+    <nombre>Charmander</nombre>
+
+    <tipo>Fuego</tipo>
+
+    <nivel>15</nivel>
+
+  </pokemon>
+
+  <pokemon>
+
+    <nombre>Bulbasaur</nombre>
+
+    <tipo>Planta</tipo>
+
+    <nivel>20</nivel>
+
+  </pokemon>
+
+
+</pokemonList>
