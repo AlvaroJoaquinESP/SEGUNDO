@@ -1,0 +1,19 @@
+<!ELEMENT tienda (productos, clientes, ventas)>
+    <!ELEMENT productos (producto+)>
+        <!ELEMENT producto (titulo, fabricante?, marca?, modelo, precio, stock, reacondicionado?)>
+            <!ELEMENT titulo (#PCDATA)>
+            <!ELEMENT fabricante (#PCDATA)>
+            <!ELEMENT modelo (#PCDATA)>
+            <!ELEMENT precio (#PCDATA)>
+            <!ELEMENT stock (#PCDATA)>
+            <!ELEMENT reacondicionado (#PCDATA)>
+            <!ELEMENT marca (#PCDATA)>
+
+
+            <!ATTLIST producto idP ID #REQUIRED
+                               ean CDATA #IMPLIED
+                               iva CDATA #REQUIRED
+            >
+
+            <!ATTLIST precio divisa CDATA #REQUIRED
+                             descuento CDATA #IMPLIED>
