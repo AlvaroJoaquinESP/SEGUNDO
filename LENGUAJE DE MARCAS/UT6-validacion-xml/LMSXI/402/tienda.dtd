@@ -17,3 +17,30 @@
 
             <!ATTLIST precio divisa CDATA #REQUIRED
                              descuento CDATA #IMPLIED>
+
+    <!ELEMENT clientes (cliente+)>
+        <!ELEMENT cliente (nombre?, apellidos?, nombre-completo?, dni, telefono*, direccion?)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT apellidos (#PCDATA)>
+            <!ELEMENT nombre-completo (#PCDATA)>
+            <!ELEMENT dni (#PCDATA)>
+            <!ELEMENT telefono (#PCDATA)>
+            <!ELEMENT direccion (#PCDATA)>
+
+        <!ATTLIST cliente idC ID #REQUIRED
+                          creado CDATA #REQUIRED
+        >
+    
+    <!ELEMENT ventas (venta+)>
+        <!ELEMENT venta (item+, total)>
+        <!ELEMENT item (#PCDATA)>
+        <!ELEMENT total (#PCDATA)>
+        <!ATTLIST venta fecha CDATA #REQUIRED
+                        cliente CDATA #REQUIRED
+         >
+
+        <!ATTLIST item ref CDATA #REQUIRED
+                       cantidad CDATA #IMPLIED
+        >
+
+        <!ATTLIST total divisa CDATA #REQUIRED>
