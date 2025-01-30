@@ -125,7 +125,7 @@ FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rd /s /q "%d"
 
 -- spring initializr
 
-https://mp0373-lmsxi.vercel.app/docs/unidades/05/ejercicios/510
+
 
 
 

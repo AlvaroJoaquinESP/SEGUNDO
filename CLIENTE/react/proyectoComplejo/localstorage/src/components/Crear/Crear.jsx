@@ -1,23 +1,29 @@
+import { useState } from "react";
+
 export const Crear = () => {
+  const [tareas, setTareas] = useState([]);
 
-  let tareaDOM = tarea.target.value
-
-  const datosObj = (ev) => {    
+  const datosObj = (ev) => {
     ev.preventDefault();
-    const obj = {
-      tarea : tareaDOM,
-      tarea : tareaDOM,
 
-
+    let tareaDOM = tarea.target.value;
+    let fechaDOM = fecha.target.value;
+    const tarea = {
+      id: Date.now(),
+      tarea: tareaDOM,
+      fecha: fechaDOM,
     };
+
+    setTareas(...tareas, tarea);
   };
+
   return (
-    <div>
-      <form onSubmit={datosObj}>
+    <div className="container mt-5">
+      <form className="form-control" onSubmit={datosObj}>
         <label className="form-label">Tarea</label>
-        <input type="text" className="form-control" name="tarea" />
+        <input type="text" className="form-control" name="tarea" required />
         <label className="form-label">Fecha</label>
-        <input type="text" className="form-control" name="fecha" />
+        <input type="date" className="form-control" name="fecha" required />
         <br />
         <input type="submit" className="btn btn-check" value="Añadir" />
       </form>

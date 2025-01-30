@@ -5,6 +5,7 @@ function App() {
       <h1>Listar</h1>
       <hr />
       <h1>Crear</h1>
+      <Crear/>
     </div>
   )
 }
