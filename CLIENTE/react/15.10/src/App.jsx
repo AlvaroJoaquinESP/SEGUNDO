@@ -5,16 +5,21 @@ function App() {
   const tareaP = useRef("");
   const fechaP = useRef("");
 
-  const tareas = {
-    tarea: tareaP,
-    fecha: fechaP,
+  const addTarea = () => {
+    const tarea = {
+      tarea: tareaP.current.value,
+      fecha: fechaP.current.value,
+    };
+    setArrTareas([...arrTareas, tarea]);
+    tareaP.current.value = "";
+    fechaP.current.value = "";
   };
 
-  setArrTareas([...arrTareas, tareas]);
   console.log(arrTareas);
 
   return (
     <div className="container mt-4">
+      <h2 className="modal-title">Tareas por hacer (TO-DO)</h2>
       <label htmlFor="tarea" className="label-form">
         Tarea
       </label>
@@ -24,9 +29,22 @@ function App() {
       </label>
       <input type="date" className="form-control" id="fecha" ref={fechaP} />
       <br />
-      <button className="btn btn-info">Añadir</button>
+      <button className="btn btn-info" onClick={addTarea}>
+        Añadir
+      </button>
 
-      <div className="mt-4"></div>
+      <div className="mt-4">
+        <h2 className="card-title">Lista</h2>
+        <ul>
+          {arrTareas.map((elemento, indice) => {
+            return (
+              <li key={indice}>
+                Tarea: {elemento.tarea} Limite: {elemento.fecha}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
