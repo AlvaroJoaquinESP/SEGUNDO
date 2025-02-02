@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- restrictions of elements -->
+    <xs:simpleType name="tipoR">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INDIVIDUAL" />
+            <xs:enumeration value="DOBLE" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="precioR">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0.00" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- restrictions of attributes -->
+    <xs:simpleType name="tlfR">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-9]{9}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- definition of attributes -->
+    <xs:attribute name="telefono" type="tlfR" />
+    <xs:attribute name="id" type="xs:integer" />
+    <xs:attribute name="codigo" type="xs:integer" />
+    <xs:attribute name="nombre" type="xs:string" />
+
+
+    <!-- definition of simple elements -->
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="telefono" use="required" />
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- god will bless u garcher -->
+    <xs:element name="vegano">
+        <xs:complexType>
+            <xs:attribute name="id" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="precio" type="precioR" />
+    <xs:element name="tipo" type="tipoR" />
+
+
+    <!-- definition of complex elements -->
+    <xs:element name="helado">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tipo"></xs:element>
+                <xs:element ref="precio"></xs:element>
+                <xs:element ref="vegano" minOccurs="0"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="codigo" use="required"></xs:attribute>
+            <xs:attribute ref="nombre" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="postre">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="precio"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="codigo" use="required"></xs:attribute>
+            <xs:attribute ref="nombre" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="heladeria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="postre"></xs:element>
+                <xs:element ref="helado" maxOccurs="3"></xs:element>
+                <xs:element ref="direccion"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

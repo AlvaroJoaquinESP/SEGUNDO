@@ -1,0 +1,14 @@
+<!ELEMENT universidad (nombre, rector, facultades, ubicacion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT rector (#PCDATA)>
+    <!ELEMENT ubicacion (#PCDATA)>
+    <!ELEMENT facultades (facultad+)>
+        <!ELEMENT facultad (tipo, director, web?)>
+            <!ELEMENT tipo (#PCDATA)>
+            <!ELEMENT director (#PCDATA)>
+            <!ELEMENT web (#PCDATA)>
+        <!ATTLIST facultad acreditada CDATA #REQUIRED>
+    <!ATTLIST ubicacion pais NMTOKEN #REQUIRED>
+<!ATTLIST universidad tipo NMTOKEN #REQUIRED
+                      fundada NMTOKEN #REQUIRED
+>

@@ -1,0 +1,24 @@
+<!ELEMENT biblioteca (peliculas, ubicacion)>
+<!ELEMENT ubicacion (#PCDATA)>
+
+    <!ELEMENT peliculas (pelicula+)>
+        <!ELEMENT pelicula (titulo, director, genero, anioLanzamiento, productora, sinopsis?)>
+                <!ELEMENT titulo (#PCDATA)>
+                <!ELEMENT director (#PCDATA)>
+                <!ELEMENT genero (#PCDATA)>
+                <!ELEMENT anioLanzamiento (#PCDATA)>
+                <!ELEMENT productora (#PCDATA)>
+                <!ELEMENT sinopsis (#PCDATA)>
+
+        <!ATTLIST pelicula id ID #REQUIRED
+                           disponible CDATA #REQUIRED
+                           premiada CDATA #IMPLIED
+        >
+
+<!ATTLIST biblioteca nombre CDATA #REQUIRED
+                     añoFundacion NMTOKEN #REQUIRED
+>
+
+<!ATTLIST ubicacion ciudad NMTOKEN #REQUIRED
+                    pais NMTOKEN #REQUIRED
+>

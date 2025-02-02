@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE universidad SYSTEM "universidad.dtd">
+
+<universidad tipo="Publica" fundada="2020">
+    <nombre>UMU</nombre>
+    <rector>Cipriano Garcia Hernandez</rector>
+    <facultades>
+        <facultad acreditada="Si">
+            <tipo>Economia</tipo>
+            <director>Juan Ferrer</director>
+        </facultad>
+        <facultad acreditada="No">
+            <tipo>Informatica</tipo>
+            <director>Cipriano</director>
+        </facultad>
+        <facultad acreditada="Si">
+            <tipo>Medicina</tipo>
+            <director>Susana</director>
+            <web>www.murciaeduca.es</web>
+        </facultad>
+    </facultades>
+    <ubicacion pais="España">Murcia</ubicacion>
+</universidad>
