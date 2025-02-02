@@ -1,5 +1,5 @@
 import { PropTypes } from "prop-types";
-export const Crear = ({tareas, setTareas}) => {
+const Crear = ({tareas, setTareas}) => {
 
   const createTask = (ev) => {
     ev.preventDefault(); 
@@ -31,7 +31,9 @@ export const Crear = ({tareas, setTareas}) => {
 };
 
 Crear.PropTypes = {
-  tareas : PropTypes.array,
-  setTareas : PropTypes.array
+  tareas:PropTypes.PropTypes.array,
+  setTareas:PropTypes.PropTypes.func
+
 }
+
 export default Crear
