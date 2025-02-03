@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pilotosF1>
+    <piloto nacionalidad="GBR">
+        <nombre>Lewis</nombre>
+        <apellido>Hamilton</apellido>
+        <equipo>Ferrari</equipo>
+        <titulos>7</titulos>
+    </piloto>
+    <piloto nacionalidad="ESP">
+        <nombre>Fernando</nombre>
+        <apellido>Alonso</apellido>
+        <equipo>Aston Martin</equipo>
+        <titulos>2</titulos>
+    </piloto>
+    <piloto nacionalidad="NLD">
+        <nombre>Max</nombre>
+        <apellido>Verstappen</apellido>
+        <equipo>Red Bull</equipo>
+        <titulos>4</titulos>
+    </piloto>
+    <piloto nacionalidad="ITA">
+        <nombre>Andrea Kimi</nombre>
+        <apellido>Antonelli</apellido>
+        <equipo>Mercedes</equipo>
+        <titulos>0</titulos>
+    </piloto>
+    <piloto nacionalidad="ESP">
+        <nombre>Carlos</nombre>
+        <apellido>Sainz</apellido>
+        <equipo>Williams</equipo>
+        <titulos>0</titulos>
+    </piloto>
+</pilotosF1>
