@@ -30,10 +30,12 @@ const Crear = ({tareas, setTareas}) => {
   );
 };
 
-Crear.PropTypes = {
-  tareas:PropTypes.PropTypes.array,
-  setTareas:PropTypes.PropTypes.func
+Crear.propTypes = {
 
+  tareas:PropTypes.array,
+  setTareas:PropTypes.func
 }
 
 export default Crear
+
+
