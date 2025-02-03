@@ -39,7 +39,7 @@ function App() {
           {arrTareas.map((elemento, indice) => {
             return (
               <li key={indice}>
-                Tarea: {elemento.tarea} Limite: {elemento.fecha}
+                Tarea: <br/> {elemento.tarea} <br/> Límite: <br/> {elemento.fecha} <hr/>
               </li>
             );
           })}
