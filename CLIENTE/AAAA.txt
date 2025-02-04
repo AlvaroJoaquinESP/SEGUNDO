@@ -1,0 +1,6 @@
+min 21.
+de listacontactos a contactos le sigo pasando el objeto por prop.
+
+POR QUE RECORRE EN CONTACTOCOMPONENT Y EN LISTAR PONE ETIQUETAS DE CONTACTO COMPONENT CON VALORES OBJ.....
+
+QUE SE LE PASA A CONTACTOCOMPONENT?!?!
