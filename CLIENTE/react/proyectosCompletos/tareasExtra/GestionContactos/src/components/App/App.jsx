@@ -1,4 +1,4 @@
-import { ContactosProvider } from "../../helpers/Contactos";
+import { ContactosProvider } from "../../helpers/ContactoHelper";
 import FormularioContactos from "../Formulario/FormularioContactos";
 import ListaContactos from "../Lista/ListaContactos";
 

@@ -1,24 +1,21 @@
-import { useContext } from "react"
-import { ContactosContext } from "../../helpers/Contactos"
-
+import { useContext } from "react";
+import { ContactosContext } from "../../helpers/ContactoHelper.jsx";
+import { ContactoComponent } from "../Contacto/ContactoComponent.jsx"
 const ListaContactos = () => {
-
-    const {contactos} = useContext(ContactosContext)
+  const { contactos } = useContext(ContactosContext);
 
   return (
-    <div >
-        { contactos.map((elemento, indice) => {
-            return (
-                <div key={indice} className="container form-control bg-primary bg-gradient m-3">
-                <h1>Id: {elemento.id}</h1>
-                <h2>Nombre: {elemento.nombre}</h2>
-                <h3>Teléfono: {elemento.telefono}</h3>
-                <h3>Email: {elemento.email}</h3>
-                </div>
-            )
-        }) }
+    <div>
+      {contactos.map((elemento, indice) => {
+        return (
+          <ContactoComponent
+            key={indice} obj={elemento}
+            className="container form-control bg-primary bg-gradient m-3"
+          />
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default ListaContactos
+export default ListaContactos;

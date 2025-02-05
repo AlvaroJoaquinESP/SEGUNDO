@@ -1,14 +1,21 @@
 import { PropTypes } from "prop-types";
 
-const Contacto = ({contactos}) => {
+const Contacto = ({obj}) => {
 
   return (
-    <div>Contacto</div>
+    <div>
+        <h1>{obj.id}</h1>
+        <h1>{obj.id}</h1>
+        <h1>{obj.id}</h1>
+        <h1>{obj.id}</h1>
+
+
+    </div>
   )
 }
 
 Contacto.propTypes = {
-    contactos : PropTypes.array
+    obj : PropTypes.object
 }
 
 export default Contacto

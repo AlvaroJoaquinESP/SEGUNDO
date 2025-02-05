@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { ContactosContext } from "../../helpers/Contactos"
+import { ContactosContext } from "../../helpers/ContactoHelper"
 
 const FormularioContactos = () => {
 
