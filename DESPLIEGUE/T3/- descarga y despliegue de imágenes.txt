@@ -1,0 +1,14 @@
+- descarga y despliegue de imágenes.
+- la imagen se despliega creando contenedores.
+- para que sea la imagen mas reciente, Docker pull nombreImagen:latest (hoja)
+- creación de contenedores con mapeo de puertos y sin mapeo.
+- Ejecuciones en el contenedor.
+	para ejecutar solo un comando -> Docker exec nombrecontenedor comando
+	
+- copiar fichero en el contenedor.
+- enlazar carpetas
+- crear volumen
+- si intento borrar un volumen que esta asociado a otro, no me va a dejar, pero si pongo rm -f, lo fuerzo.
+- creación de una red.
+- crear un contenedor en esa red.
+- preguntar brevemente acerca de 
