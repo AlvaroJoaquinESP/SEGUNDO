@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { ContactoContext } from "../helpers/ContactoHelper";
 
 function Contacto({ elemento }) {
+  
   const { eliminaContacto } = useContext(ContactoContext);
 
   return (
@@ -21,9 +22,11 @@ function Contacto({ elemento }) {
     </div>
   );
 }
+
 Contacto.propTypes = {
   elemento: Proptypes.object,
   contactos: Proptypes.array,
   setContactos: Proptypes.array,
 };
+
 export default Contacto;

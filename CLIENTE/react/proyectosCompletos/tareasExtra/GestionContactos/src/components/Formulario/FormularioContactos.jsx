@@ -16,13 +16,13 @@ const FormularioContactos = () => {
         <form onSubmit={createContact}>
             <h2>Introduce a new contact</h2>
             <label htmlFor="nombre" className="form-label">Nombre</label>
-            <input type="text" name="nombre" id="nombre" className="form-control mb-2" />
+            <input type="text" name="nombre" id="nombre" className="form-control mb-2" required/>
             
             <label htmlFor="tel" className="form-label">Teléfono</label>
-            <input type="tel" name="tel" id="tel" className="form-control mb-2" />
+            <input type="tel" name="tel" id="tel" className="form-control mb-2" required/>
             
             <label htmlFor="email" className="form-label">Email</label>
-            <input type="email" name="email" id="email" className="form-control mb-2" />
+            <input type="email" name="email" id="email" className="form-control mb-2" required/>
 
             <button className="btn btn-primary">Add</button>
         </form>
