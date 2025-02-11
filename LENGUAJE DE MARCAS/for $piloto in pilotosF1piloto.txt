@@ -1,0 +1,118 @@
+for $piloto in /pilotosF1/piloto
+where contains($piloto/nombre,"a")
+order by $piloto/titulos descending
+return $piloto/nombre/text()
+
+
+--
+
+
+
+let $minTitulos := min(/pilotosF1/piloto/titulos)
+let $maxTitulos := max(/pilotosF1/piloto/titulos)
+
+let $pilotoMin := for $piloto in /pilotosF1/piloto
+                  where $piloto/titulos = $minTitulos
+                  return $piloto
+
+let $pilotoMax := for $piloto in /pilotosF1/piloto
+                  where $piloto/titulos = $maxTitulos
+                  return $piloto
+                  
+return 
+<pilotosF1>
+
+<pilotoConMenosTitulos>{$pilotoMin/nombre/text()}</pilotoConMenosTitulos>
+<pilotoConMasTitulos>{$pilotoMax/nombre/text()}</pilotoConMasTitulos>
+
+</pilotosF1>
+
+
+--
+
+
+let $nombre := for $alumno in 
+/clase/alumnos/alumno
+ return $alumno/apenom/text()
+ 
+return $nombre
+
+--
+
+
+let $codigo := "n43483437"
+(:ESTA MAL:)
+for $nota in /clase/notas/nota[@alum = $codigo]
+
+let $seg := /clase/asignaturas/asignatura/[@cod = $nota/@asig]/@nombre
+   
+return concat($seg, ": ", $nota/@calificacion)
+
+
+--
+
+for $alumno in /clase/alumnos/alumno
+            order by $alumno/apenom descending
+            
+return
+<alumno>
+   <nombre>{$alumno/apenom/text()}</nombre>
+   <telefono>{$alumno/telef/number()}</telefono>
+</alumno>
+
+--
+
+count(/clase/asignaturas/asignatura)
+
+
+--
+
+
+let $codAsig := data(clase/asignaturas/asignatura[@nombre = 'LMSGI']/@cod)
+
+let $codAlumnos := for $nota in clase/notas/nota[@asig = $codAsig]
+                order by $nota/@calificacion 
+                return data($nota/@alum)
+                       
+                
+for $alumno in clase/alumnos/alumno
+where $alumno/@cod = $codAlumnos
+return
+  <alumno>
+    <nombre>{data($alumno/apenom)}</nombre>
+    <nota>{clase/notas/nota[@asig = $codAsig and @alum = $alumno/@cod]/@calificacion}</nota>  
+  </alumno>
+
+--
+
+for $modulo in /fp/ciclos_informatica/ciclo[@id = 'DAM']/modulos
+return $modulo/modulo/nombre/text()
+
+--
+
+
+for $ciclo in fp/ciclos_informatica/ciclo
+where $ciclo/anyo >= 2010
+order by $ciclo/titulacion ascending
+return data($ciclo/nombre)
+
+--
+
+(:let $horas := for $duracion in fp/ciclos_informatica/ciclo where $duracion/modulos/modulo/horas = 96
+return data($duracion/nombre) 
+
+
+let $ciclos := for $ciclo in fp/ciclos_informatica/clico
+               where $ciclo/@id 
+               :)
+
+for $ciclo in fp/ciclos_informatica/ciclo
+for $modulo in $ciclo/modulos/modulo
+where $modulo/horas = 96  
+return <datos>
+        <ciclo>{data($ciclo/@id)}</ciclo>
+        <modulo>{data($modulo/nombre)}</modulo>
+       </datos>              
+
+
+
