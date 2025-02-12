@@ -1,0 +1,56 @@
+/*Como puedo maquetar los textos que saco de los botones?*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+input {
+    width: 97%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 97%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    width: 10%;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+table {
+    width: 50vh;
+    margin: 1.5rem;
+    border: 2px solid black;
+}
+
+th{
+    border: 2px dashed black;
+    background-color: purple;
+    color: white;
+}
+
+tr{
+    
+}
+
