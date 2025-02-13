@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CursosDeJuanAcademy>
+    <Curso id="1" tipo="backend">
+        <Nombre>Introducción a PHP</Nombre>
+        <Duracion>40</Duracion>
+        <Instructor>Juan Ferrer</Instructor>
+        <Nivel>Principiante</Nivel>
+        <Descripcion>Curso básico para aprender los fundamentos de PHP.</Descripcion>
+        <AñoPublicacion>2025</AñoPublicacion>
+        <ValoracionMedia>4.5</ValoracionMedia>
+        <AlumnosMatriculados>
+            <Alumno idAlumno="101">
+                <Nombre>Ana López</Nombre>
+                <Correo>ana.lopez@example.com</Correo>
+                <Edad>25</Edad>
+            </Alumno>
+            <Alumno idAlumno="102">
+                <Nombre>Carlos Ruiz</Nombre>
+                <Correo>carlos.ruiz@example.com</Correo>
+                <Edad>30</Edad>
+            </Alumno>
+            <Alumno idAlumno="103">
+                <Nombre>María Gómez</Nombre>
+                <Correo>maria.gomez@example.com</Correo>
+                <Edad>22</Edad>
+            </Alumno>
+        </AlumnosMatriculados>
+    </Curso>
+    <Curso id="2" tipo="backend">
+        <Nombre>Desarrollo Web con Laravel</Nombre>
+        <Duracion>60</Duracion>
+        <Instructor>Carmen Torrano</Instructor>
+        <Nivel>Intermedio</Nivel>
+        <Descripcion>Curso para aprender a crear aplicaciones web con Laravel.</Descripcion>
+        <AñoPublicacion>2025</AñoPublicacion>
+        <ValoracionMedia>4.2</ValoracionMedia>
+        <AlumnosMatriculados>
+            <Alumno idAlumno="104">
+                <Nombre>Javier Pérez</Nombre>
+                <Correo>javier.perez@example.com</Correo>
+                <Edad>28</Edad>
+            </Alumno>
+            <Alumno idAlumno="105">
+                <Nombre>Laura Díaz</Nombre>
+                <Correo>laura.diaz@example.com</Correo>
+                <Edad>35</Edad>
+            </Alumno>
+        </AlumnosMatriculados>
+    </Curso>
+    <Curso id="3" tipo="backend">
+        <Nombre>Desarrollo de Aplicaciones con Spring</Nombre>
+        <Duracion>80</Duracion>
+        <Instructor>María Calero</Instructor>
+        <Nivel>Avanzado</Nivel>
+        <Descripcion>Curso avanzado sobre desarrollo de aplicaciones con Spring.</Descripcion>
+        <AñoPublicacion>2025</AñoPublicacion>
+        <ValoracionMedia>4.7</ValoracionMedia>
+        <AlumnosMatriculados>
+            <Alumno idAlumno="106">
+                <Nombre>Pedro Sánchez</Nombre>
+                <Correo>pedro.sanchez@example.com</Correo>
+                <Edad>40</Edad>
+            </Alumno>
+            <Alumno idAlumno="107">
+                <Nombre>Sofía Martínez</Nombre>
+                <Correo>sofia.martinez@example.com</Correo>
+                <Edad>27</Edad>
+            </Alumno>
+            <Alumno idAlumno="108">
+                <Nombre>Diego Fernández</Nombre>
+                <Correo>diego.fernandez@example.com</Correo>
+                <Edad>32</Edad>
+            </Alumno>
+            <Alumno idAlumno="109">
+                <Nombre>Lucía Rodríguez</Nombre>
+                <Correo>lucia.rodriguez@example.com</Correo>
+                <Edad>29</Edad>
+            </Alumno>
+        </AlumnosMatriculados>
+    </Curso>
+    <Curso id="4" tipo="frontend">
+        <Nombre>Desarrollo Frontend con React</Nombre>
+        <Duracion>50</Duracion>
+        <Instructor>Juan Ferrer</Instructor>
+        <Nivel>Intermedio</Nivel>
+        <Descripcion>Curso para aprender a desarrollar interfaces de usuario con React.</Descripcion>
+        <AñoPublicacion>2024</AñoPublicacion>
+        <ValoracionMedia>4.6</ValoracionMedia>
+        <AlumnosMatriculados>
+            <Alumno idAlumno="110">
+                <Nombre>Pablo González</Nombre>
+                <Correo>pablo.gonzalez@example.com</Correo>
+                <Edad>26</Edad>
+            </Alumno>
+            <Alumno idAlumno="111">
+                <Nombre>Elena Castro</Nombre>
+                <Correo>elena.castro@example.com</Correo>
+                <Edad>31</Edad>
+            </Alumno>
+            <Alumno idAlumno="112">
+                <Nombre>Marta Ruiz</Nombre>
+                <Correo>marta.ruiz@example.com</Correo>
+                <Edad>24</Edad>
+            </Alumno>
+        </AlumnosMatriculados>
+    </Curso>
+</CursosDeJuanAcademy>

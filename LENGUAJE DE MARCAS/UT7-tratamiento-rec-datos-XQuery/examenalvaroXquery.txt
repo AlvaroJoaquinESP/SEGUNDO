@@ -1,0 +1,133 @@
+- Ejercicio 1.
+
+for $curso in CursosDeJuanAcademy/Curso
+where contains($curso/Nombre , "Desarrollo")
+return 
+<Nombre>{data($curso/Nombre)}</Nombre>
+
+
+- Ejercicio 2.
+
+for $curso in CursosDeJuanAcademy/Curso
+where $curso/Nivel = "Principiante"
+order by $curso/AñoPublicacion descending
+return 
+<Nombre>{data($curso/Nombre)}</Nombre>
+
+
+- Ejercicio 3.
+
+for $curso in CursosDeJuanAcademy/Curso
+where $curso/@tipo = "backend" and $curso/ValoracionMedia > 4.3
+order by $curso/AñoPublicacion ascending
+return 
+<curso>
+  <id>{data($curso/@id)}</id>
+  <nombre>{data($curso/Nombre)}</nombre>
+</curso>
+
+
+- Ejercicio 4.
+
+let $total := count(CursosDeJuanAcademy/Curso)
+let $media := avg(
+  for $curso in CursosDeJuanAcademy/Curso
+  return $curso/ValoracionMedia
+)
+return 
+<resultado>
+  <totalCursos>{data($total)}</totalCursos>
+  <valoracionMediaTotal>{data($media)}</valoracionMediaTotal>
+</resultado>
+
+
+- Ejercicio 5.
+
+let $duracion := 
+sum(
+  for $curso in CursosDeJuanAcademy/Curso
+  return $curso/Duracion
+)
+return <totalDuracion>{data($duracion)}</totalDuracion>
+
+
+- Ejercicio 6.
+
+let $max := max(CursosDeJuanAcademy/Curso/Duracion)
+let $min := min(CursosDeJuanAcademy/Curso/Duracion)
+for $curso in CursosDeJuanAcademy/Curso
+where $curso/Duracion = $max or $curso/Duracion = $min
+return 
+<resultado>
+  <cursoMayorDuracion>{data($curso/Nombre)}</cursoMayorDuracion>
+</resultado>
+
+
+- Ejercicio 7.
+
+let $prin := 
+  for $curso in CursosDeJuanAcademy/Curso
+where $curso/Nivel = "Principiante"
+return count($curso/AlumnosMatriculados/Alumno)
+    
+let $inter := sum(
+  for $curso in CursosDeJuanAcademy/Curso
+where $curso/Nivel = "Intermedio"
+return count($curso/AlumnosMatriculados/Alumno)
+)
+
+let $av := 
+  for $curso in CursosDeJuanAcademy/Curso
+where $curso/Nivel = "Avanzado"
+return count($curso/AlumnosMatriculados/Alumno)
+
+return
+ <resultado>
+   <principiante>{data($prin)}</principiante>
+   <intermedio>{data($inter)}</intermedio>
+   <avanzado>{data($av)}</avanzado>
+ </resultado>
+
+
+- Ejercicio 8.
+
+let $cursos := CursosDeJuanAcademy/Curso/AlumnosMatriculados
+
+for $curso in CursosDeJuanAcademy/Curso
+order by $curso/AlumnosMatriculados descending
+
+return 
+
+<curso>
+  <nombre>{data($curso/Nombre)}</nombre>
+  <numAlumnos>{data(count($curso/AlumnosMatriculados/Alumno))}</numAlumnos>
+</curso>
+
+- Ejercicio 10.
+
+for $curso in CursosDeJuanAcademy/Curso
+where $curso/AlumnosMatriculados/Alumno/Edad > 25
+return 
+
+<curso>
+  <nombre>{data($curso/Nombre)}</nombre>
+  <intructor>{data($curso/Instructor)}</intructor>
+  <duracion>{data($curso/Duracion)}</duracion>
+  <valoracion>{data($curso/ValoracionMedia)}</valoracion>
+  <numAlumnos>{data(count($curso/AlumnosMatriculados/Alumno))}</numAlumnos>
+  <alumnosMayores25>
+    <alumno>{data($curso/AlumnosMatriculados/Alumno/Nombre)}</alumno>
+  </alumnosMayores25>
+</curso>
+
+
+- Ejercicio 9.
+
+for $curso in CursosDeJuanAcademy/Curso
+where $curso/AlumnosMatriculados/Alumno/Edad 
+return $curso/Nombre
+
+
+
+  
+
