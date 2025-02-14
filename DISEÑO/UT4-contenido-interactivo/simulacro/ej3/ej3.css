@@ -1,0 +1,17 @@
+.hero {
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: 120%;
+    animation: imagen 5s infinite alternate ease-in-out;
+    height: 100vh;
+  }
+  
+  @keyframes imagen {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+  }
