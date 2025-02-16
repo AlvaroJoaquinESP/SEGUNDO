@@ -11,20 +11,16 @@ header {
     display:inline-block;
     font-size: 45px;
     font-weight: bold;
-    animation: logo 1s infinite ease;
+    animation: logo 2s linear infinite;
   }
   
   @keyframes logo {
      0% {
-        transform: scale(1) rotate(0deg);
-     }
-
-     50% {
-        transform: scale(1.3) rotate(180deg);
+        transform: scale(0) rotate(0deg);
      }
 
      100% {
-        transform: scale(1) rotate(360deg);
+        transform: scale(1.3) rotate(360deg);
      }
     
   }
