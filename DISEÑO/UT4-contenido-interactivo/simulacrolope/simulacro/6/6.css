@@ -1,0 +1,14 @@
+.hero {
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/featured/fondos-de-paisajes-naturales-k9tfch0hpfjbaxel.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto crea el efecto parallax */
+
+  }
+  
+  div{
+    height: 1500px;
+    width: 500px;
+  }
+  

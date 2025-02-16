@@ -1,0 +1,16 @@
+.hero {
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: 120%;
+    animation: mover 5s infinite alternate ease-in-out;
+  }
+  
+
+@keyframes mover {
+    0% {
+        background-position: top left;
+    }   
+    100% {
+        background-position: bottom right;
+    }    
+}

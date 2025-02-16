@@ -1,0 +1,22 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+  
+.logo {
+    border-radius: 50%;
+    animation: rotar 2s infinite;
+    background-color: rgb(170, 170, 170);
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px; /*align-content:center*/
+}
+
+@keyframes rotar {
+    0% { transform: rotate(0deg) scale(1); }
+    50% {transform: rotate(180deg) scale(2); }
+    100% {transform: rotate(360deg) scale(1); }
+}

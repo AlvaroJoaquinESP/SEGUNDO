@@ -1,0 +1,11 @@
+.hero {
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/featured/fondos-de-paisajes-naturales-k9tfch0hpfjbaxel.jpg');
+    animation: back 5s infinite alternate;
+  }
+
+  @keyframes back {
+    from {background-position: top left;}
+    to {background-position: bottom right;}
+  }
+  

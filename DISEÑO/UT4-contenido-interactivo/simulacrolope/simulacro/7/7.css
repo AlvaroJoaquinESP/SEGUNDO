@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    scroll-snap-type: x mandatory; /* Habilita el scroll snap en el eje horizontal */
+}
+
+.item{
+    flex-shrink: 0; /* Evita que los elementos se encojan */
+    background-color: #999999;
+    padding: 500px;
+    scroll-snap-align: start; /* Alinea cada elemento al comienzo del contenedor cuando se hace scroll */
+}

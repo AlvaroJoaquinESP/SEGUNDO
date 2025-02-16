@@ -1,0 +1,27 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    color: red;
+    font-size: larger;
+    animation: mylogo 2s linear infinite;
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+  }
+
+  @keyframes mylogo {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+  }

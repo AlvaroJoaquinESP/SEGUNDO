@@ -1,0 +1,23 @@
+.hamburger-icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  }
+
+  .menu.active{
+    display: flex;
+    flex-direction: column;
+  }
+  
