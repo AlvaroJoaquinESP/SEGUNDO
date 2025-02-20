@@ -1,0 +1,11 @@
+Pasos para UseContext:
+Dividido en 4 pasos.
+1º-> Crear el proyecto. + topics.(bootstrap, rutas, sliders...).
+
+2º-> Crear la carpeta con el fichero helper.(Usar snippet helper.) Aqui centralizamos la información.
+
+3º-> Creamos los componentes y rutas, trayendo y utilizando los datos del contexto(helper), si procede.
+
+4º-> Dentro de App.jsx, envolver los componentes que utilicen el contexto con el provider. Para que los componentes puedan acceder a los datos del contexto.
+
+
