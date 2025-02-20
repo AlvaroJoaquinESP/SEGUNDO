@@ -126,6 +126,9 @@ FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rd /s /q "%d"
 -- spring initializr
 
 
+-- PREGUNTAS JUAN VIERNES 21.
+	-¿Puedo usar browserRouter con un Contexto? Me refiero a si se puede poner con el provider.
+
 
 
 

@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { EventsContext } from "../helper/Events"
+import { Link } from "react-router-dom"
 
 const EventsList = () => {
 
@@ -8,7 +9,8 @@ const EventsList = () => {
 
   return (
     <div className="container">
-        <div className="row">
+        <div className="row gap-3 mt-2">
+            <h1 className="text-center bg-warning rounded-3">EVENTS</h1>
             { datos.map((elemento) => {
                 return (
                     <div className="col-5 border"  key={elemento.id}>
@@ -20,15 +22,14 @@ const EventsList = () => {
                     </div>
                 )
             }) }
+        </div>  
 
-
-
-
-        </div>
-
-
+        <Link to="/add" className="btn btn-primary m-3">Add another one</Link>
+        {/* Compruebo el navigate del App.jsx */}
+        <Link to="/" className="btn btn-primary m-3">Home</Link>
 
     </div>
+
   )
 }
 
