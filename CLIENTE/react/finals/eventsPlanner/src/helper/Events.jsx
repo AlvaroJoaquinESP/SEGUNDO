@@ -6,10 +6,19 @@ export const EventsContext = createContext();
 export const EventsProvider = ({ children }) => {
     const [datos, setDatos] = useState([{id:1,titulo:"Evento1", fecha:"2022-12-12", hora:"17:00", ubicacion:"La calle",asistentes:200,},{id:2,titulo:"Evento2", fecha:"2022-12-12", hora:"17:00", ubicacion:"La calle",asistentes:200,},{id:3,titulo:"Evento3", fecha:"2022-12-12", hora:"17:00", ubicacion:"La calle",asistentes:200,},{id:4,titulo:"Evento4", fecha:"2022-12-12", hora:"17:00", ubicacion:"La calle",asistentes:250,}]);
     
+
     // aqui se pueden agregar mas estados y funciones
 
+    const eventoAdd = (obj) => {
+        setDatos([...datos, obj])
+    }
+
+    // const deleteEvent = (id) => {
+    //     const nuevo = datos.filter((elemento) => elemento.id != id)
+    // }
+
     return (
-        <EventsContext.Provider value={{datos, setDatos}}>
+        <EventsContext.Provider value={{datos, setDatos, eventoAdd}}>
             {children}
         </EventsContext.Provider>
     )

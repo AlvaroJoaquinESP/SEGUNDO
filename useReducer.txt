@@ -1,0 +1,8 @@
+-- USE REDUCER --
+1º-> El mismo que con useContext. Crear app + topics.
+2º-> En el app.jsx,borramos el mismo y  vamos a usar el snippet llamado rutareducer
+3º-> Componentes-> utilizar el state y el dispatch, el state para traerme los datos y el dispatch  para llamar 
+a las funciones.
+4º-> Programar.
+
+diferencias ver video hora y poco.

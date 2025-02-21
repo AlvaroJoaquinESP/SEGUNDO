@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { v4 as uuidv4 } from "uuid"
+import { EventsContext } from "../helper/Events"
+import { useContext } from "react"
 const AddEvent = () => {
 
-    const [events, setEvents] = useState([])
+    const {eventoAdd} = useContext(EventsContext)
 
-    useEffect(() => {
-        
-    })
+    
 
-    const add = ev => {
+    const recibir = ev => {
         ev.preventDefault()
 
         const obj = {
@@ -20,12 +19,15 @@ const AddEvent = () => {
             ubicacion: ev.target.ubicacion.value,
             asistentes: ev.target.asistentes.value
         }
+        alert("Insertado correctamente")
+        eventoAdd(obj)
     }
 
 
   return (
     <div className="container m-4">
-        <form className="form-control" onSubmit={add} >
+        <h1 className="text-center bg-primary rounded-2">INSERT YOUR EVENT</h1>
+        <form className="form-control" onSubmit={recibir} >
             <label htmlFor="titulo" className="form-label">Tittle:</label>
             <input type="text" name="titulo" id="titulo" className="form-control" required/>
             <br />

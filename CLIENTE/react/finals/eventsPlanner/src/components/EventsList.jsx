@@ -8,6 +8,7 @@ const EventsList = () => {
 
 
   return (
+    // Aqui se puede meter un header(componente).
     <div className="container">
         <div className="row gap-3 mt-2">
             <h1 className="text-center bg-warning rounded-3">EVENTS</h1>
@@ -29,6 +30,8 @@ const EventsList = () => {
         <Link to="/" className="btn btn-primary m-3">Home</Link>
 
     </div>
+
+    // Aqui se puede meter un footer(componente).
 
   )
 }
