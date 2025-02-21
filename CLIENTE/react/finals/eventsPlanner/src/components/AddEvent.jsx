@@ -4,7 +4,7 @@ import { EventsContext } from "../helper/Events"
 import { useContext } from "react"
 const AddEvent = () => {
 
-    const {eventoAdd} = useContext(EventsContext)
+    const {addEvent} = useContext(EventsContext)
 
     
 
@@ -20,7 +20,7 @@ const AddEvent = () => {
             asistentes: ev.target.asistentes.value
         }
         alert("Insertado correctamente")
-        eventoAdd(obj)
+        addEvent(obj)
     }
 
 
@@ -37,7 +37,7 @@ const AddEvent = () => {
             <br />
             
             <label htmlFor="hora" className="form-label">Hour:</label>
-            <input type="text" name="hora" id="hora" className="form-control" required/>
+            <input type="time" name="hora" id="hora" className="form-control" required/>
             <br />
             
             <label htmlFor="ubicacion" className="form-label">Ubication:</label>

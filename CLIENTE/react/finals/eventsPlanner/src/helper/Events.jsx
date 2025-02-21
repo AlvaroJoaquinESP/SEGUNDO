@@ -9,16 +9,17 @@ export const EventsProvider = ({ children }) => {
 
     // aqui se pueden agregar mas estados y funciones
 
-    const eventoAdd = (obj) => {
+    const addEvent = (obj) => {
         setDatos([...datos, obj])
     }
 
-    // const deleteEvent = (id) => {
-    //     const nuevo = datos.filter((elemento) => elemento.id != id)
-    // }
+    const deleteEvent = (id) => {
+        const nuevo = datos.filter(p=>p.id != id)
+        setDatos(nuevo)
+    }
 
     return (
-        <EventsContext.Provider value={{datos, setDatos, eventoAdd}}>
+        <EventsContext.Provider value={{datos, setDatos, addEvent, deleteEvent}}>
             {children}
         </EventsContext.Provider>
     )

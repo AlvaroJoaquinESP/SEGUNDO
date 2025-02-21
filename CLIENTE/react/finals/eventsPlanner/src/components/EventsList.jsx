@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const EventsList = () => {
 
-    const {datos} = useContext(EventsContext)
+    const {datos, deleteEvent} = useContext(EventsContext)
 
 
   return (
@@ -20,6 +20,8 @@ const EventsList = () => {
                     <h2>{elemento.hora}</h2>
                     <h2>{elemento.ubicacion}</h2>
                     <h2>{elemento.asistentes}</h2>
+                    <button className="btn btn-danger m-1" onClick={() => deleteEvent(elemento.id)}>Delete</button>
+                    <Link to={"/list/edit/" + elemento.id}className="btn btn-info">Editar</Link>
                     </div>
                 )
             }) }
