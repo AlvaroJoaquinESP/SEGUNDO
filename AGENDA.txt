@@ -126,10 +126,10 @@ FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rd /s /q "%d"
 -- spring initializr
 
 
--- PREGUNTAS JUAN VIERNES 21.
-	-¿Puedo usar browserRouter con un Contexto? Me refiero a si se puede poner con el provider.
-
-
+-- PREGUNTAS JUAN --
+- ¿El editar siempre lo vamos a poner con <Link />?
+- ¿El editar siempre lo vamos a hacer eliminando y agregando en la funcion?
+-¿Puedo evitar que se vea el id en la ruta al editar?
 
 
 
