@@ -15,7 +15,7 @@ const EditEvent = () => {
 
   return (
     <div className="container m-4">
-        <h1 className="text-center bg-primary rounded-2">INSERT YOUR EVENT</h1>
+        <h1 className="text-center bg-primary rounded-2">EDITING EVENT Nº {id}</h1>
         <form className="form-control">
             <label htmlFor="titulo" className="form-label">Tittle:</label>
             <input type="text" name="titulo" id="titulo" className="form-control" />

@@ -1,6 +1,7 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes,Navigate } from "react-router-dom"
 import { useReducer } from "react"
 import { HabitsList } from "./components/HabitsList"
+import AddHabit from "./components/AddHabit"
 
 
 
@@ -17,6 +18,7 @@ case 'delete':
     return { 
       datos: state.datos.filter(elemento => elemento.dia != action.payload)
      }
+     
 case 'add':
      return {
       datos : action.payload
@@ -34,8 +36,9 @@ const [state,dispatch]=useReducer(reducer,initialState)
 
 return (
 <Routes>
+    <Route path="/" element={<Navigate to="/list" />} />
     <Route path="/list" element={<HabitsList state={state} dispatch={dispatch}/>}/>
-    <Route path="/add" element={<HabitsList state={state} dispatch={dispatch}/>}/>
+    <Route path="/add" element={<AddHabit state={state} dispatch={dispatch}/>}/>
 </Routes>
 
 );
