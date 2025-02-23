@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
-import { Link } from "react-router-dom"
+import { Link,useNavigate } from "react-router-dom"
 
 function AddHabit ({state,dispatch}) {
+  /** IMPORTANTE EL NAVIGATE . Boton más abajo*/
+  const navigate = useNavigate()
 
 const recibir = ev => {
     ev.preventDefault()
@@ -14,6 +16,8 @@ const recibir = ev => {
     const nuevo = [...state.datos,obj]
     dispatch({type: "add", payload: nuevo})
     alert("Added")
+    /** IMPORTANTE EL NAVIGATE */
+    navigate("/list")
 }
 
   return (

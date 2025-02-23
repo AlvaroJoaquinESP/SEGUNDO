@@ -1,0 +1,33 @@
+-- REDUX TOOLKIT -- clase 83 + bootswatch
+ 
+1º-> Crear el proyecto.
+2º-> Instalar tópics.
+3º-> Instalar redux (npm i react-redux @reduxjs/toolkit)
+4º-> Crear el Slice (reduxslice snippet)->personalizar. El slice va a ser un componente y va a ser un fichero JS llamado datosSlice.js. A PESAR DE SER COMPONENTES, LOS METO EN SRC.
+5º-> Crear la store (reduxstore snippet) -> personalizar. Creamos en src el fichero store.js, y metemos el snippet. PUNTO.
+6º-> Modificar el main.jsx-> Añadir Provider. POSIBLE SNIPPET     *****
+6.5º-> Añadir las rutas en App.jsx.
+7º-> Crear los componentes -> utilizaremos useSelector y useDispatch (reduxsd snippet).
+
+MUY IMPORTANTE QUE PARA CREAR COMPONENTES UTILICE EL REDUXSD (useSelector + useDispatch)
+
+
+-- Slice --
+Tenemos un initialState.
+En el createSlice tenemos una serie de reducers (funciones)  dentro de un objeto.
+
+-- store --
+Es un fichero que lo único que hace es decir que tipo de datos vamos a tener.
+
+***** 
+El main.jsx debe quedar:
+
+<BrowserRouter>
+   <Provider store={store}>
+	<App />
+   </Provider>
+</BrowserRouter>, <-NO QUITAR LA COMA.
+
+Además, tengo que importar store con import { store } from "./store.js" e importar Provider de react-redux.
+
+

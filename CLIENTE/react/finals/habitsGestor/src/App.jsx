@@ -18,7 +18,7 @@ case 'delete':
     return { 
       datos: state.datos.filter(elemento => elemento.dia != action.payload)
      }
-     
+
 case 'add':
      return {
       datos : action.payload
@@ -47,3 +47,4 @@ return (
 
 
 export default App;
+

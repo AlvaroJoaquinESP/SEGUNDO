@@ -133,6 +133,18 @@ FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rd /s /q "%d"
 
 
 
+-Diferencias entre el dispatch en los onclick, (o siempre) entre el useReducer y el redux toolkit.
+En useReducer se utiliza onClick = {() => dispatch(type: nombrefuncionEnApp, payload: pk)}
 
+Y en Redux Toolkit se utiliza onClick = {() => dispatch(nombreFuncionSlice(pk))}
+
+-Para redux, en el slice recibe un state y un action, pero en el onClick solo recibe un action. ¿Es correcto?
+
+- Los reducers de redux, ¿siempre van a recibir lo mismo? Es decir, state y action.
+
+- Cuando en añadir, sea donde sea(context, reducer o redux), monto el objeto, el nombre de los campos que monte deben de ser iguales al array, firebase, o donde sea que los recoja. ¿Verdad?
+
+
+- Para el notFound tuve que importar la imagen.
 
 

@@ -18,7 +18,7 @@ const EditEvent = () => {
         <h1 className="text-center bg-primary rounded-2">EDITING EVENT Nº {id}</h1>
         <form className="form-control">
             <label htmlFor="titulo" className="form-label">Tittle:</label>
-            <input type="text" name="titulo" id="titulo" className="form-control" />
+            <input type="text" name="titulo" id="titulo" className="form-control"/>
             <br />
             
             <label htmlFor="fecha" className="form-label">Data:</label>
