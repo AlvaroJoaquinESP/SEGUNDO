@@ -147,4 +147,8 @@ Y en Redux Toolkit se utiliza onClick = {() => dispatch(nombreFuncionSlice(pk))}
 
 - Para el notFound tuve que importar la imagen.
 
+- ¿Cuándo usar find y cuando filter?
+- ¿Find solo en editar?
+
+- Ver la desestructuración con Juan en el final1(EditEvento.jsx).
 
