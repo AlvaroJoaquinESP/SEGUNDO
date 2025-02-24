@@ -38,6 +38,11 @@ const datosSlice = createSlice({
         (books) => books.isbn != action.payload
       );
     },
+
+    // editDatos: (state, action) => {
+    //   addDatos(state, action)
+    //   removeDatos(state, action)
+    // }
   },
 });
 

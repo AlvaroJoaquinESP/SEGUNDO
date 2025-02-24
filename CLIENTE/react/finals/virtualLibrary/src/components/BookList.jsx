@@ -10,7 +10,7 @@ function BookList() {
         <div className="row">
       {datos.map((elemento) => {
         return (
-          <div className="col border" key={elemento.isbn}>
+          <div className="col border p-2" key={elemento.isbn}>
             <h1>{elemento.isbn}</h1>
             <h1>{elemento.name}</h1>
             <h2>{elemento.pages}</h2>
@@ -21,6 +21,7 @@ function BookList() {
             >
               Delete
             </button>
+            <Link to={`/edit/${elemento.isbn}`} className="btn btn-info" >Edit</Link>
           </div>
         );
       })}
