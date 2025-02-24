@@ -129,7 +129,7 @@ FOR /d /r . %d in (node_modules) DO @IF EXIST "%d" rd /s /q "%d"
 -- PREGUNTAS JUAN --
 - ¿El editar siempre lo vamos a poner con <Link />?
 - ¿El editar siempre lo vamos a hacer eliminando y agregando en la funcion?
--¿Puedo evitar que se vea el id en la ruta al editar?
+- ¿Puedo evitar que se vea el id en la ruta al editar?
 
 
 
