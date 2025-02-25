@@ -18,14 +18,11 @@ export const EventosProvider = ({ children }) => {
         const nuevo = datos.filter(p => p.id != id)
         setDatos(nuevo)
     }
-
-    const editEvent = (obj) => {
-    }
     
     // aqui se pueden agregar mas estados y funciones
 
     return (
-        <EventosContext.Provider value={{datos, setDatos, deleteEvent, addEvent, editEvent}}>
+        <EventosContext.Provider value={{datos, setDatos, deleteEvent, addEvent}}>
             {children}
         </EventosContext.Provider>
     )
