@@ -5,11 +5,15 @@ import { Link, useParams } from "react-router-dom"
 const AddEvento = () => {
     const {id} = useParams()
     const {editEvent, datos} = useContext(EventosContext)
-    const[objActualizar, setobjActualizar] = useState([])
+    const datos2=datos.find(p => p.id == id)
+    console.log(datos2);
+    const { titulo, fecha, hora, asistentes } = datos2;
+
+
     const recibir = (ev) => {
         ev.preventDefault()
 
-        // const { titulo, fecha, hora, asistentes } = ev.target.value;
+  
         const obj = {
             id: id,
             titulo: ev.target.titulo.value,
@@ -20,7 +24,7 @@ const AddEvento = () => {
         editEvent(obj)
 
         
-        setobjActualizar(datos.find(p => p.id == id))
+        
     }
 
 
@@ -29,7 +33,7 @@ const AddEvento = () => {
     <div className="container m-4">
         <form className="form-control" onSubmit={recibir}>
             <label htmlFor="titulo" className="form-label">Titulo</label>
-            <input type="text" name="titulo" id="titulo" className="form-control" defaultValue={objActualizar.titulo}/>
+            <input type="text" name="titulo" id="titulo" className="form-control" defaultValue={titulo}/>
             <br />
             <label htmlFor="fecha" className="form-label">Fecha</label>
             <input type="text" name="fecha" id="fecha" className="form-control" />
