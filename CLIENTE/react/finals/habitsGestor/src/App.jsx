@@ -21,7 +21,7 @@ case 'delete':
 
 case 'add':
      return {
-      datos : action.payload
+      datos : 
      }
 
     default:

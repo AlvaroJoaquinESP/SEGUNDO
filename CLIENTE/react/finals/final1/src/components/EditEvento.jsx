@@ -1,33 +1,35 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { EventosContext } from "../helper/Eventos"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 const AddEvento = () => {
-    const {editEvent} = useContext(EventosContext)
-    
+    const {id} = useParams()
+    const {editEvent, datos} = useContext(EventosContext)
+    const[objActualizar, setobjActualizar] = useState([])
     const recibir = (ev) => {
         ev.preventDefault()
 
-        const { titulo, fecha, hora, asistentes } = ev.target.value;
-
-
+        // const { titulo, fecha, hora, asistentes } = ev.target.value;
         const obj = {
-
-
-            id: Date.now(),
+            id: id,
             titulo: ev.target.titulo.value,
             fecha: ev.target.fecha.value,
             hora: ev.target.hora.value,
             asistentes: ev.target.asistentes.value
         }
         editEvent(obj)
+
+        
+        setobjActualizar(datos.find(p => p.id == id))
     }
+
+
 
     return (
     <div className="container m-4">
         <form className="form-control" onSubmit={recibir}>
             <label htmlFor="titulo" className="form-label">Titulo</label>
-            <input type="text" name="titulo" id="titulo" className="form-control" defaultValue={titulo}/>
+            <input type="text" name="titulo" id="titulo" className="form-control" defaultValue={objActualizar.titulo}/>
             <br />
             <label htmlFor="fecha" className="form-label">Fecha</label>
             <input type="text" name="fecha" id="fecha" className="form-control" />
@@ -38,7 +40,7 @@ const AddEvento = () => {
             <label htmlFor="asistentes" className="form-label">Asistentes</label>
             <input type="text" name="asistentes" id="asistentes" className="form-control" />
             <br />
-            <button className="btn btn-info">Añadir</button>
+            <button className="btn btn-info">Editar</button>
         </form>
 
         <Link to="/list" className="btn btn-info m-2">Ver Listado</Link>

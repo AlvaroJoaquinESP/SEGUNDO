@@ -14,7 +14,6 @@ export const HabitsList = ({ state, dispatch }) => {
             <h2>{elemento.habito}</h2>
             <h2>{elemento.nivel_cumplimiento}</h2>
             <button onClick={() => dispatch({type:"delete", payload: elemento.dia})}>Delete </button>
-           
           </div>
         );
         

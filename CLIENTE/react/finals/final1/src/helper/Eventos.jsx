@@ -20,8 +20,6 @@ export const EventosProvider = ({ children }) => {
     }
 
     const editEvent = (obj) => {
-        addEvent(obj)
-        deleteEvent(obj.id)
     }
     
     // aqui se pueden agregar mas estados y funciones

@@ -152,3 +152,9 @@ Y en Redux Toolkit se utiliza onClick = {() => dispatch(nombreFuncionSlice(pk))}
 
 - Ver la desestructuración con Juan en el final1(EditEvento.jsx).
 
+- ¿Diferencia entre los snippet reducer y rutaReducer?
+
+- ¿En cuales uso state? Solo en el reducer y en reduxToolkit
+
+- ¿Donde uso useEffect?
+
