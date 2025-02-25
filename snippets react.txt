@@ -1,0 +1,282 @@
+{
+	"bootstrapim": {
+		"prefix": "bootstrapim",
+		"body": [
+			"import \"bootstrap/dist/css/bootstrap.min.css\";",
+			"import \"bootstrap/dist/js/bootstrap.min.js\";",
+			""
+		]
+	},
+
+	"mapa": {
+		"prefix": "mapa",
+		"body": [
+			"arr.map((elemento, indice) => {",
+			"    return <li key={indice}>{elemento}</li>",
+			"})"
+		]
+	},
+
+	"fetch get": {
+		"prefix": "fetchg",
+		"body": [
+			"let url= \"\"",
+		  "try {",
+		  "  fetch(url)",
+		  "    .then((datatype) => datatype.json())",
+		  "    .then((response) => {",
+		  "      console.log(response);",
+		  "    });",
+		  "} catch (error) {",
+		  "  console.log(error.message);",
+		  "}",
+		  ""
+		],
+		"description": "Crea un fetch para peticiones GET"
+	  },
+	
+	"fetch post": {
+		"prefix":"fetchp",
+		"body": [
+			"fetch(url, {",
+			"\tmethod:'POST',",
+			"\tbody: datosJSON,",
+			"\theaders: {",
+			"\t\t'Content-Type':'application/json'",
+			"\t},\n})",
+			"\t.then(datatype=>datatype.json())",
+			"\t.then(response => {",
+			"\t\t console.log(response);\n",
+			"\t });"
+		],
+		"description": "Crea un fetch para peticiones POST"
+	},
+	
+	"fetch get async": {
+		"prefix":"asyncg",
+		"body": [
+			"async function peticion() {",
+			"\tlet url = \"\"",
+			"\tconst datatype= await fetch(url);",
+			"\tconst response= await datatype.json()",
+			"\t console.log(response);\n",
+			"}",
+			"\npeticion();"
+	],
+		"description": "Crea un fetch para peticiones async"
+	},
+		
+	"fetch post async": {
+		"prefix":"asyncp",
+		"body": [
+			"async function peticion() {",
+			"\tlet url = \"\"",
+			"\tconst datatype= await fetch(url, {",
+			"\tmethod:'POST',",
+			"\tbody: datosJSON,",
+			"\theaders: {",
+			"\t\t'Content-Type':'application/json'",
+			"\t}\n\t});",
+			"\tconst response= await datatype.json()",
+			"\t console.log(response);\n",
+			"}",
+			"\npeticion();"
+			],
+		"description": "Crea un fetch para peticiones async"
+	},
+
+	"mapaobj": {
+    "prefix": "mapaobj",
+    "body": [
+      "{ datos.map((elemento, indice) => {",
+      "    return (",
+      "        <div key={indice}>",
+      "        <h1>{elemento.id}</h1>",
+      "        <h2>{elemento.$1}</h2>",
+      "        </div>",
+      "    )",
+      "}) }"
+    ]
+  },
+
+  "proptypes": {
+    "prefix": "proptypes\r",
+    "body": [
+      "import PropTypes from 'prop-types'\r",
+      "\r",
+      "function ${TM_FILENAME_BASE} ({datos,setDatos}) {\r",
+      "  return (\r",
+      "    <div>Componente</div>\r",
+      "  )\r",
+      "}\r",
+      "\r",
+      "${TM_FILENAME_BASE}.propTypes = {\r",
+      "  datos: PropTypes.array,\r",
+      "  setDatos: PropTypes.func\r",
+      "}\r",
+      "\r",
+      "\r",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+
+  "helper": {
+    "prefix": "helper\r",
+    "body": [
+      "import { createContext, useState } from \"react\";\r",
+      "import PropTypes from 'prop-types'\r",
+      "\r",
+      "export const ${TM_FILENAME_BASE}Context = createContext();\r",
+      "\r",
+      "export const ${TM_FILENAME_BASE}Provider = ({ children }) => {\r",
+      "    const [datos, setDatos] = useState([]);\r",
+      "    \r",
+      "    // aqui se pueden agregar mas estados y funciones\r",
+      "\r",
+      "    return (\r",
+      "        <${TM_FILENAME_BASE}Context.Provider value={{datos, setDatos}}>\r",
+      "            {children}\r",
+      "        </${TM_FILENAME_BASE}Context.Provider>\r",
+      "    )\r",
+      "}\r",
+      "\r",
+      "\r",
+      "${TM_FILENAME_BASE}Provider.propTypes = {\r",
+      " children: PropTypes.node\r",
+      "}\r",
+      ""
+    ]
+  },
+
+  "reducer": {
+    "prefix": "reducer",
+    "body": [
+      "import { useReducer } from \"react\"",
+      "",
+      "// datos inciales",
+      "const initialState = {",
+      "    datos : [],",
+      "",
+      "}",
+      "",
+      "function reducer(state,action){",
+      "switch(action.type){",
+      "    ",
+      "case '':",
+      "    return {",
+      "",
+      "    }",
+      "",
+      "    default:",
+      "        return state",
+      "}",
+      "",
+      "}",
+      "",
+      "",
+      "function ${TM_FILENAME_BASE}() {",
+      "const [state,dispatch]=useReducer(reducer,initialState)",
+      "",
+      "return (",
+      "<>",
+      "",
+      "</>",
+      ");",
+      "",
+      "}",
+      "",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
+  },
+
+  "rutareducer": {
+    "prefix": "rutareducer",
+    "body": [
+      "import { Route, Routes } from \"react-router-dom\"",
+      "import { useReducer } from \"react\"",
+      "",
+      "// datos inciales",
+      "const initialState = {",
+      "    datos : [],",
+      "",
+      "}",
+      "",
+      "function reducer(state,action){",
+      "switch(action.type){",
+      "    ",
+      "case '':",
+      "    return {",
+      "",
+      "    }",
+      "",
+      "    default:",
+      "        return state",
+      "}",
+      "",
+      "}",
+      "",
+      "",
+      "function ${TM_FILENAME_BASE}() {",
+      "const [state,dispatch]=useReducer(reducer,initialState)",
+      "",
+      "return (",
+      "<Routes>",
+      "    <Route path=\"/\" element={<$1 state={state} dispatch={dispatch}/>}/>",
+      "</Routes>",
+      "",
+      ");",
+      "",
+      "}",
+      "",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
+  },
+  
+  "reduxsd": {
+    "prefix": "reduxsd\r",
+    "body": [
+      "import { useDispatch, useSelector } from \"react-redux\";\r",
+      "\r",
+      "function ${TM_FILENAME_BASE}() {\r",
+      "    const datos = useSelector((state) => state.datos.datos);\r",
+      "    const dispatch = useDispatch();\r",
+      "  return (\r",
+      "        <>\r",
+      "        </>\r",
+      "  )\r",
+      "}\r",
+      "\r",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+
+  "filterN": {
+  "prefix": "filterN",
+  "body": [
+    "case 'filter':",
+    "  return {",
+    "    ...state,  // Mantener el resto del estado intacto",
+    "    datos: state.datos.filter(libro => libro.asistentes >= action.payload) // Filtrar solo los libros con asistentes >= al valor",
+    "  };"
+  ]
+},
+
+"filterB": {
+  "prefix": "filterB",
+  "body": [
+    "case 'filter':",
+    "  return {",
+    "    ...state,",
+    "    datos: state.datos.filter(event =>",
+    "      event.name.toLowerCase().includes(action.payload.toLowerCase()) || // Filtrar por nombre",
+    "      event.lugar.toLowerCase().includes(action.payload.toLowerCase())   // O filtrar por lugar",
+    "    )",
+    "  };"
+  ]
+}
+
+
+  
+}
