@@ -8,7 +8,7 @@ const initialState = {
 const datosSlice = createSlice({
   name: "datos",
   initialState,
-  reducers: {
+  reducers: { 
     addDatos: (state, action) => {
         const {name, autor, year, pages} = action.payload
 
@@ -35,3 +35,5 @@ const datosSlice = createSlice({
 
 export const { addDatos, removeDatos } = datosSlice.actions;
 export default datosSlice.reducer;
+
+

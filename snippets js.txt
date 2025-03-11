@@ -1,0 +1,212 @@
+{
+	"add event listener post async": {
+		"prefix": "click",
+		"body": [
+			"document.querySelector(\"#boton\").addEventListener(\"click\",()=> {",
+			"\t$1",
+			"\n});"
+		],
+		"description": "addEventListener para boton"
+	},
+	  
+	"evento de submit": {
+		"prefix": "submit",
+		"body": [
+			"document.querySelector(\"#formulary\").addEventListener(\"submit\",(ev)=> {",
+			"\tev.preventDefault()",
+			"\t$1",
+			"\n});"
+		],
+		"description": "ev prevent default para formularios"
+	},
+
+	"recoger valor del html (string)": {
+		"prefix": "dqv",
+		"body": [
+			"document.querySelector('#id').value"
+		],
+		"description": "Recoge el valor con el id"
+	},
+	
+	"recoger valor del html (number)": {
+		"prefix": "dqvN",
+		"body": [
+			"Number(document.querySelector('#id').value)"
+		],
+		"description": "Recoge el valor con el id para tipos numéricos"
+	},
+
+	"fetch get": {
+		"prefix":"fetchg",
+		"body": [
+			"fetch(url)",
+			"\t.then(datatype=>datatype.json())",
+			"\t.then(response => {",
+			"\t\t console.log(response);\n",
+			"\t });"
+		],
+		"description": "Crea un fetch para peticiones GET"
+	},
+	
+	"fetch post": {
+		"prefix":"fetchp",
+		"body": [
+			"fetch(url, {",
+			"\tmethod:'PUT',",
+			"\tbody: datosJSON,",
+			"\theaders: {",
+			"\t\t'Content-Type':'application/json'",
+			"\t},\n})",
+			"\t.then(datatype=>datatype.json())",
+			"\t.then(response => {",
+			"\t\t console.log(response);\n",
+			"\t });"
+		],
+		"description": "Crea un fetch para peticiones POST"
+	},
+	
+	"fetch get async": {
+		"prefix":"asyncg",
+		"body": [
+			"async function peticion() {",
+			"\tlet url = \"\"",
+			"\tconst datatype= await fetch(url);",
+			"\tconst response= await datatype.json()",
+			"\t console.log(response);\n",
+			"}",
+			"\npeticion();"
+	],
+		"description": "Crea un fetch para peticiones async"
+	},
+	
+	"fetch post async": {
+		"prefix":"asyncp",
+		"body": [
+			"async function peticion() {",
+			"\tlet url = \"\"",
+			"\tconst datatype= await fetch(url, {",
+			"\tmethod:'PUT',",
+			"\tbody: datosJSON,",
+			"\theaders: {",
+			"\t\t'Content-Type':'application/json'",
+			"\t}\n\t});",
+			"\tconst response= await datatype.json()",
+			"\t console.log(response);\n",
+			"}",
+			"\npeticion();"
+			],
+		"description": "Crea un fetch para peticiones async"
+	},
+
+	"reduxslice": {
+    "prefix": "reduxslice\r",
+    "body": [
+      "import { createSlice } from \"@reduxjs/toolkit\";\r",
+      "\r",
+      "const initialState = {\r",
+      "  datos: [\r",
+      "    { id: 1, name: \"Interstellar\" },\r",
+      "    { id: 2, name: \"Harry Potter\" },\r",
+      "  ],\r",
+      "};\r",
+      "\r",
+      "const datosSlice = createSlice({\r",
+      "  name: \"datos\",\r",
+      "  initialState,\r",
+      "  reducers: {\r",
+      "    addDatos: (state, action) => {\r",
+      "      const newDatos = {\r",
+      "        id: Date.now(),\r",
+      "        name: action.payload,\r",
+      "      };\r",
+      "      state.datos.push(newDatos);\r",
+      "    },\r",
+      "    removeDatos: (state, action) => {\r",
+      "      state.datos = state.datos.filter(\r",
+      "        (datos) => datos.id != action.payload\r",
+      "      );\r",
+      "    },\r",
+      "  },\r",
+      "});\r",
+      "\r",
+      "export const { addDatos, removeDatos } = datosSlice.actions;\r",
+      "export default datosSlice.reducer;"
+    ]
+  },
+
+  "reduxstore": {
+    "prefix": "reduxstore\r",
+    "body": [
+      "import { configureStore } from \"@reduxjs/toolkit\";\r",
+      "import datosReducer from \"./datosSlice\";\r",
+      "\r",
+      "export const store = configureStore({\r",
+      "  reducer: {\r",
+      "    datos: datosReducer,\r",
+      "  },\r",
+      "});\r",
+      ""
+    ]
+  },
+
+  "localStorageLibros": {
+  "prefix": "localStorageLibros",
+  "body": [
+    "export const traerLibros = () => {",
+    "    let datos = localStorage.getItem(\"libros\");",
+    "    ",
+    "    if(datos) {",
+    "        return JSON.parse(datos);",
+    "    } else {",
+    "        return [];",
+    "    }",
+    "};",
+    "",
+    "export const guardarLibros = (arrLibros) => {",
+    "    const libroJSON = JSON.stringify(arrLibros);",
+    "    localStorage.setItem(\"libros\", libroJSON);",
+    "};",
+    "",
+    "/*",
+    "",
+    "      *add- state.datos.push(newDatos);",
+    "      guardarLibros(state.datos);",
+    "",
+    "      *remove-",
+    "      guardarLibros(state.datos);",
+    "",
+    "*/"
+  ]
+}, 
+
+"filterN": {
+  "prefix": "filterN",
+  "body": [
+    "case 'filter':",
+    "  return {",
+    "    ...state,  // Mantener el resto del estado intacto",
+    "    datos: state.datos.filter(libro => libro.asistentes >= action.payload) // Filtrar solo los libros con asistentes >= al valor",
+    "  };"
+  ]
+},
+
+"filterB": {
+  "prefix": "filterB",
+  "body": [
+    "case 'filter':",
+    "  return {",
+    "    ...state,",
+    "    datos: state.datos.filter(event =>",
+    "      event.name.toLowerCase().includes(action.payload.toLowerCase()) || // Filtrar por nombre",
+    "      event.lugar.toLowerCase().includes(action.payload.toLowerCase())   // O filtrar por lugar",
+    "    )",
+    "  };"
+  ]
+}
+
+
+
+
+
+
+}
