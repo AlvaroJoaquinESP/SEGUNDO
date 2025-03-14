@@ -1,0 +1,102 @@
+//Crear la base de datos "cine"
+use cine;
+
+//Crear la colección "peliculas" (no es necesario en MongoDB, se crea automáticamente al insertar)
+db.createCollection("peliculas");
+
+//Insertar 5 películas
+db.peliculas.insertMany([
+  {
+    "titulo": "Independence Day",
+    "genero": "Acción",
+    "año_lanzamiento": 1997,
+    "duracion": 145,
+    "oscars": {
+      "ganados": 1,
+      "nominaciones": 2,
+      "premios_principales": ["Mejores Efectos Visuales"]
+    },
+    "reparto": ["Will Smith", "Bill Pullman", "Jeff Goldblum"],
+    "detalles": {
+      "director": "Roland Emmerich",
+      "idioma": "Inglés",
+      "pais": "Estados Unidos"
+    },
+    "recaudacion": 450
+  },
+  {
+    "titulo": "Titanic",
+    "genero": "Drama",
+    "año_lanzamiento": 1997,
+    "duracion": 195,
+    "oscars": {
+      "ganados": 11,
+      "nominaciones": 14,
+      "premios_principales": ["Mejor Película", "Mejor Director"]
+    },
+    "reparto": ["Leonardo DiCaprio", "Kate Winslet"],
+    "detalles": {
+      "director": "James Cameron",
+      "idioma": "Inglés",
+      "pais": "Estados Unidos"
+    },
+    "recaudacion": 2200
+  },
+  {
+    "titulo": "Inception",
+    "genero": "Ciencia Ficción",
+    "año_lanzamiento": 2010,
+    "duracion": 148,
+    "oscars": {
+      "ganados": 4,
+      "nominaciones": 8,
+      "premios_principales": ["Mejor Fotografía", "Mejor Edición de Sonido"]
+    },
+    "reparto": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
+    "detalles": {
+      "director": "Christopher Nolan",
+      "idioma": "Inglés",
+      "pais": "Estados Unidos"
+    },
+    "recaudacion": 830
+  },
+  {
+    "titulo": "Interstellar",
+    "genero": "Ciencia Ficción",
+    "año_lanzamiento": 2014,
+    "duracion": 169,
+    "oscars": {
+      "ganados": 1,
+      "nominaciones": 5,
+      "premios_principales": ["Mejores Efectos Visuales"]
+    },
+    "reparto": ["Matthew McConaughey", "Anne Hathaway"],
+    "detalles": {
+      "director": "Christopher Nolan",
+      "idioma": "Inglés",
+      "pais": "Estados Unidos"
+    },
+    "recaudacion": 677
+  },
+  {
+    "titulo": "Dunkerque",
+    "genero": "Drama",
+    "año_lanzamiento": 2017,
+    "duracion": 106,
+    "oscars": {
+      "ganados": 3,
+      "nominaciones": 8,
+      "premios_principales": ["Mejor Edición de Sonido", "Mejor Mezcla de Sonido"]
+    },
+    "reparto": ["Fionn Whitehead", "Tom Hardy"],
+    "detalles": {
+      "director": "Christopher Nolan",
+      "idioma": "Inglés",
+      "pais": "Estados Unidos"
+    },
+    "recaudacion": 499
+  }
+]);
+
+//Verificar la inserción
+db.peliculas.find();
