@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  background-color: blue;
+  color: white;
+  padding: 2%;
+}
+
+nav {
+  background-color: #eeeeee;
+  padding: 2%;
+}
+
+nav ul a {
+  margin: 2%;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  height: 72.5%;
+  
+}
+
+main .boxes {
+  position: absolute;
+  left: 0%;
+  width: 80%;
+  border: 1px solid black;
+  height: 100%;
+  padding: 3vh 0;
+}
+
+.title-first-section {
+  text-align: center;
+  border-bottom: 1px solid #00000030; /*6 zeros + opacity*/
+  padding-bottom: 3vh;
+}
+
+.box1 {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  background-color: red;
+  border: 5px solid blue;
+  padding: 100px 120px;
+  color: white;
+}
+
+.box2 {
+  position: absolute;
+  left: 46%;
+  top: 20%;
+  background-color: red;
+  border: 5px solid blue;
+  padding: 100px 120px;
+  color: white;
+}
+
+.box3 {
+  position: absolute;
+  left: 77%;
+  top: 20%;
+  background-color: red;
+  border: 5px solid blue;
+  padding: 100px 120px;
+  color: white;
+}
+
+.box4 {
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  background-color: red;
+  border: 5px solid blue;
+  padding: 100px 120px;
+  color: white;
+}
+
+.box5 {
+  position: absolute;
+  left: 46%;
+  top: 60%;
+  background-color: red;
+  border: 5px solid blue;
+  padding: 100px 120px; 
+  color: white;
+}
+
+.box6 {
+  position: absolute;
+  left: 77%;
+  top: 60%;
+  background-color: red;
+  border: 5px solid blue;
+  padding: 100px 120px;
+  color: white;
+}
+
+.main-boxes div span {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .bar-element {
+  position: absolute;
+  left: 80%;
+  border: 1px solid red;
+  width: 20%;
+  height: 100%;
+}
+
+.bar-element h1 {
+    margin: 4px;
+    text-align: center;
+}
+
+footer {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 2vh 0;
+}
