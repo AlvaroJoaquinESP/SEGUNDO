@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-
+/**
+ * Decorador.
+ * selector->Nombre para otros componentes.
+ * templateUrl->Ruta del componente.
+ * styleUrl->Ruta para estilos del componente.
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +12,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'app1';
+  title = 'Hola Mundo soy el amo en Angular';
+  numero = 33;
 }
