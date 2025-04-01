@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    /* flex-direction: column; */
+    max-width: 800px;
+    height: 50vh;
+}
+
+li {
+    background-color: #4D7298;
+    border-radius: 5px;
+    height: 100%;
+    border: 2px solid blue;
+    flex: 1;
+}
+
+/* Bonus question: Can you now make the first item twice the size of the other items? */
+
+/* li:first-child{
+    flex: 2;
+} */

@@ -1,0 +1,18 @@
+.parent{
+    border: 2px solid #4D7298;
+    border-radius: 5px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    background-color: #4D7298;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}

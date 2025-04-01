@@ -1,0 +1,17 @@
+nav ul {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid black;
+    min-height: 50px;
+    border-radius: 5px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background-color: #4D7298;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}

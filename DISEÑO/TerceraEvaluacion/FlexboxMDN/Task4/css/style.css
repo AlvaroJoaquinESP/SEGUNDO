@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    height: 40vh;
+    width: 40vw;
+    border: 1px solid #4D7298;
+    border-radius: 10px 0 5px 40px;
+    align-content: start;
+
+}
+
+li {
+    background-color: #4D7298;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 2px solid #77a6b6;
+    border-radius: 0.5em;
+    flex: 1 1 auto;
+    text-align: center;
+
+}
+li:nth-child()
