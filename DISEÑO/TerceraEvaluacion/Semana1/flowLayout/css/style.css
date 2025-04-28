@@ -22,10 +22,7 @@ body {
 
 .header {
     background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
     border: 1px solid black;
-    align-items: end;
     padding: 1rem 2rem;
     border-top: 10px solid red;
 }
@@ -52,7 +49,49 @@ body {
     flex: 1;
 }
 
+.flex-column-end {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.center-container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .footer {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5dvh 0 ;
 }
+
+.footer p a {
+    color: grey;
+    list-style-type: none;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    gap: 0.8rem;
+    /* border: 1px solid black; */
+}
+
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+}
+
+
