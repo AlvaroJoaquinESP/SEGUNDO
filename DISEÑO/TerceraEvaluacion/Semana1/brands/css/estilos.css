@@ -1,0 +1,74 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 850px;
+ }
+ 
+ 
+ h1 {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+ 
+  /* Clase para alinear la imagen a la izquierda */
+ .float-left {
+    float: left;
+    margin-right: 20px;
+ }
+ 
+ 
+ /* Clase para alinear la imagen a la derecha */
+ .float-right {
+    float: right;
+    margin-left: 20px;
+ }
+ 
+ 
+ .manufacturer-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 20px;
+    overflow: hidden; /* Para que el contenedor envuelva los elementos flotantes */
+    clear: both;
+ }
+ 
+ 
+ /* Estilos para el título de cada ficha */
+ .manufacturer-card h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ /* Estilos para la imagen con float */
+ .manufacturer-card__logo {
+    width: 150px;
+    margin: 100px;
+    float: left;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Estilos para la descripción */
+ .manufacturer-card__description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+ }
+ 

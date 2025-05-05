@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de una página web sencilla con etiquetas HTML semánticas, formularios, tablas, listas, imágenes, videos, anclas y listas de descripción.">
+    <meta name="keywords" content="HTML, formularios, tablas, listas, imágenes, videos, anclas, listas de descripción, ejemplo, semántica">
+    <meta name="author" content="Nombre del Autor">
+    <meta name="robots" content="index, follow">
+    <title>Mi Página Web Completa con Imágenes, Videos y Anclas</title>
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#tabla">Tabla de Datos</a></li>
+                <li><a href="#imagenes">Imágenes</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#descripcion">Lista de Descripción</a></li>
+                <li><a href="#contacto">Ir al pie de página (Ancla)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Este es un ejemplo de una página web sencilla que utiliza formularios, tablas, listas, imágenes, videos, anclas y listas de descripción, además de etiquetas HTML semánticas.</p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un desarrollador web que disfruta creando sitios web accesibles y bien estructurados. Me encanta enseñar a los demás cómo usar HTML.</p>
+
+            <h3>Mis hobbies:</h3>
+            <ul>
+                <li>Programación</li>
+                <li>Lectura</li>
+                <li>Senderismo</li>
+                <li>Viajar</li>
+            </ul>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="suscripcion">Suscribirse a la newsletter:</label>
+                <input type="checkbox" id="suscripcion" name="suscripcion"><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="tabla">
+            <h2>Tabla de Cursos</h2>
+            <table border="1">
+                <caption>Mis Cursos de Programación</caption>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Duración</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML y CSS Básico</td>
+                        <td>1 Mes</td>
+                        <td>Principiante</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Intermedio</td>
+                        <td>2 Meses</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>PHP Avanzado</td>
+                        <td>3 Meses</td>
+                        <td>Avanzado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Más cursos disponibles próximamente.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="imagenes">
+            <h2>Imágenes con la etiqueta &lt;picture&gt;</h2>
+            <picture>
+                <source media="(min-width: 650px)" srcset="imagen-grande.jpg">
+                <source media="(min-width: 465px)" srcset="imagen-mediana.jpg">
+                <img src="imagen-pequeña.jpg" alt="Descripción de la imagen">
+            </picture>
+            <p>Esta imagen cambia según el tamaño de la pantalla del dispositivo.</p>
+        </section>
+
+        <section id="videos">
+            <h2>Video Ejemplo</h2>
+            <video width="320" height="240" controls>
+                <source src="video-ejemplo.mp4" type="video/mp4">
+                <source src="video-ejemplo.ogv" type="video/ogg">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <p>Este es un video de ejemplo que puede ser reproducido con controles.</p>
+        </section>
+
+        <section id="descripcion">
+            <h2>Lista de Descripción</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web.</dd>
+
+                <dt>CSS</dt>
+                <dd>Lenguaje de estilos utilizado para describir la presentación de un documento escrito en HTML o XML.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de programación que permite crear contenido dinámico en las páginas web.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>&copy; 2024 Nombre del Autor. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
