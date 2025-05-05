@@ -46,7 +46,7 @@ body {
  
  
  /* Estilos para el título de cada ficha */
- .manufacturer-card h2 {
+ .manufacturer-card__title {
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 10px;
@@ -59,10 +59,6 @@ body {
     margin: 100px;
     float: left;
  }
- 
- 
- 
- 
  
  
  /* Estilos para la descripción */
