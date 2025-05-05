@@ -1,0 +1,34 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lazarus";
+    src: url("../css/fonts/Comic_Relief/ComicRelief-Regular.ttf");
+}
+
+.container {
+    padding: 2% 25%;
+}
+
+header {
+    text-align: center;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Lazarus';
+    font-weight: 200;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li {
+    list-style-type: none;
+    line-height: 1.4rem;
+}
