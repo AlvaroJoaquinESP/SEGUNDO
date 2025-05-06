@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'dia3';
-  numero = 5;
+  title = 'dia4';
 }
