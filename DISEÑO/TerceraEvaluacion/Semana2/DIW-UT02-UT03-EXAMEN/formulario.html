@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La plataforma que conecta organizadores de eventos y asistentes entusiastas." />
+    <title>FOCO</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1><a class="index" href="index.html">FOCO</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li class="active"><a href="formulario.html">Sugiere</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main formulario">
+        <article class="article-header">
+            <div>
+                <h1 class="article-title">SUGIERE TU EVENTO</h1>
+                <h3 class="article-motto">Comparte tu evento y conecta con tu público.</h3>
+
+            </div>
+        </article>
+        <article>
+            <section class="section-form contain-center">
+                <p class="form-info">
+                    Los campos señalados son obligatorios.
+                </p>
+                <form>
+                    <fieldset>
+                        <legend>Datos del evento</legend>
+                        <div class="form-item">
+                            <label for="name">Nombre </label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div class="form-item">
+                            <label for="description">Descripción </label>
+                            <small>Detalles del evento, propósito, actividades, qué podrán encontrar los
+                                asistentes</small>
+                            <textarea id="description" name="description" rows="10" cols="50"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-item">
+                                <label for="date-time-start">Fecha de inicio</label>
+                                <input type="date" name="date-time-start" id="date-time-start">
+                            </div>
+                            <div class="form-item">
+                                <label for="date-time-end">Fecha de finalización </label>
+                                <input type="date" name="date-time-end" id="date-time-end">
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="ubicacion">Ubicación </label>
+                            <input type="text" id="ubicacion" name="ubicacion">
+                        </div>
+                        <div class="form-item">
+                            <label for="categoria">Categoría </label>
+                            <select name="categoria" id="categoria">
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="Profesional">Profesional</option>
+                                <option value="Cultural">Cultural</option>
+                                <option value="Educativa">Educativa</option>
+                                <option value="Deportiva">Deportiva</option>
+                                <option value="Tecnológica">Tecnológica</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Detalles logísticos</legend>
+                        <div class="form-row">
+                            <div class="form-row">
+                                <div class="form-item">
+                                    <label for="tlf-contact">Teléfono de contacto </label>
+                                    <input type="tel" id="tlf-contact" name="tlf-contact">
+                                </div>
+                                <div class="form-item">
+                                    <label for="web-contact">Sitio web de la organización</label>
+                                    <input type="text" id="web-contact" name="web-contact">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="aforo">Aforo </label>
+                                <small>Número máximo de asistentes</small>
+                                <input type="number" id="aforo" name="aforo" min="1">
+                            </div>
+                            <div class="form-item">
+                                <label for="price">Precio de la entrada </label>
+                                <input type="number" id="price" name="price" min="1" value="0">
+                            </div>
+                        </div>
+                        <div class="form-item form-radio">
+                            <label>¿Es necesario registro previo? </label>
+                            <br>
+                            <label for="previus-register-yes">
+                                <input type="radio" id="previus-register-yes" name="previus-register" value="si"> Sí
+                            </label>
+                            <br>
+                            <label for="previus-register-no">
+                                <input type="radio" id="previus-register-no" name="previus-register" value="no"> No
+                            </label>
+                        </div>
+                    </fieldset>
+
+
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <p><span class="underline-dotted">IES Ribera de los molinos</span>. Diciembre de 2024. Nombre y apellidos
+                del autor</p>
+ 
+        </div>
+    </footer>
+</body>
+
+</html>
