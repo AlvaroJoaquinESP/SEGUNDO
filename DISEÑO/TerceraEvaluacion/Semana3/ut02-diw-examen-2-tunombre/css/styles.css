@@ -1,0 +1,34 @@
+/*Estilos para Focus */
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+  --color-green: rgb(64, 195, 130);
+  --color-beige: rgb(242, 242, 230);
+  --color-beige-m: rgba(242, 242, 230, 0.7);
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url(../fonts/Alegreya-Regular.woff);
+}
+@font-face {
+  font-family: "Alegreya-Bold";
+  src: url(../fonts/Alegreya-Bold.woff);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  color: var(--color-black);
+  line-height: 1.6;
+  background-color: var(--color-white);
+}
