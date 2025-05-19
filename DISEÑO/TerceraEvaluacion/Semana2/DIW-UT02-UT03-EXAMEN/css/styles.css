@@ -69,6 +69,10 @@ header ul li a {
   color: black;
 }
 
+.containerMax .ul li a {
+
+}
+
 header ul li a:hover {
   color: #cc3333;
 }
@@ -124,6 +128,11 @@ body {
 }
 
 /* INDEX.html */
+.containerMax{
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
 
 .index h2 {
   font-size: 3rem;
@@ -173,7 +182,6 @@ body {
   border-collapse: collapse;
 }
 
-
 .article-header {
   display: flex;
   width: 100%;
@@ -222,13 +230,13 @@ th {
   padding: 0;
 }
 
-.table-title{
+.table-title {
   text-align: center;
   padding: 1.5em;
   font-size: 24px;
 }
 
-.table-title th{
+.table-title th {
   text-align: start;
 }
 
@@ -236,7 +244,9 @@ th {
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
-
+/*Meter clase container max al grid.
+Textos con position absolute
+Imagenes */
 .loadMore a {
   color: #cc3333;
 }
@@ -244,7 +254,6 @@ th {
 .link-contrast {
   color: #cc3333;
 }
-
 
 /* formulario.html */
 
@@ -264,16 +273,43 @@ th {
 }
 
 .home-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  border: 1px solid black;
 }
+
+.home-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 9%;
+}
+
+.home-hero h3 {
+  position:absolute;
+  top:1rem;
+}
+
 
 .feature,
 .photos,
 .news,
 .special,
 .amazing {
-  padding: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #333;
-  width: 100%;
+     position: relative;
+
+  /* background-color: #333; */
+  /* width: 100%; */
+  border: 1px solid black;
+}
+
+.uno {
+  /* grid-row-start: 1;
+  grid-row-end: -1; */
+  grid-row: 1 / 4;
+}
+.tres {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
 }
