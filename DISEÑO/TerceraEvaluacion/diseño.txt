@@ -1,0 +1,10 @@
+- Ancho del contenedor.
+- 3 filas en lugar de 2.
+- card-text-> flex:1.
+- Los elementos tienen un tamaño por defecto, texto, titulos...
+- Si no quiero poner flex 1 en card-text, en card-footer puedo poner 	margin-top: auto, haciendo que se baje.
+Con flex y margin auto, se completa el espacio. 
+
+--
+
+flex-direction row, meter anchura en px (con % si el contenedor padre tiene anchura definida) a las cards + jugar con margin 0 auto. 
