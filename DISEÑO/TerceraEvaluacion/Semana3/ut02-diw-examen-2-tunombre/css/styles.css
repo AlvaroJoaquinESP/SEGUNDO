@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*Estilos para Focus */
 :root {
   --color-black: rgb(0, 0, 0);
@@ -6,29 +13,65 @@
   --color-beige: rgb(242, 242, 230);
   --color-beige-m: rgba(242, 242, 230, 0.7);
 }
+
 @font-face {
   font-family: "Alegreya";
   src: url(../fonts/Alegreya-Regular.woff);
 }
+
 @font-face {
   font-family: "Alegreya-Bold";
   src: url(../fonts/Alegreya-Bold.woff);
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 body {
   font-family: "Alegreya", serif;
   font-weight: 400;
   color: var(--color-black);
   line-height: 1.6;
   background-color: var(--color-white);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2em 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em; /*No hace mucho.*/
+}
+
+.logo-footer{
+  border: 1px solid purple;
+}
+
+.anchors {
+  /* Me hace más grande el contenedor.*/
+  margin-top: px;
+}
+
+.footer ul{
+  margin-top: 0px;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border: 1px solid red;
+}
+
+.footer .nav-footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .nav-footer li a:hover {
+  color: green;
+}
+
+.footer .nav-footer li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
 }

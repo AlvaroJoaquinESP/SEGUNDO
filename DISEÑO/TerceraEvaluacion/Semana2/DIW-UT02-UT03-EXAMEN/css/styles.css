@@ -276,7 +276,7 @@ Imagenes */
   margin: 0.5em 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 0.5em;
 }
 
@@ -297,6 +297,7 @@ Imagenes */
   object-fit: cover;
   width: 100%;
   height: 240px;
+  overflow: hidden;
 }
 
 .card-title {
