@@ -30,27 +30,207 @@ body {
   color: var(--color-black);
   line-height: 1.6;
   background-color: var(--color-white);
+  height: 100dvh;
 }
 
+/* Header */
+.container {
+  /* border: 1px solid black; */
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+/* .site-logo {
+    border: 1px solid red;
+} */
+
+.menu {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+}
+
+.container nav ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: black;
+  font-family: "Alegreya-Bold";
+}
+
+.menu-item:hover {
+  color: green;
+}
+
+/* .menu:first-child::after {
+  border: 1px solid black;
+  content: "|";
+}
+
+.menu-item:last-child::after {
+  content: "";
+} */
+
+/* Imagen */
+
+.headlineWrapper {
+  background-image: url(/img/hero-image-home.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100dvw;
+  height: 35dvh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.headlineWrapper a {
+  text-decoration: none;
+  color: black;
+  background-color: beige;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  margin: 15px;
+}
+
+.title-lema h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+/* Main */
+
+/* Primer section */
+main {
+  background-color: beige;
+}
+
+.container-limited {
+  border-bottom: 1px solid black;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.d-grid-number {
+  display: grid;
+}
+
+.container-section {
+  display: flex;
+}
+
+.container-limited h2 {
+  font-family: "Alegreya-Bold";
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.info-web-span {
+  padding-right: 2em;
+  max-width: 750px;
+}
+
+/* Formulario */
+
+fieldset {
+  border: none;
+}
+
+.suscription-form-span ul li {
+  list-style-type: none;
+}
+
+.input-form {
+  width: 100%;
+  height: 30px;
+  border: none;
+  margin: 1.4dvh 0;
+}
+
+.politica a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  background-color: beige;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+/* Segundo section */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  margin: 20px 0px;
+}
+
+.dotted-link {
+  color: black;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: start;
+  position: relative;
+  height: 50dvh;
+}
+
+.card h2 {
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.card h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 20;
+  margin-bottom: 20px;
+}
+
+
+/* Footer */
 .footer {
   background-color: black;
   color: white;
   padding: 2em 2em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1em; /*No hace mucho.*/
 }
 
-.logo-footer{
-  border: 1px solid purple;
-}
-
-.anchors {
-  /* Me hace más grande el contenedor.*/
+/* .anchors {
+   Me hace más grande el contenedor.
   margin-top: px;
-}
+} */
 
-.footer ul{
+.footer ul {
   margin-top: 0px;
 }
 
@@ -58,7 +238,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  border: 1px solid red;
 }
 
 .footer .nav-footer li a {
