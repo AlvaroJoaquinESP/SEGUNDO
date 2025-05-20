@@ -225,11 +225,6 @@ fieldset {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* .anchors {
-   Me hace más grande el contenedor.
-  margin-top: px;
-} */
-
 .footer ul {
   margin-top: 0px;
 }
@@ -254,3 +249,27 @@ fieldset {
   display: inline-block;
   margin: 10px;
 }
+
+
+
+@media (max-width: 768px) {
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+  /* .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-footer ul li{
+    display: block;
+  } */
+}
+
+  .menu li:not(:first-child)::before {
+
+    content: '|';
+  }
