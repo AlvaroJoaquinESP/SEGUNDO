@@ -1,34 +1,324 @@
-
 :root {
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
-
+  /* EJERCICIO 1*/
+  --color-yellow: #f9d622;
+  --color-yellow-m: #f9d62280;
 }
+
 @font-face {
   font-family: "Alegreya";
   src: url(../fonts/Alegreya-Regular.woff);
 }
+
 @font-face {
   font-family: "Alegreya-Bold";
   src: url(../fonts/Alegreya-Bold.woff);
 }
 
-
 *,
 *::before,
 *::after {
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* EJERCICIO 1*/
 
 /* EJERCICIO 2*/
+body {
+  font-family: "Alegreya";
+  height: 100dvh;
+  width: 100dvw;
+}
 
 /* EJERCICIO 3*/
+.header {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+}
+
+.header h1 {
+  font-size: 34px;
+  padding-top: 10px;
+  font-family: "Alegreya-Bold";
+}
+
+.header h1::first-letter {
+  font-size: 42px;
+  color: #f9d622;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+@media (max-width: 990px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  nav ul li {
+    display: grid;
+  }
+
+  .header nav {
+    text-align: center;
+    padding: 0 40%;
+  }
+}
+
+.header nav ul li:not(:first-child)::before {
+  content: "|";
+  margin-right: 25px;
+}
+
+.header nav {
+  text-align: end;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Alegreya-Bold";
+}
+
+.header nav ul li a:hover {
+  color: green;
+}
+
+.header-img {
+  width: 70px;
+}
+
+
 
 /* EJERCICIO 4*/
 
+/* No he añadido css para este ejercicio, únicamente he puesto el fondo del main en amarillo. */
+
+main {
+  background-color: var(--color-yellow);
+}
+
 /* EJERCICIO 5*/
+
+.footer {
+  background-color: black;
+  display: flex;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.footer p {
+  color: white;
+  padding-top: 1.8em;
+}
+
+.footer-img {
+  width: 80px;
+}
+
+@media (max-width: 990px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template-media li{
+    display: inline-block;
+  }
+
+  .template-media {
+    width: 62%;
+  }
+
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.navs {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: end;
+  padding-top: 10px;
+}
+
+.footer nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .links ul li a:hover {
+  color: green;
+}
+
+.footer .links ul li:not(:first-child)::before {
+  content: "|";
+  margin-right: 25px;
+  color: white;
+}
+
+
 
 /* EJERCICIO 6*/
 
+.section-bg {
+  height: 50dvh;
+  background-image: url(../img/hero-image-home.jpg);
+  background-size: cover;
+  background-position: center 79%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-bg div {
+  text-align: center;
+  color: white;
+}
+
+.section-bg h1 {
+  font-size: 68px;
+  font-family: "Alegreya-Bold";
+}
+
+.section-bg a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  background-color: var(--color-yellow-m);
+  padding: 10px 20px;
+  opacity: 0.7;
+  bottom: 0;
+  right: center;
+  margin-bottom: 10px;
+}
+
+
+
 /* EJERCICIO 7*/
+
+.containerMax {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.containerMax h2 {
+  font-size: 48px;
+  font-family: "Alegreya-Bold";
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  padding: 30px;
+}
+
+.cards-div p {
+  margin-left: 30px;
+}
+
+.cards-div p a {
+  color: black;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.card img {
+  width: 100%;
+  padding: px;
+}
+
+@media (max-width: 990px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card h2 a {
+  text-decoration: none;
+  font-size: 28px;
+  color: black;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.button:hover {
+  border-color: var(--color-yellow);
+}
+
+
+
+/* EJERCICIO 8*/
+
+.masMorricos {
+  display: grid;
+  grid-template-columns: repeat(200px, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.masMorricos img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.img1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+}
+
+.img2 {
+  grid-row: 1 / 3;
+}
+
+.img6 {
+  grid-column: 2 / 4;
+}
+
+@media (max-width: 990px) {
+  .masMorricos {
+    display: flex;
+    flex-direction: column;
+  }
+}
