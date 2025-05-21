@@ -1,0 +1,34 @@
+
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+
+}
+@font-face {
+  font-family: "Alegreya";
+  src: url(../fonts/Alegreya-Regular.woff);
+}
+@font-face {
+  font-family: "Alegreya-Bold";
+  src: url(../fonts/Alegreya-Bold.woff);
+}
+
+
+*,
+*::before,
+*::after {
+
+}
+/* EJERCICIO 1*/
+
+/* EJERCICIO 2*/
+
+/* EJERCICIO 3*/
+
+/* EJERCICIO 4*/
+
+/* EJERCICIO 5*/
+
+/* EJERCICIO 6*/
+
+/* EJERCICIO 7*/
