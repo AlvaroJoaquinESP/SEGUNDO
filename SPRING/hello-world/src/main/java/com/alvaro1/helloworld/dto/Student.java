@@ -2,16 +2,15 @@ package com.alvaro1.helloworld.dto;
 
 import java.time.LocalDate;
 
-public class Students {
-
-    private String name;
-    private String email;
+public class Student {
     private static int counter_id = 0;
     private int id;
+    private String name;
+    private String email;
     private LocalDate bornDate;
 
 
-    public Students(String name, String email, LocalDate bornDate) {
+    public Student(String name, String email, LocalDate bornDate) {
         this.id = ++counter_id;
         this.name = name;
         this.email = email;
