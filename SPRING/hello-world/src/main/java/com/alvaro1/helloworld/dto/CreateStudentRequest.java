@@ -7,9 +7,11 @@ import jakarta.validation.constraints.Past;
 import java.time.LocalDate;
 
 public class CreateStudentRequest {
-    @NotEmpty(message = "Name is mandatory")
+    /*@NotEmpty(message = "Name is mandatory")*/
+    @NotEmpty()
     private String name;
-    @Email(message = "Email is mandatory")
+    /*@Email(message = "Email is mandatory")*/
+    @Email()
     private String email;
     @Past
     private LocalDate bornDate;

@@ -1,7 +1,7 @@
 package com.alvaro1.helloworld.controller;
 
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
-import com.alvaro1.helloworld.dto.Student;
+import com.alvaro1.helloworld.dto.StudentDTO;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,13 +23,13 @@ public class StudentController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<Student>> getAll(){
+    public ResponseEntity<List<StudentDTO>> getAll(){
         return ResponseEntity.ok(studentService.getAllStudents());
     }
 
     // Si no pongo @Valid, las validaciones están DESACTIVADAS por defecto.
     @PostMapping("/create")
-    public  ResponseEntity<Student> create(@RequestBody @Valid CreateStudentRequest createStudentRequest){
+    public  ResponseEntity<StudentDTO> create(@RequestBody @Valid CreateStudentRequest createStudentRequest){
 
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(studentService

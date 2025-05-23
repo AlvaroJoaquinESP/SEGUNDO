@@ -1,10 +1,13 @@
 package com.alvaro1.helloworld.services;
 
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
-import com.alvaro1.helloworld.dto.Student;
+import com.alvaro1.helloworld.dto.StudentDTO;
+import com.alvaro1.helloworld.entity.Student;
+import com.alvaro1.helloworld.repository.IStudentRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,7 +15,8 @@ import java.util.Map;
 @Service
 public class StudentsServiceImpl implements IStudentService {
 
-    private Map<Integer, Student> students;
+    private Map<Integer, StudentDTO> students;
+    private final IStudentRepository studentRepository;
 
     /*
     * Como una especie de constructor en el cual:
@@ -20,20 +24,32 @@ public class StudentsServiceImpl implements IStudentService {
     *   - Inserto valores en esa lista.
     *   - ¿ Lo podria hacer directamente en el constructor ?
     * */
-    public StudentsServiceImpl() {
+    public StudentsServiceImpl(IStudentRepository studentRepository) {
+        this.studentRepository = studentRepository;
         // Voy a inicializar la lista de students.
         initStudents();
     }
 
 
     @Override
-    public  List<Student> getAllStudents() {
-        return students.values().stream().toList();
+    public  List<StudentDTO> getAllStudents() {
+        /*
+        * Tengo que devolver StudentDTO, pero el metodo findAll devuelve Student(Entity).
+        * return this.studentRepository.findAll();
+        * */
+        List<Student> lstStudent = this.studentRepository.findAll();
+        List<StudentDTO> lstStudentDTO = new ArrayList<>();
+
+        //----- TERMINAR -----
+        for (Student student : lstStudent) {
+            lstStudentDTO.add(new StudentDTO());
+        }
+        
     }
 
     @Override
-    public Student createStudent(CreateStudentRequest createStudentRequest) {
-        Student student = new Student(createStudentRequest.getName(),
+    public StudentDTO createStudent(CreateStudentRequest createStudentRequest) {
+        StudentDTO student = new StudentDTO(createStudentRequest.getName(),
                 createStudentRequest.getEmail(),
                 createStudentRequest.getBornDate());
 
@@ -47,19 +63,19 @@ public class StudentsServiceImpl implements IStudentService {
         students = new HashMap<>();
 
         // Inserto valores en la lista.
-        Student student = new Student("Joaquin",
+        StudentDTO student = new StudentDTO("Joaquin",
                 "joq@gmail.com",
                 LocalDate.of(12, 12, 12));
         students.put(student.getId(), student);
 
-        student  = new Student("Andrés",
+        student  = new StudentDTO("Andrés",
                 "andq@gmail.com",
                 LocalDate.of(12, 12, 12));
 
         students.put(student.getId(), student);
 
 
-        student  = (new Student("Yo",
+        student  = (new StudentDTO("Yo",
                 "yoq@gmail.com",
                 LocalDate.of(13, 12, 12)));
 
