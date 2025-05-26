@@ -8,9 +8,11 @@ import java.util.List;
 
 public interface IStudentService {
 
-    public List<StudentDTO> getAllStudents();
+    List<StudentDTO> getAllStudents();
 
-    public StudentDTO createStudent(CreateStudentRequest createStudentRequest);
+    StudentDTO createStudent(CreateStudentRequest createStudentRequest);
+
+    StudentDTO deleteStudent(int id);
 
 
 }

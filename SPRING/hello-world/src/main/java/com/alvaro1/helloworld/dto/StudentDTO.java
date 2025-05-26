@@ -1,22 +1,30 @@
 package com.alvaro1.helloworld.dto;
 
+import lombok.*;
+
 import java.time.LocalDate;
 
+@Getter @Setter
+@ToString
+@Builder
+ // @NoArgsConstructor CONSTRUCTOR VACÍO.
 public class StudentDTO {
-    private int id;
+    private static int count_id = 1;
+    private Integer id;
     private String name;
     private String email;
     private LocalDate bornDate;
 
 
-    public StudentDTO(Integer id, String name, String email, LocalDate bornDate) {
-        this.id = id;
+    public StudentDTO(String name, String email, LocalDate bornDate) {
+        this.id = count_id;
+        count_id++;
         this.name = name;
         this.email = email;
         this.bornDate = bornDate;
     }
 
-
+ /*
     public String getName() {
         return name;
     }
@@ -54,4 +62,6 @@ public class StudentDTO {
                 ", email='" + email + '\'' +
                 '}';
     }
+    */
+  
 }

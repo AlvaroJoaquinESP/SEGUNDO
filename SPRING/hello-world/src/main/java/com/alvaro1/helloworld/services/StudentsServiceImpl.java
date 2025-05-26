@@ -3,6 +3,7 @@ package com.alvaro1.helloworld.services;
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
 import com.alvaro1.helloworld.dto.StudentDTO;
 import com.alvaro1.helloworld.entity.Student;
+import com.alvaro1.helloworld.mapper.StudentMapper;
 import com.alvaro1.helloworld.repository.IStudentRepository;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,8 @@ public class StudentsServiceImpl implements IStudentService {
 
     private Map<Integer, StudentDTO> students;
     private final IStudentRepository studentRepository;
+    // Para usar el mapper de classes/general...
+    private final StudentMapper studentMapper;
 
     /*
     * Como una especie de constructor en el cual:
@@ -24,28 +27,37 @@ public class StudentsServiceImpl implements IStudentService {
     *   - Inserto valores en esa lista.
     *   - ¿ Lo podria hacer directamente en el constructor ?
     * */
-    public StudentsServiceImpl(IStudentRepository studentRepository) {
+    public StudentsServiceImpl(IStudentRepository studentRepository, StudentMapper studentMapper) {
         this.studentRepository = studentRepository;
+        this.studentMapper = studentMapper;
         // Voy a inicializar la lista de students.
         initStudents();
+
     }
 
-
+/*
     @Override
     public  List<StudentDTO> getAllStudents() {
         /*
         * Tengo que devolver StudentDTO, pero el metodo findAll devuelve Student(Entity).
         * return this.studentRepository.findAll();
-        * */
+        *
         List<Student> lstStudent = this.studentRepository.findAll();
         List<StudentDTO> lstStudentDTO = new ArrayList<>();
 
         //----- TERMINAR -----
-        for (Student student : lstStudent) {
+        /*for (Student student : lstStudent) {
             lstStudentDTO.add(new StudentDTO());
-        }
 
+    return null;
     }
+}*/
+        @Override
+        public  List<StudentDTO> getAllStudents() {
+
+            return studentMapper.studentToStudentDTO(this.studentRepository.findAll());
+
+        }
 
     @Override
     public StudentDTO createStudent(CreateStudentRequest createStudentRequest) {
@@ -55,6 +67,11 @@ public class StudentsServiceImpl implements IStudentService {
 
         students.put(student.getId(), student);
         return student;
+    }
+
+    @Override
+    public StudentDTO deleteStudent(int id) {
+    return null;
     }
 
 

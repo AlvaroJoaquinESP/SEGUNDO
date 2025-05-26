@@ -1,0 +1,8 @@
+IMPLEMENTAR MAPPER
+
+- getAll()
+- delete(id)
+- update patch o post
+- implementar un buscar por id como extra. posibilidad de hacerlo con get o post.
+
+quitar el mapa del servicio, por la bbdd.
