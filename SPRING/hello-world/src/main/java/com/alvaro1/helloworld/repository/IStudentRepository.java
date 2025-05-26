@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 // En JpaRepository<Student, Integer>, Integer es el tipo de la PK.
 @Repository
 public interface IStudentRepository extends JpaRepository<Student, Integer> {
+
 }

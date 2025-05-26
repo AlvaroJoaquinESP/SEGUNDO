@@ -8,8 +8,8 @@ import java.util.List;
 
 // Muy importante esta etiqueta.
 @Mapper(componentModel = "spring")
-public interface StudentMapper {
-    // Especifico las conversiones que voy a hacer.
+public interface IStudentMapper {
+    // Especifico las conversiones que voy a hacer. De Student a StudentDTO.
     StudentDTO studentToStudentDTO(Student student);
     List<StudentDTO> studentToStudentDTO(List<Student> students);
 }

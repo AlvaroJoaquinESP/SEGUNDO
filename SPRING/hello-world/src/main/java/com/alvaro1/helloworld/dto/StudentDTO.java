@@ -4,10 +4,13 @@ import lombok.*;
 
 import java.time.LocalDate;
 
-@Getter @Setter
+@Getter
+@Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
- // @NoArgsConstructor CONSTRUCTOR VACÍO.
+// @NoArgsConstructor CONSTRUCTOR VACIO.
 public class StudentDTO {
     private static int count_id = 1;
     private Integer id;
@@ -24,44 +27,5 @@ public class StudentDTO {
         this.bornDate = bornDate;
     }
 
- /*
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public LocalDate getBornDate() {
-        return bornDate;
-    }
-
-    public void setBornDate(LocalDate bornDate) {
-        this.bornDate = bornDate;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    @Override
-    public String toString() {
-        return "Students{" +
-                "id=" + id + '\'' +
-                "bornDate=" + bornDate +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
-    */
-  
 }

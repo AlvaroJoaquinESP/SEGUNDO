@@ -3,7 +3,7 @@ package com.alvaro1.helloworld.services;
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
 import com.alvaro1.helloworld.dto.StudentDTO;
 import com.alvaro1.helloworld.entity.Student;
-import com.alvaro1.helloworld.mapper.StudentMapper;
+import com.alvaro1.helloworld.mapper.IStudentMapper;
 import com.alvaro1.helloworld.repository.IStudentRepository;
 import org.springframework.stereotype.Service;
 
@@ -19,15 +19,16 @@ public class StudentsServiceImpl implements IStudentService {
     private Map<Integer, StudentDTO> students;
     private final IStudentRepository studentRepository;
     // Para usar el mapper de classes/general...
-    private final StudentMapper studentMapper;
+    private final IStudentMapper studentMapper;
 
     /*
     * Como una especie de constructor en el cual:
     *   - Instancio una lista.
     *   - Inserto valores en esa lista.
     *   - ¿ Lo podria hacer directamente en el constructor ?
-    * */
-    public StudentsServiceImpl(IStudentRepository studentRepository, StudentMapper studentMapper) {
+    *
+    */
+    public StudentsServiceImpl(IStudentRepository studentRepository, IStudentMapper studentMapper) {
         this.studentRepository = studentRepository;
         this.studentMapper = studentMapper;
         // Voy a inicializar la lista de students.
@@ -35,23 +36,7 @@ public class StudentsServiceImpl implements IStudentService {
 
     }
 
-/*
-    @Override
-    public  List<StudentDTO> getAllStudents() {
-        /*
-        * Tengo que devolver StudentDTO, pero el metodo findAll devuelve Student(Entity).
-        * return this.studentRepository.findAll();
-        *
-        List<Student> lstStudent = this.studentRepository.findAll();
-        List<StudentDTO> lstStudentDTO = new ArrayList<>();
-
-        //----- TERMINAR -----
-        /*for (Student student : lstStudent) {
-            lstStudentDTO.add(new StudentDTO());
-
-    return null;
-    }
-}*/
+    // ----- GRACIAS AL MAPPER -----
         @Override
         public  List<StudentDTO> getAllStudents() {
 
