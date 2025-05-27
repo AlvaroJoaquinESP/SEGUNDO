@@ -3,86 +3,81 @@ package com.alvaro1.helloworld.services;
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
 import com.alvaro1.helloworld.dto.StudentDTO;
 import com.alvaro1.helloworld.entity.Student;
+import com.alvaro1.helloworld.exceptions.NotFoundStudentException;
 import com.alvaro1.helloworld.mapper.IStudentMapper;
 import com.alvaro1.helloworld.repository.IStudentRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClient;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class StudentsServiceImpl implements IStudentService {
 
+    private final RestClient.Builder builder;
     private Map<Integer, StudentDTO> students;
     private final IStudentRepository studentRepository;
-    // Para usar el mapper de classes/general...
+    // Para usar el MAPPER de classes/general...
     private final IStudentMapper studentMapper;
 
-    /*
-    * Como una especie de constructor en el cual:
-    *   - Instancio una lista.
-    *   - Inserto valores en esa lista.
-    *   - ¿ Lo podria hacer directamente en el constructor ?
-    *
-    */
-    public StudentsServiceImpl(IStudentRepository studentRepository, IStudentMapper studentMapper) {
+    public StudentsServiceImpl(IStudentRepository studentRepository, IStudentMapper studentMapper, RestClient.Builder builder) {
         this.studentRepository = studentRepository;
         this.studentMapper = studentMapper;
-        // Voy a inicializar la lista de students.
-        initStudents();
-
+        this.builder = builder;
     }
 
     // ----- GRACIAS AL MAPPER -----
         @Override
         public  List<StudentDTO> getAllStudents() {
 
-            return studentMapper.studentToStudentDTO(this.studentRepository.findAll());
+            return studentMapper.studentToStudentDTO
+                    (this.studentRepository.findAll());
 
         }
 
+
     @Override
     public StudentDTO createStudent(CreateStudentRequest createStudentRequest) {
-        StudentDTO student = new StudentDTO(createStudentRequest.getName(),
+       /* StudentDTO student = new StudentDTO(createStudentRequest.getName(),
                 createStudentRequest.getEmail(),
                 createStudentRequest.getBornDate());
 
         students.put(student.getId(), student);
-        return student;
+        return student;*/
+
+        StudentDTO build = StudentDTO.builder()
+                .name(createStudentRequest.getName())
+                    .email(createStudentRequest.getEmail())
+                        .bornDate(createStudentRequest.getBornDate())
+                            .build();
+        return build;
     }
+
 
     @Override
     public StudentDTO deleteStudent(int id) {
-    return null;
+
+        Optional<Student> opStudent= this.studentRepository.findById(id);
+
+        if (opStudent.isEmpty()) {
+            throw new NotFoundStudentException("Not found");
+        }
+
+        this.studentRepository.deleteById(id);
+
+        return this.studentMapper.studentToStudentDTO(opStudent.get());
+
+
+    }
+
+    @Override
+    public StudentDTO searchStudent(int id) {
+
+        return this.studentMapper.studentToStudentDTO(this.studentRepository.findById(id).get());
+
     }
 
 
-    private void initStudents() {
-        // Creo la lista.
-        students = new HashMap<>();
-
-        // Inserto valores en la lista.
-        StudentDTO student = new StudentDTO("Joaquin",
-                "joq@gmail.com",
-                LocalDate.of(12, 12, 12));
-        students.put(student.getId(), student);
-
-        student  = new StudentDTO("Andrés",
-                "andq@gmail.com",
-                LocalDate.of(12, 12, 12));
-
-        students.put(student.getId(), student);
-
-
-        student  = (new StudentDTO("Yo",
-                "yoq@gmail.com",
-                LocalDate.of(13, 12, 12)));
-
-
-        students.put(student.getId(), student);
-
-    }
 }

@@ -1,8 +1,9 @@
 IMPLEMENTAR MAPPER
 
-- getAll()
+- getAll()✅
 - delete(id)
 - update patch o post
+- crear student
 - implementar un buscar por id como extra. posibilidad de hacerlo con get o post.
 
-quitar el mapa del servicio, por la bbdd.
+Quitar el mapa del servicio, por la bbdd.

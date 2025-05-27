@@ -3,6 +3,7 @@ package com.alvaro1.helloworld.controller;
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
 import com.alvaro1.helloworld.dto.StudentDTO;
 import jakarta.validation.Valid;
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,13 +36,21 @@ public class StudentController {
                 .body(studentService
                         .createStudent(createStudentRequest));
 
+    }
 
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<StudentDTO> delete(@PathVariable int id){
 
+        return ResponseEntity.ok(studentService.deleteStudent(id));
     }
 
 
-    /*public ResponseEntity<>*/
+    @GetMapping("/search/{id}")
+    public StudentDTO search(@RequestParam int id){
 
+        return ResponseEntity.status(HttpStatus.OK)
+                .body(studentService.deleteStudent(id));
+    }
 
 
 }

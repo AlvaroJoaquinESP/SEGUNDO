@@ -14,5 +14,7 @@ public interface IStudentService {
 
     StudentDTO deleteStudent(int id);
 
+    StudentDTO searchStudent(int id);
+
 
 }

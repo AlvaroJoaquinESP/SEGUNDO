@@ -1,9 +1,17 @@
 package com.alvaro1.helloworld.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.time.LocalDate;
-
+// Necesita un constructor vacío. ¿Lo aplica por defecto o hace falta indicarlo?
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 // @Entity se utiliza para definir una clase como una entidad de base de datos.
 @Entity
 // Indico el nombre de la tabla. ¿Lo pondría así por defecto?
@@ -34,38 +42,6 @@ public class Student {
         this.name = name;
     }
 
-    // Necesita un constructor vacío. ¿Lo aplica por defecto o hace falta indicarlo?
-    public Student() {}
 
-    public LocalDate getBornDate() {
-        return bornDate;
-    }
 
-    public void setBornDate(LocalDate bornDate) {
-        this.bornDate = bornDate;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }

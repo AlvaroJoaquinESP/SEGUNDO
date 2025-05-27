@@ -3,17 +3,15 @@ package com.alvaro1.helloworld.dto;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Past;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Getter
 @Setter
 @ToString
-@Builder
+// @Builder ME DA ERROR ESTO, MÁS SI PONGO EL NOARGSCONSTRUCTOR
+@NoArgsConstructor
 public class CreateStudentRequest {
     /*@NotEmpty(message = "Name is mandatory")*/
     @NotEmpty()
