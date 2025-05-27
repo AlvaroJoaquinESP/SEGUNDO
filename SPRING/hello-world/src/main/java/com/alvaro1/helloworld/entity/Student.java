@@ -1,10 +1,7 @@
 package com.alvaro1.helloworld.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 // Necesita un constructor vacío. ¿Lo aplica por defecto o hace falta indicarlo?

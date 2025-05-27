@@ -40,14 +40,9 @@ public class StudentsServiceImpl implements IStudentService {
 
     @Override
     public StudentDTO createStudent(CreateStudentRequest createStudentRequest) {
-       /* StudentDTO student = new StudentDTO(createStudentRequest.getName(),
-                createStudentRequest.getEmail(),
-                createStudentRequest.getBornDate());
 
-        students.put(student.getId(), student);
-        return student;*/
 
-        StudentDTO build = StudentDTO.builder()
+        Student student = Student.builder()
                 .name(createStudentRequest.getName())
                     .email(createStudentRequest.getEmail())
                         .bornDate(createStudentRequest.getBornDate())
