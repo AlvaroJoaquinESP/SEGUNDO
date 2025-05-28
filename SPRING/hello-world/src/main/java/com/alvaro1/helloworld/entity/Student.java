@@ -6,6 +6,8 @@ import lombok.*;
 import java.time.LocalDate;
 // Necesita un constructor vacío. ¿Lo aplica por defecto o hace falta indicarlo?
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Getter
 @Setter
 @ToString

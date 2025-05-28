@@ -47,7 +47,7 @@ public class StudentsServiceImpl implements IStudentService {
                     .email(createStudentRequest.getEmail())
                         .bornDate(createStudentRequest.getBornDate())
                             .build();
-        return build;
+        return student;
     }
 
 
