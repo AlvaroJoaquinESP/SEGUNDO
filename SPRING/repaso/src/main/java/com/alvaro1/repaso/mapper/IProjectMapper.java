@@ -6,7 +6,7 @@ import org.mapstruct.Mapper;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface IProjectMapper {
     ProjectDTO projectToProjectDTO(Project project);
     List<ProjectDTO> projectToProjectDTO(List<Project> projects);
