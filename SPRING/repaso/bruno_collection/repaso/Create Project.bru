@@ -6,6 +6,19 @@ meta {
 
 post {
   url: http://localhost:8080/project/create
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+  
+      "name": "Spring y Angular",
+      "description": "Proyecto de spring y angular",
+      "startDate": "2025-02-28",
+      "endDate": "2025-12-28",
+      "clientId": 1,
+      "teamId": 2
+  
+  }
 }
