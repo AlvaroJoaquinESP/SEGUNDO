@@ -1,0 +1,8 @@
+- ¿ Etiqueta @NotNull en la request ?
+- @NotEmpty SOLO aplica a STRING.
+- @Enumerated(EnumType.STRING) ¡SOLO se pone en la ENTIDAD, NO en el DTO!
+- Incluir @JsonFormat(patter = "yyyy-MM-dd") en Request y en DTO para las FECHAS.
+        - En el dto se utiliza por si el frontend necesita los datos en ese formato, ej: Angular.
+        - En la Request se utiliza para establecer como se deben pasar los datos desde Bruno/Postman.
+            o también sobre cómo recibir los datos desde el frontend hacia el backend.
+- @Past SOLO se utiliza en la Request.

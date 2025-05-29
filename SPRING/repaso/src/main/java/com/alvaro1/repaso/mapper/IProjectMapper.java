@@ -10,4 +10,5 @@ import java.util.List;
 public interface IProjectMapper {
     ProjectDTO projectToProjectDTO(Project project);
     List<ProjectDTO> projectToProjectDTO(List<Project> projects);
+
 }

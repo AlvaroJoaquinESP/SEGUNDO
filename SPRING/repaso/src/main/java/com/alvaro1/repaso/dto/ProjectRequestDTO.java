@@ -2,9 +2,10 @@ package com.alvaro1.repaso.dto;
 
 import com.alvaro1.repaso.entity.Client;
 import com.alvaro1.repaso.entity.Team;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Past;
-import jdk.jfr.Description;
+
 import lombok.*;
 
 import java.time.LocalDate;
@@ -15,7 +16,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @ToString
-
+// ESTA CLASE ES LA QUE RECIBE JSON.
 public class ProjectRequestDTO {
     @NotEmpty
     private String name;
@@ -23,18 +24,14 @@ public class ProjectRequestDTO {
     @NotEmpty
     private String description;
 
-    @NotEmpty
     @Past
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate startDate;
-
-    @NotEmpty
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate endDate;
 
-    @NotEmpty
-    private Client clientId;
+    private Long clientId;
 
-    @NotEmpty
-    private Team teamId;
-
+    private Long teamId;
 
 }
