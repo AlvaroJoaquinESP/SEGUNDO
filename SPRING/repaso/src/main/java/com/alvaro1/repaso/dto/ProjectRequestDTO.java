@@ -1,7 +1,6 @@
 package com.alvaro1.repaso.dto;
 
-import com.alvaro1.repaso.entity.Client;
-import com.alvaro1.repaso.entity.Team;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Past;

@@ -5,7 +5,6 @@ import com.alvaro1.repaso.dto.ProjectRequestDTO;
 import com.alvaro1.repaso.service.IService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

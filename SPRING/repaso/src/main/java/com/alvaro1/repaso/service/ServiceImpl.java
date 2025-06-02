@@ -3,6 +3,7 @@ package com.alvaro1.repaso.service;
 import com.alvaro1.repaso.dto.ProjectDTO;
 import com.alvaro1.repaso.dto.ProjectRequestDTO;
 import com.alvaro1.repaso.entity.Project;
+import com.alvaro1.repaso.entity.Team;
 import com.alvaro1.repaso.enums.ProjectStatus;
 import com.alvaro1.repaso.mapper.IProjectMapper;
 import com.alvaro1.repaso.repository.IProjectRepository;
@@ -32,6 +33,8 @@ public class ServiceImpl implements IService{
 
     @Override
     public ProjectDTO createProject(ProjectRequestDTO projectRequestDTO) {
+
+        Team team = Team.builder().id(ProjectRequestDTO.getTeamId())
 
         Project project = Project.builder().name(projectRequestDTO.getName())
                 .description(projectRequestDTO.getDescription())
