@@ -1,14 +1,13 @@
-package com.alvaro1.helloworld.controller;
+package student.controller;
 
 import com.alvaro1.helloworld.dto.CreateStudentRequest;
 import com.alvaro1.helloworld.dto.StudentDTO;
 import com.alvaro1.helloworld.dto.UpdateStudentRequest;
+import com.alvaro1.helloworld.services.IStudentService;
 import jakarta.validation.Valid;
-import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.alvaro1.helloworld.services.IStudentService;
 
 import java.util.List;
 
