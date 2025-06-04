@@ -1,0 +1,14 @@
+org\generator\model\Order.class
+org\generator\model\Pet.class
+org\generator\api\UserApi.class
+org\generator\model\Pet$StatusEnum.class
+org\generator\model\Address.class
+org\generator\model\Category.class
+org\generator\api\ApiUtil.class
+org\generator\model\User.class
+org\generator\model\Customer.class
+org\generator\api\PetApi.class
+org\generator\model\ModelApiResponse.class
+org\generator\model\Order$StatusEnum.class
+org\generator\model\Tag.class
+org\generator\api\StoreApi.class
