@@ -4,112 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bootstrap exam</title>
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  </head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <style>
+      .btn-hover-orange:hover {
+        background-color: orange;
+      }
+
+    </style>
+  </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <div class="logo-icon">asdfasdf</div>
-        <div class="logo-text">COMPUTADORAS</div>
-      </div>
-      <nav class="nav-buttons">
-        <a href="#" class="btn nav-button">Inicio</a>
-        <a href="#" class="nav-button">Productos</a>
-        <a href="#" class="nav-button">Contacto</a>
-      </nav>
+    <header class="row">
+      <a class="col-12 col-sm-3" href="#"><img src="./bootstrap/assets/img/logo-pccomponentes.svg" alt="pcCom"></a>
+
+      <ul class="col-12 col-sm-9 border border-1 d-flex flex-column flex-sm-row align-items-center">
+        <li class="btn btn-outline-dark w-100 btn-hover-orange"><a href="#">Inicio</a></li>
+        <li class="btn btn-outline-dark w-100 btn-hover-orange"><a href="#">Productos</a></li>
+        <li class="btn btn-outline-dark w-100 btn-hover-orange"><a href="#">Contacto</a></li>
+      </ul>
     </header>
 
-      <aside class="sidebar">
+    <aside>
+      <ul>
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+        <li><a href="#">Enlace 4</a></li>
+        <li><a href="#">Enlace 5</a></li>
+        <li><a href="#">Enlace 6</a></li>
+      </ul>
+    </aside>
+
+    <main>
+
+      <img class="w-100" src="./bootstrap/assets/img/imgs.png" alt="imgMain">
+      <img class="w-100" src="./bootstrap/assets/img/imgs.png" alt="imgMain">
+      <img class="w-100" src="./bootstrap/assets/img/imgs.png" alt="imgMain">
+
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente ad pariatur non. Temporibus vel, eveniet dolorum ducimus fuga dolore, laudantium nobis enim quod ipsam perferendis aliquid deleniti, quasi deserunt.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente ad pariatur non. Temporibus vel, eveniet dolorum ducimus fuga dolore, laudantium nobis enim quod ipsam perferendis aliquid deleniti, quasi deserunt.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente ad pariatur non. Temporibus vel, eveniet dolorum ducimus fuga dolore, laudantium nobis enim quod ipsam perferendis aliquid deleniti, quasi deserunt.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente ad pariatur non. Temporibus vel, eveniet dolorum ducimus fuga dolore, laudantium nobis enim quod ipsam perferendis aliquid deleniti, quasi deserunt.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente ad pariatur non. Temporibus vel, eveniet dolorum ducimus fuga dolore, laudantium nobis enim quod ipsam perferendis aliquid deleniti, quasi deserunt.</p>
+    </main>
+
+    <footer>
+      <nav>
         <ul>
-          <li><a href="#">Enlace 1</a></li>
-          <li><a href="#">Enlace 2</a></li>
-          <li><a href="#">Enlace 3</a></li>
-          <li><a href="#">Enlace 4</a></li>
-          <li><a href="#">Enlace 5</a></li>
-          <li><a href="#">Enlace 6</a></li>
+          <li><a href="#"><img src="" alt="media"></a></li>
+          <li><a href="#"><img src="" alt="media"></a></li>
+          <li><a href="#"><img src="" alt="media"></a></li>
         </ul>
-      </aside>
-
-      <main class="main-content">
-        <div class="image-gallery">
-          <div class="landscape-image"><img src="https://loremflickr.com/400/300" alt=""></div>
-          <div class="landscape-image"><img src="https://loremflickr.com/400/300" alt=""></div>
-          <div class="landscape-image"><img src="https://loremflickr.com/400/300" alt=""></div>
-        </div>
-
-        <div class="content-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut est
-          metus. Fusce at mauris tellus. Nulla ac ultrices purus. Curabitur
-          risus nulla, porttitor sit amet tortor in, pharetra suscipit mauris.
-          Praesent consequat nam vitae feugiat finibus. Nullam mauris nibh,
-          porta at nibh sed, tempus venenatis leo. Proin laoreet consectetur
-          tempor.
-        </div>
-
-        <div class="content-text">
-          Quisque turpis metus, placerat ut mauris id, pharetra tincidunt magna.
-          Vivamus eleifend, nulla in tincidunt iaculis, nibh nunc ornare diam, a
-          aliquam elit quam tempus urna. Nam vulputate aliquet massa. Sed
-          lobortis tortor arcu, egestas malesuada velit rutrum id. Integer
-          maximus tellus eu auctor efficitur. Duis mattis, vel vehicula posuere
-          luctus, magna orci tempus elit, sit amet semper dui leo nec elit. Ut
-          eu purus ut ipsum lobortis dictum. Sed maximus enim a felis
-          consectetuer varius. Donec luctus massa, condimentum ut volutpat
-          sodales, consectetur at et. Nunc neque tortor, iaculis eu bibendum
-          vitae, facilisis non arcu. Aliquam luctus dui ac purus interdum, quis
-          sollicitudin arcu dictum. Maecenas enim erat, aliquet in accumsan eu,
-          fermentum vitae ligula.
-        </div>
-
-        <div class="content-text">
-          Etiam elit lorem, egestas ut mauris et, egestas dictum lectus. Quisque
-          lobortis orci odio, ac laoreet mi hendrerit vitae. Suspendisse
-          lobortis fermentum velit sed accumsan. Donec mollis accumsan turpis,
-          quis viverra arcu gravida orci. Ut vulputate, risus et faucibus
-          pretium, augue enim viverra nunc, nec malesuada arcu ligula quis
-          tellus. Pellentesque ut lectus nec arcu semper laoreet. Proin sit amet
-          pharetra ligula. Aliquam facilisis sollicitudin gravida. In blandit
-          semper mi.
-        </div>
-
-        <div class="content-text">
-          Proin vulputate arcu magna, id laoreet lectus ornare eu. Vestibulum ut
-          turpis, dicitur auctor quis, vulputate quis sapien. Maecenas sed neque
-          in libero mattis tincidunt. Proin eu ultrices lectus. Nunc eget arcu
-          viverra, gravida nibh porttitor, hendrerit augue. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus. In
-          vulputate, mi non accumsan vulputate, lorem enim efficitur risus, sit
-          amet lacinia lorem urna vitae lectus. Quisque a lacus quam. In gravida
-          aliquet urna sit amet tincidunt. Quisque id urna id libero congue
-          gravida at id felis.
-        </div>
-
-        <div class="content-text">
-          Phasellus id neque enim. Pellentesque habitant morbi tristique
-          senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-          bibendum augue sit amet nibh lobortis, a dignissim sapien euismod.
-          Maecenas felis odio, ultrices non suscipit id, ornare in purus.
-          Integer eu vulputate leo, vitae tincidunt enim. Donec non justo
-          tortor. Ut vulputate ligula id sem venenatis aliquet. Vestibulum ante
-          ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-          curae; Suspendisse aliquam ultrices lectus id venenatis. Integer
-          feugiat tincidunt tempor, quis vehicula lorem gravida non ex. Ut
-          blandit mollis a fermentum, mauris lacinia accumsan et sodales arcu
-          augue. Sed ut consectetur sodales varius accumsan condimentum rutrum
-          libero. Nunc finibus magna neque, sed consequat sapien elementum id.
-        </div>
-      </main>
-    </div>
-
-    <footer class="footer">
-      <div class="social-icons">
-        <a href="#" class="social-icon">f</a>
-        <a href="#" class="social-icon">@</a>
-        <a href="#" class="social-icon">▶</a>
-      </div>
-      <div>Copyright 2022</div>
+      </nav>
+      <p>Copyright 2025</p>
     </footer>
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
