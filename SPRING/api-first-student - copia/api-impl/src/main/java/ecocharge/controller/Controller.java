@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping({"/chargers/", "/availability/", "/station/"})
 
 public class Controller {
-
     private final IService service;
 
     public Controller(IService service) {

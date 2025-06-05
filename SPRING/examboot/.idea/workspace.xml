@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e15e6b-1883-4679-9714-f6efb81a1c8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../api-student/.idea/api-student.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-student/.idea/api-student.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-student/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-student/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api-student/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api-student/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/config2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/controller/ArtisanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/main/java/com/example/demo/controller/ArtisanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,36 +33,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2y2Dq8jglOvDr2l0OYU0MgyDrNe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.books-api [clean,install].executor": "Run",
-    "Maven.books-api [install].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Alvaro/Documents/GitHub/SEGUNDO/SPRING/examboot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.books-api [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.books-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alvaro Joaquin/Documents/DAW/SEGUNDO/SPRING/examboot&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Maven.books-api [clean,install]">
     <configuration name="books-api [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -130,6 +146,8 @@
       <option name="presentableId" value="Default" />
       <updated>1749023962622</updated>
       <workItem from="1749023963680" duration="889000" />
+      <workItem from="1749105245194" duration="270000" />
+      <workItem from="1749105855204" duration="4000" />
     </task>
     <servers />
   </component>
