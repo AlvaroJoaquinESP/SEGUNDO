@@ -5,24 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0e15e6b-1883-4679-9714-f6efb81a1c8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/config2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/controller/ArtisanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/main/java/com/example/demo/controller/ArtisanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config1/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +130,7 @@
       <workItem from="1749023963680" duration="889000" />
       <workItem from="1749105245194" duration="270000" />
       <workItem from="1749105855204" duration="4000" />
+      <workItem from="1749459955800" duration="2300000" />
     </task>
     <servers />
   </component>
