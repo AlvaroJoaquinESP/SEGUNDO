@@ -14,5 +14,18 @@ public class Handler {
         ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), 409, "The book already exists");
 
         return ResponseEntity.status(HttpStatus.CONFLICT).body(errorResponse);
+
     }
+
+
+
+    @ExceptionHandler(BookGenreNotFound.class)
+    public ResponseEntity<ErrorResponse> bookGenreNotFound(BookGenreNotFound ex) {
+
+        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), 404, "Genre was not found");
+
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+
+    }
+
 }

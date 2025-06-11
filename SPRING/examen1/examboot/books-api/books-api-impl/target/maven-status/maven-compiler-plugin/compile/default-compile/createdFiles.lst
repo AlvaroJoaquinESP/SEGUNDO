@@ -12,6 +12,7 @@ org\iesribera\service\IService.class
 org\iesribera\controller\TestController.class
 org\iesribera\dto\LoanDTO$LoanDTOBuilder.class
 org\iesribera\dto\AuthorDTO.class
+org\iesribera\exception\BookGenreNotFound.class
 org\iesribera\repository\ILoanRepositirory.class
 org\iesribera\entity\Author$AuthorBuilder.class
 org\iesribera\entity\Author.class

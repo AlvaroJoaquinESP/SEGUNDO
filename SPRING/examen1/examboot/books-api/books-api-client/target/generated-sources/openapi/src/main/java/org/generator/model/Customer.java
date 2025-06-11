@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   Customer.JSON_PROPERTY_USERNAME,
   Customer.JSON_PROPERTY_ADDRESS
 })
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-06-10T13:53:30.962780300+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-06-11T22:59:38.138439+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
 public class Customer implements Serializable {
   private static final long serialVersionUID = 1L;
 

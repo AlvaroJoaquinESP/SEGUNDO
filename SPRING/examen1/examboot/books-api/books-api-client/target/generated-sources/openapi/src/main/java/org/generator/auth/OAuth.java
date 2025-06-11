@@ -21,7 +21,7 @@ import org.springframework.util.MultiValueMap;
 /**
  * Provides support for RFC 6750 - Bearer Token usage for OAUTH 2.0 Authorization.
  */
-@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-06-10T13:53:30.962780300+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
+@jakarta.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-06-11T22:59:38.138439+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
 public class OAuth implements Authentication {
     private Supplier<String> tokenSupplier;
 

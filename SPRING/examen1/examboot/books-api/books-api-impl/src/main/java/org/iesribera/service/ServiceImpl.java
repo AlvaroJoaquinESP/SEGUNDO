@@ -3,12 +3,17 @@ package org.iesribera.service;
 import org.iesribera.dto.BookDTO;
 import org.iesribera.dto.RequestCreateBookDTO;
 import org.iesribera.entity.Book;
+import org.iesribera.enums.BookGenre;
 import org.iesribera.exception.BookConflictException;
+import org.iesribera.exception.BookGenreNotFound;
 import org.iesribera.mapper.IMapper;
 import org.iesribera.repository.IAuthorRepository;
 import org.iesribera.repository.IBookRepository;
 import org.iesribera.repository.ILoanRepositirory;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ServiceImpl implements IService {
@@ -37,4 +42,21 @@ public class ServiceImpl implements IService {
         return this.mapper.BookToBookDTO(this.bookRepository.save(book));
 
     }
+
+
+    @Override
+    public List<BookDTO> getAllBooksByGenre(BookGenre genre) {
+
+        if (this.bookRepository.getBooksByGenre(genre));
+
+        if (this.bookRepository.existsBookGenre(genre)) {
+            return this.mapper.ListBooksToListBooksDTO(this.bookRepository.getBooksByGenre(genre));
+        }
+
+        throw new BookGenreNotFound("The genre " + genre + " does not exists");
+
+
+    }
+
+
 }

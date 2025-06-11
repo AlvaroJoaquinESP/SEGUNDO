@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * Address
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-06-10T13:53:27.160822100+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-06-11T22:59:32.096650600+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
 public class Address implements Serializable {
 
   private static final long serialVersionUID = 1L;
