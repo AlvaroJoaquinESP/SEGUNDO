@@ -26,4 +26,5 @@ org\iesribera\repository\IAuthorRepository.class
 org\iesribera\entity\Book.class
 org\iesribera\mapper\IMapper.class
 org\iesribera\entity\Loan.class
+org\iesribera\exception\HttpMessageNotReadableException.class
 org\iesribera\dto\LoanDTO.class

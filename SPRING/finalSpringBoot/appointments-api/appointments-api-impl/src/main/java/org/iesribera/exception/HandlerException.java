@@ -1,5 +1,6 @@
 package org.iesribera.exception;
 
+import org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -37,5 +38,26 @@ public class HandlerException {
                         ,HttpStatus.BAD_REQUEST.value()
                         ,errors));
 
+    }
+
+
+    @ExceptionHandler(DoctorNotFoundException.class)
+    public ResponseEntity<ErrorResponse> doctorNotFoundException(DoctorNotFoundException ex) {
+        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), "Doctor not found", 404);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+    }
+
+
+    @ExceptionHandler(PatientNotFoundException.class)
+    public ResponseEntity<ErrorResponse> patientNotFoundException (PatientNotFoundException ex) {
+        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), "Doctor not found", 404);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
+    }
+
+
+    @ExceptionHandler(AppointmentNotFoundException.class)
+    public ResponseEntity<ErrorResponse> patientNotFoundException (AppointmentNotFoundException ex) {
+        ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), "Doctor not found", 404);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
     }
 }

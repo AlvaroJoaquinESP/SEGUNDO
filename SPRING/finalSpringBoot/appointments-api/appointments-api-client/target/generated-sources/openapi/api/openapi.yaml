@@ -1,0 +1,252 @@
+openapi: 3.0.0
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+paths:
+  /JonHealth/updateAppointment:
+    post:
+      operationId: updateAppointment
+      parameters:
+      - explode: true
+        in: query
+        name: appointmentStatus
+        required: true
+        schema:
+          enum:
+          - SCHEDULED
+          - COMPLETED
+          - CANCELLED
+          type: string
+        style: form
+      requestBody:
+        content:
+          application/json:
+            schema:
+              format: int64
+              type: integer
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/AppointmentDTO'
+          description: OK
+      tags:
+      - controller
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /JonHealth/create:
+    post:
+      operationId: createAppointment
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestCreateAppointmentDTO'
+        required: true
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/AppointmentDTO'
+          description: OK
+      tags:
+      - controller
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /:
+    get:
+      operationId: test
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      tags:
+      - test-controller
+      x-accepts:
+      - '*/*'
+  /JonHealth/listOfPatiens/{doctorId}:
+    get:
+      operationId: getPatiensByDoctor
+      parameters:
+      - explode: false
+        in: path
+        name: doctorId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/PatientDTO'
+                type: array
+          description: OK
+      tags:
+      - controller
+      x-accepts:
+      - '*/*'
+  /JonHealth/appointmentsById/{patientId}:
+    get:
+      operationId: getAppointmentsByPatient
+      parameters:
+      - explode: false
+        in: path
+        name: patientId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                format: int32
+                type: integer
+          description: OK
+      tags:
+      - controller
+      x-accepts:
+      - '*/*'
+components:
+  schemas:
+    AppointmentDTO:
+      example:
+        doctor:
+          speciality: CARDIOLOGY
+          name: name
+          id: 1
+          dni: dni
+          email: email
+        notes: notes
+        patient:
+          name: name
+          id: 6
+          medicalHistory: medicalHistory
+          dni: dni
+          email: email
+        id: 0
+        appointmentDate: 2000-01-23T04:56:07.000+00:00
+        status: SCHEDULED
+      properties:
+        id:
+          format: int64
+          type: integer
+        patient:
+          $ref: '#/components/schemas/Patient'
+        doctor:
+          $ref: '#/components/schemas/Doctor'
+        appointmentDate:
+          format: date-time
+          type: string
+        status:
+          enum:
+          - SCHEDULED
+          - COMPLETED
+          - CANCELLED
+          type: string
+        notes:
+          type: string
+      type: object
+    Doctor:
+      example:
+        speciality: CARDIOLOGY
+        name: name
+        id: 1
+        dni: dni
+        email: email
+      properties:
+        id:
+          format: int64
+          type: integer
+        name:
+          type: string
+        speciality:
+          enum:
+          - CARDIOLOGY
+          - PEDIATRICS
+          - DERMATOLOGY
+          - NEUROLOGY
+          type: string
+        dni:
+          type: string
+        email:
+          type: string
+      type: object
+    Patient:
+      example:
+        name: name
+        id: 6
+        medicalHistory: medicalHistory
+        dni: dni
+        email: email
+      properties:
+        id:
+          format: int64
+          type: integer
+        name:
+          type: string
+        dni:
+          type: string
+        email:
+          type: string
+        medicalHistory:
+          type: string
+      type: object
+    RequestCreateAppointmentDTO:
+      example:
+        patientId: 0
+        doctorId: 6
+        appointmentDate: 2000-01-23T04:56:07.000+00:00
+      properties:
+        patientId:
+          format: int64
+          type: integer
+        doctorId:
+          format: int64
+          type: integer
+        appointmentDate:
+          format: date-time
+          type: string
+      required:
+      - appointmentDate
+      - doctorId
+      - patientId
+      type: object
+    PatientDTO:
+      example:
+        name: name
+        id: 0
+        medicalHistory: medicalHistory
+        dni: dni
+        email: email
+      properties:
+        id:
+          format: int64
+          type: integer
+        name:
+          type: string
+        dni:
+          type: string
+        email:
+          type: string
+        medicalHistory:
+          type: string
+      type: object
+

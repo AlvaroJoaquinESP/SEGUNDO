@@ -1,0 +1,5 @@
+org\iesribera\BooksBatchApplication.class
+org\iesribera\batch\config\OpenApiConfig.class
+org\iesribera\batch\schedule\MySchedule.class
+org\iesribera\batch\config\BatchConfig.class
+org\iesribera\batch\tasklet\BooksTasklet.class

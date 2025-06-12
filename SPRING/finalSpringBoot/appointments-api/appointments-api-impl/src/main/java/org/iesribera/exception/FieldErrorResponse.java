@@ -11,8 +11,8 @@ public class FieldErrorResponse extends ErrorResponse{
 
     private Map<String, String> errors;
 
-    public FieldErrorResponse(String message, String details, int errorcode,Map<String, String> errors) {
-        super(message, details, errorcode);
+    public FieldErrorResponse(String message, String details, int errorCode,Map<String, String> errors) {
+        super(message, details, errorCode);
         this.errors = errors;
     }
 }

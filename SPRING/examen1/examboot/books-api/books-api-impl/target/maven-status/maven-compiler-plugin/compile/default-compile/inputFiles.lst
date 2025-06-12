@@ -13,6 +13,7 @@ C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\
 C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\exception\BookGenreNotFound.java
 C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\exception\ErrorResponse.java
 C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\exception\Handler.java
+C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\exception\HttpMessageNotReadableException.java
 C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\mapper\IMapper.java
 C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\repository\IAuthorRepository.java
 C:\Users\Alvaro Joaquin\Documents\DAW\SEGUNDO\SPRING\examen1\examboot\books-api\books-api-impl\src\main\java\org\iesribera\repository\IBookRepository.java

@@ -56,6 +56,13 @@
             <artifactId>mapstruct</artifactId>
             <version>${mapstruct.version}</version>
         </dependency>
+
+
+			<dependency>
+				<groupId>org.iesribera.api</groupId>
+				<artifactId>appointments-api-client</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
 	</dependencies>
 
 	<build>

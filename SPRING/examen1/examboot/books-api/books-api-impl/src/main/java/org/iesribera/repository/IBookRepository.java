@@ -11,7 +11,5 @@ public interface IBookRepository extends JpaRepository <Book, Long> {
 
     Book getBookByIsbn (String isbn);
 
-    List<Book> getBooksByGenre(BookGenre genre);
-
-    boolean existsBookGenre(BookGenre genre);
+    List<Book> findBooksByGenre(BookGenre genre);
 }

@@ -19,7 +19,7 @@ import jakarta.annotation.Generated;
  * Category
  */
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-06-11T22:59:32.096650600+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-06-12T10:59:04.622596900+02:00[Europe/Madrid]", comments = "Generator version: 7.10.0")
 public class Category implements Serializable {
 
   private static final long serialVersionUID = 1L;

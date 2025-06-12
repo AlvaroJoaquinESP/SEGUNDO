@@ -3,6 +3,7 @@ package org.iesribera.mapper;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+import org.iesribera.dto.AuthorDTO;
 import org.iesribera.dto.BookDTO;
 import org.iesribera.dto.RequestCreateBookDTO;
 import org.iesribera.entity.Author;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-11T22:59:44+0200",
+    date = "2025-06-12T11:09:55+0200",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 22.0.1 (Oracle Corporation)"
 )
 @Component
@@ -66,6 +67,20 @@ public class IMapperImpl implements IMapper {
         return list;
     }
 
+    @Override
+    public List<AuthorDTO> ListAuthorToListhAuthorDTO(List<Author> authorList) {
+        if ( authorList == null ) {
+            return null;
+        }
+
+        List<AuthorDTO> list = new ArrayList<AuthorDTO>( authorList.size() );
+        for ( Author author : authorList ) {
+            list.add( authorToAuthorDTO( author ) );
+        }
+
+        return list;
+    }
+
     protected Author requestCreateBookDTOToAuthor(RequestCreateBookDTO requestCreateBookDTO) {
         if ( requestCreateBookDTO == null ) {
             return null;
@@ -76,5 +91,21 @@ public class IMapperImpl implements IMapper {
         author.id( requestCreateBookDTO.getAuthorId() );
 
         return author.build();
+    }
+
+    protected AuthorDTO authorToAuthorDTO(Author author) {
+        if ( author == null ) {
+            return null;
+        }
+
+        AuthorDTO.AuthorDTOBuilder authorDTO = AuthorDTO.builder();
+
+        authorDTO.id( author.getId() );
+        authorDTO.name( author.getName() );
+        authorDTO.nationality( author.getNationality() );
+        authorDTO.birthDate( author.getBirthDate() );
+        authorDTO.awards( author.getAwards() );
+
+        return authorDTO.build();
     }
 }

@@ -1,6 +1,7 @@
 package org.iesribera.controller;
 
 import jakarta.validation.Valid;
+import org.iesribera.dto.AuthorDTO;
 import org.iesribera.dto.BookDTO;
 import org.iesribera.dto.RequestCreateBookDTO;
 import org.iesribera.enums.BookGenre;
@@ -31,9 +32,15 @@ public class Controller {
 
 
 
-    @PostMapping("category")
-    public ResponseEntity<List<BookDTO>> getAllBooksByGenre(BookGenre genre) {
+    @GetMapping("category/{genre}")
+    public ResponseEntity<List<BookDTO>> getAllBooksByGenre(@PathVariable BookGenre genre) {
         return ResponseEntity.status(HttpStatus.OK).body(this.service.getAllBooksByGenre(genre));
+    }
+
+
+    @GetMapping("maxAwards")
+    public ResponseEntity<List<AuthorDTO>> getMaxAwards() {
+        return ResponseEntity.status(HttpStatus.OK).body(this.service.getMaxAwards());
     }
 
 

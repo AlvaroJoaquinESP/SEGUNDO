@@ -9,9 +9,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class AppointmentsTasklet implements Tasklet {
 
+    // Creo el controller de la api y el servicio del batch.
+    // Primero llamo al service, y dentro del service llamo al controller.
+
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception{
-        System.out.println("Test");
+
+
+
+
+
         return RepeatStatus.FINISHED;
     }
 }

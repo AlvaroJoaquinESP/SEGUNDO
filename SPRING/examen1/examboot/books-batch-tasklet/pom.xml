@@ -42,6 +42,14 @@
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 		</dependency>
+
+
+		<dependency>
+			<groupId>org.iesribera.api</groupId>
+			<artifactId>books-api-client</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

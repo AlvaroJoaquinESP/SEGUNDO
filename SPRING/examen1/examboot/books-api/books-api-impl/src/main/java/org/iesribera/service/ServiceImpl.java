@@ -1,7 +1,9 @@
 package org.iesribera.service;
 
+import org.iesribera.dto.AuthorDTO;
 import org.iesribera.dto.BookDTO;
 import org.iesribera.dto.RequestCreateBookDTO;
+import org.iesribera.entity.Author;
 import org.iesribera.entity.Book;
 import org.iesribera.enums.BookGenre;
 import org.iesribera.exception.BookConflictException;
@@ -47,14 +49,23 @@ public class ServiceImpl implements IService {
     @Override
     public List<BookDTO> getAllBooksByGenre(BookGenre genre) {
 
-        if (this.bookRepository.getBooksByGenre(genre));
 
-        if (this.bookRepository.existsBookGenre(genre)) {
-            return this.mapper.ListBooksToListBooksDTO(this.bookRepository.getBooksByGenre(genre));
-        }
 
-        throw new BookGenreNotFound("The genre " + genre + " does not exists");
+        List<Book> bookList = this.bookRepository.findBooksByGenre(genre);
 
+
+        return this.mapper.ListBooksToListBooksDTO(bookList);
+
+
+    }
+
+    @Override
+    public List<AuthorDTO> getMaxAwards() {
+
+        List<Author> authorList = this.authorRepository.findAll();
+
+        return this.mapper.ListAuthorToListhAuthorDTO
+                (this.authorRepository.findAuthorMaxAwards());
 
     }
 
