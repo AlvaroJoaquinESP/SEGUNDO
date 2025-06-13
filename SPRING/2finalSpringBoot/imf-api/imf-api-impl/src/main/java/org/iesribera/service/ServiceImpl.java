@@ -124,6 +124,15 @@ public class ServiceImpl implements IService {
 
     }
 
+    @Override
+    public List<MissionDTO> getAllMissions() {
+
+        List<Mission> missionList = this.missionRepository.findAll();
+
+        return this.mapper.listMissionsToListMissionsDTO(missionList);
+
+    }
+
 
 }
 

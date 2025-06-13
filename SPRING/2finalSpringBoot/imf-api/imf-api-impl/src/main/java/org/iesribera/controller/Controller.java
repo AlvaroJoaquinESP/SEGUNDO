@@ -24,7 +24,7 @@ public class Controller {
 
 
     @GetMapping("agents/{deceased}")
-    public ResponseEntity<List<AgentDTO>> getAgentsDeceased (Boolean deceased) {
+    public ResponseEntity<List<AgentDTO>> getAgentsDeceased (@PathVariable Boolean deceased) {
         return ResponseEntity.ok(this.service.getAgentsDeceased(deceased));
     }
 
@@ -45,6 +45,12 @@ public class Controller {
     @GetMapping("teams/name/{teamName}/agents")
     public ResponseEntity<List<AgentDTO>> getAgentsByTeamName (@PathVariable String teamName) {
         return ResponseEntity.status(HttpStatus.OK).body(this.service.getAgentsByTeamName(teamName));
+    }
+
+
+    @GetMapping("getAllMissions")
+    public ResponseEntity<List<MissionDTO>> getAllMissions() {
+        return ResponseEntity.status(HttpStatus.OK).body(this.service.getAllMissions());
     }
 
 

@@ -16,4 +16,8 @@ public interface IService {
     MissionDTO updateMissionStatus (Long id, ChangeStatusRequestDTO changeStatusRequestDTO);
 
     List<AgentDTO> getAgentsByTeamName (String teamName);
+
+
+    List<MissionDTO> getAllMissions();
+
 }

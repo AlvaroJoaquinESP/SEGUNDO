@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-13T12:55:51+0200",
+    date = "2025-06-13T13:17:22+0200",
     comments = "version: 1.6.3, compiler: javac, environment: Java 23-valhalla (Oracle Corporation)"
 )
 @Component
@@ -85,6 +85,20 @@ public class IMapperImpl implements IMapper {
         List<AgentDTO> list = new ArrayList<AgentDTO>( agentList.size() );
         for ( Agent agent : agentList ) {
             list.add( agentToAgentDTO( agent ) );
+        }
+
+        return list;
+    }
+
+    @Override
+    public List<MissionDTO> listMissionsToListMissionsDTO(List<Mission> missionList) {
+        if ( missionList == null ) {
+            return null;
+        }
+
+        List<MissionDTO> list = new ArrayList<MissionDTO>( missionList.size() );
+        for ( Mission mission : missionList ) {
+            list.add( missionToMissionDTO( mission ) );
         }
 
         return list;

@@ -26,6 +26,8 @@ public interface IMapper {
 
     List<AgentDTO> listAgentToListAgentDTO (List<Agent> agentList);
 
+    List<MissionDTO> listMissionsToListMissionsDTO (List<Mission> missionList);
+
 
 
 }
