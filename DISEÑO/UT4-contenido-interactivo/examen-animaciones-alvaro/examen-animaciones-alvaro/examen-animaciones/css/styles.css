@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+:root {
+  --primary-dark: #001f3f; /* Azul oscuro */
+  --secondary-blue: #003366; /* Azul marino */
+  --light-gray: #d9e2ec; /* Azul grisáceo */
+  --hover-light: #ffdd57; /* Amarillo suave */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary-dark);
+}
+
+header .menu,
+header .logo,
+header .search {
+  display: flex;
+  align-items: center;
+  flex: 1 1 300px;
+}
+
+header .menu li {
+  list-style: none;
+  position: relative;
+}
+
+.resaltado span {
+  position: absolute;
+  display: inline-block;
+  z-index: 0;
+  opacity: 0.3;
+  background-color: white;
+}
+
+.resaltado:hover {
+  animation: colorA 1s;
+}
+
+@keyframes colorA {
+  0% {
+    background-color: white ;
+    width: 0%;
+  }
+
+  100% {
+    background-color: white 0.2;
+    width: 100%;
+  }
+}
+
+header .menu a {
+  text-decoration: none;
+  color: var(--light-gray);
+  margin: 0 10px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+header .menu a:hover {
+  color: aqua;
+  transition: all 0.5s ease-out;
+}
+
+header .logo {
+  width: 100%;
+  justify-content: center;
+}
+
+header .search input {
+  padding: 8px;
+  margin-right: 5px;
+  border-radius: 4px;
+  background-color: var(--light-gray);
+  color: var(--primary-dark);
+  border: none;
+}
+
+header .search button {
+  background-color: transparent;
+  color: var(--light-gray);
+  border: none;
+  font-size: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+  animation: mover 3s forwards;
+  /*Creo que no hace falta el position absolute, ya que lo ponemos a la izq uierda del input.*/
+}
+
+@keyframes mover {
+  from {
+    margin: 0 0;
+  }
+
+  to {
+    margin: 0 -13.5rem;
+    rotate: 270deg;
+  }
+}
+
+header .search input:focus {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+header .hamburger {
+  display: none;
+  background-color: var(--secondary-blue);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cta-container {
+  flex: 1 1 auto;
+  text-align: center;
+  position: relative;
+  background-image: url(../img/pexels-fotovegraf-312591823-28159971.jpg);
+  background-size: 150%;
+  animation: fondo 20s infinite alternate ease-in-out;
+  /* animation: fondo2 10s infinite alternate ease-in-out; */
+}
+
+@keyframes fondo {
+  /*Para poner la segunda animación, descomentar*/
+  0% {
+    background-position: top left;
+  }
+
+  /* 25% {
+    background-position: center right;
+  }
+  
+  50% {
+    background-position: bottom left;
+  }
+
+  75% {
+    background-position: bottom right;
+  } */
+
+  100% {
+    background-position: bottom right;
+  }
+}
+
+.cta-container .box {
+  position: relative;
+  padding: 1rem;
+  opacity: 50%;
+  animation: box 3s ease;
+}
+
+@keyframes box {
+  0% {
+    left: 3000px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+h1,
+h2 {
+  color: var(--primary-dark);
+  text-shadow: var(--hover-light) 4px 2px 6px;
+  background-color: var(--light-gray);
+}
+
+footer {
+  background-color: var(--secondary-blue);
+  color: var(--light-gray);
+}
+
+footer a {
+  color: var(--light-gray);
+  display: block;
+  text-decoration: none;
+}
+
+.footer-copy {
+  padding: 20px;
+  background-color: var(--primary-dark);
+  text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 34px 0;
+  overflow-x: auto;
+  scroll-snap-type: center center;
+  scroll-snap-align: proximity;
+}
+
+.footer-menu h3 {
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  header .menu {
+    display: none;
+  }
+
+  header ul {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    background-color: #001f3f;
+    height: 100%;
+    animation: activo 2s forwards;
+  }
+
+  header ul.active {
+    display: flex;
+  }
+
+  header .hamburger {
+    display: block;
+  }
+
+  .footer-menu {
+    width: 80wh;
+    display: flex;
+  }
+  .footer-menu div {
+    flex: 0 0 auto;
+    width: 100vw;
+  }
+
+  .footer-menu div {
+    text-align: center;
+  }
+
+  .cta-container {
+    padding: 100px 20px;
+  }
+}
+
+
+  @keyframes activo {
+    0% {
+      height: 0%;
+      
+    }
+
+    100% {
+      height: 10%;
+    }
+  }
+
