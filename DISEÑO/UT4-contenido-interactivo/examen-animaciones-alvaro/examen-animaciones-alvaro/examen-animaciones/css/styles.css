@@ -38,17 +38,29 @@ header .search {
 header .menu li {
   list-style: none;
   position: relative;
+  /*Para que el span no se agrande*/
+  overflow: hidden;
 }
 
 .resaltado span {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
   display: inline-block;
   z-index: 0;
   opacity: 0.3;
   background-color: white;
 }
 
+/*Añado height y cambio animation al span*/
 .resaltado:hover {
+  height: 100%;
+}
+
+.resaltado:hover span {
+  width: 100%;
   animation: colorA 1s;
 }
 
@@ -70,16 +82,24 @@ header .menu a {
   margin: 0 10px;
   font-weight: bold;
   z-index: 2;
+  /*Cambiado aquí*/
+  transition: all 0.5s ease-out;
 }
 
 header .menu a:hover {
   color: aqua;
-  transition: all 0.5s ease-out;
+ /*transition: all 0.5s ease-out;*/
 }
 
 header .logo {
   width: 100%;
   justify-content: center;
+}
+
+/*Ejercicio 2*/
+/*Añado este position relative*/
+header .search {
+  position: relative;
 }
 
 header .search input {
@@ -92,6 +112,10 @@ header .search input {
 }
 
 header .search button {
+  /*Meto position absolute + top + left*/
+  position: absolute;
+  top: 0;
+  left: -50px;
   background-color: transparent;
   color: var(--light-gray);
   border: none;
@@ -102,13 +126,16 @@ header .search button {
   /*Creo que no hace falta el position absolute, ya que lo ponemos a la izq uierda del input.*/
 }
 
+/*Cambiado, para que vaya de izquierda a derecha.*/
 @keyframes mover {
   from {
-    margin: 0 0;
+    left: -50px;
+    /*Opacidad, ya que si no pega un corte*/
+    opacity: 0;
   }
 
   to {
-    margin: 0 -13.5rem;
+    left: 170px;
     rotate: 270deg;
   }
 }
@@ -134,7 +161,7 @@ header .hamburger {
   position: relative;
   background-image: url(../img/pexels-fotovegraf-312591823-28159971.jpg);
   background-size: 150%;
-  animation: fondo 20s infinite alternate ease-in-out;
+  animation: fondo 20s infinite /*alternate ease-in-out*/ linear, fondo2 20s infinite linear 20s;
   /* animation: fondo2 10s infinite alternate ease-in-out; */
 }
 
@@ -161,6 +188,16 @@ header .hamburger {
   }
 }
 
+@keyframes fondo2 {
+  0% {
+    background-position: bottom right;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
 .cta-container .box {
   position: relative;
   padding: 1rem;
@@ -169,8 +206,9 @@ header .hamburger {
 }
 
 @keyframes box {
+  /*Cambio 3000px*/
   0% {
-    left: 3000px;
+    left: -100vw;
   }
 
   100% {
@@ -266,7 +304,7 @@ footer a {
     }
 
     100% {
-      height: 10%;
+      height: 30%;
     }
   }
 
